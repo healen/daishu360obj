@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/new3.css" type="text/css">
+
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+
+                    <div class="linklist">
+                        <a href="">新手指引</a>
+                        <a href="about_us.html">关于我们</a>
+                        <a href="login.html" class="user login">登录</a>
+                        <a href="regrist.html" class="user regst">注册</a>
+
+
+                    </div>
+
+                  
+
+
+
+                    <div class="search">
+
+                        <i class="icon searchico">
+                            
+                        </i>
+                        <input type="text" class="searchinput" placeholder="请输入关键字">
+
+                        <div class="close">
+                            
+                        </div>
+
+                    </div>
+
+                     <a href="project_sponsor.html" class="btn smal">+发起项目</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="index.html"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="stock_crowdfunding_list.html"><span>股权众筹</span></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="frist_crowdfunding_list.html">优先股众筹</a>
+                                    <a href="stock_crowdfunding_list.html">股权众筹</a>
+                                </div>
+                            </li>
+                            <li id="new3">
+                                <a href="new3.html"><span>新三板定增</span> </a>
+                            </li>
+                            <li class="toggle" id="product_crowdfunding_list">
+                                <a href="product_crowdfunding_list.html"><span>产品众筹</span></a>
+                            </li>
+                            <li id="shop_crowdfunding_list">
+                                <a href="shop_crowdfunding_list.html"><span>店铺众筹</span> </a>
+                            </li>
+                            <li id="transfer_list">
+                                <a href="transfer_list.html"><span>转让专区</span> </a>
+                            </li>
+
+                            <li id="Preheating">
+                                <a href="Preheating.html"><span>预热专区</span> </a>
+                            </li>
+                            
+                            <li id="my_index">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+   </div>
+
+   <script type="text/javascript">
+   $(".searchico").on("click",function(){
+        var paren=$(this).parents(".search");
+        if(!paren.hasClass("on")){
+            paren.addClass("on");
+        }else{
+            paren.removeClass("on");
+        }
+   })
+
+   $(".search .close").on("click",function(){
+        var paren=$(this).parents(".search");
+        paren.removeClass("on");
+
+
+   })
+
+   </script>
+ <!-----header.tpl读取完成---->
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="banner1"></div>
+		
+		<div class="inwarp">
+			<div class="title">投资新三板定增三大优势！</div>
+			<div class="new3content">
+				<div class="list">
+					<div class="icobox">01</div>
+					<div class="contentbox">
+						<h2>打折买牛股</h2>
+						<p><i></i>定增价格一般比市场价格低，使投资者可以以较低的价格购买到股票，从新三板定增的规则上，没有政策锁定期。</p>
+					</div>
+				</div>
+
+				<div class="list">
+					<div class="icobox">02</div>
+					<div class="contentbox">
+						<h2>超额收益显著</h2>
+						<p><i></i>折价率所带来的“乘数效应”。</p>
+						<p><i></i>募集资金投向从简单的再融资转向成熟的大股东资本运作模式。</p>
+						<p><i></i>大股东及其他关联方积极参与定增认购。</p>
+					</div>
+				</div>
+
+				<div class="list">
+					<div class="icobox">03</div>
+					<div class="contentbox">
+						<h2>高成长性，定增提高公司价值</h2>
+						<p><i></i>定增一般会收入优良资产，有利于公司整体价格的提升。</p>
+						
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="title">现在！就是参与定增最佳时！</div>
+
+
+			<div class="new3content">
+				<div class="list">
+					<div class="icobox qa">Q：</div>
+					<div class="contentbox">
+						<h2>如何参与定向增发？</h2>
+						
+					</div>
+				</div>
+
+				<div class="list">
+					<div class="icobox qa">A：</div>
+					<div class="contentbox">
+						
+						<p>新三板对于合格投资人进行了限定，需要可投资资产在500万元以上，一般个人参与不了，可以通过专门做新三板股权和定增投资的基
+金来进行参与。</p>
+					
+					</div>
+				</div>
+
+				
+				
+			</div>
+		</div>
+
+		
+		<div class="banner2"></div>
+
+
+		<div class="title">新三板企业不同阶段的投资机会</div>
+
+		<div class="proess"></div>
+
+
+		<div class="banner3"></div>
+
+		<div class="inwarp hidden">
+			<div class="listbox">
+				<a href="#">
+					<div class="tip">热推项目</div>
+					<img src="../public/img/new3.png" alt="">
+					<div class="content">
+						<div class="head">切糕王子-互联网第一新疆特产生态平台</div>
+						<div class="tag">
+							<span>项目标签</span>
+							<span>项目标签</span>
+							<span>项目标签</span>
+							
+						</div>
+						<p>2016年预计营业收入1亿元，市销率0.9倍，临近企业成长爆发期的拐点2016年预计营业收入1亿元，市销率0.9倍，临近企业成长爆发期的拐点2016年预计营业收入1亿元，市销率0.9倍，临近企业成长爆发期的拐点，...</p>
+
+						
+
+						
+					</div>
+				</a>
+				<a href="#">
+					<div class="tip">领投基金</div>
+					<img src="../public/img/new3.png" alt="">
+					<div class="content">
+						<div class="head">切糕王子-互联网第一新疆特产生态平台</div>
+						<div class="tag">
+							<span>项目标签</span>
+							<span>项目标签</span>
+							<span>项目标签</span>
+							
+						</div>
+						<p>2016年预计营业收入1亿元，市销率0.9倍，临近企业成长爆发期的拐点2016年预计营业收入1亿元，市销率0.9倍，临近企业成长爆发期的拐点2016年预计营业收入1亿元，市销率0.9倍，临近企业成长爆发期的拐点，...</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+
+
+		<div class="telbox">
+			<div class="inwarp">
+				<div class="row">
+					<div class="l">
+						<div class="telboxs">
+							<i class="telico"></i>
+							<div class="rib">
+								<p>稀缺私募股权，一百万起</p>
+								<h2>电话预留位置</h2>
+							</div>
+						</div>
+					</div>
+					<div class="r">
+						<div class="formbox">
+							<input type="text" placeholder="姓名">
+							<input type="text" placeholder="手机">
+							<input type="button" value="急速预约">
+							
+						</div>
+						<p>名额有限，预约从速！我们将在24小时内与您联系</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+		
+	</div>
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+<div class="footer">
+    <div class="ftbody">
+        <div class="inwarp">
+                <div class="ftflink">
+
+                    合作伙伴：   
+                    <a href="">贷鼠网</a>
+                    <a href="">网贷之家</a>
+                    <a href="">搜狐互联网金融</a>
+                    <a href="">老虎财经</a>
+                    <a href="">慧博咨询</a>
+                    <a href="">网贷之眼</a>
+                </div>
+            
+
+        </div>
+
+        <div class="footbot">
+            <div class="l">
+                <div class="link">
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">服务协议</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作专区</a> 
+                </div>
+
+                <div class="follow"> 服务热线：010-53677696 (9:00-21:00)</div>
+
+               
+
+                <div class="follow">
+                    <div class="title">关注我们：</div>
+                    <a href="" class="weibo"></a>
+                    <a href="" class="qq"></a>
+                    <a href="" class="tieba"></a>
+                    <a href="" class="douban"></a>
+                </div>
+            </div>
+          
+            <div class="r">
+                <img src="../public/img/erweima.png" alt="">
+                <img src="../public/img/erweima.png" alt="">
+                
+            </div>
+
+              <div class="c">©2015 贷鼠网 All Rights Reserved. 京ICP备</div>
+        </div>
+
+     
+ 
+    </div>
+
+</div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript">
+
+	
+</script>
+
+</body>
+</html>

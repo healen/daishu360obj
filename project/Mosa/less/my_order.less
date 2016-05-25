@@ -1,0 +1,222 @@
+@import "../variables";
+@import "../lib/basic";
+
+
+@import "../lib/element";
+
+/*首页样式*/
+.piceword{
+	margin-bottom: 30px;
+	position: relative;
+	.waitpay{
+			height: 28px;
+			width: 100px;
+			line-height: 28px;
+			color: #ffffff;
+			overflow: hidden;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			background: @markColor;
+			text-align: center;
+
+		}
+	&>div{
+		// height: 180px;
+		position: relative;
+		overflow: hidden;
+
+		img{
+			position: absolute;
+			top: 50%;
+			margin-top: -56px;
+		}
+
+		
+		.ri{
+			margin-left: 222px;
+			.l{
+				&>p{
+					margin-bottom: 20px;
+
+				}
+				&:hover{
+						color: @baseTextColor;
+					}
+			}
+			.r{
+				.inr{
+					padding-left: 30px;
+				}
+			}
+		}
+	}
+}
+
+.debt{
+	color: @auxColor;
+}
+
+.popupdebt{
+	font-size: 14px;
+	padding: 20px;
+	.right_title{
+		height: 35px;
+		line-height: 30px;
+		border-bottom: none;
+		padding-bottom: 10px;
+		color: @markColor;
+		h2{
+			font-size: 16px;
+		}
+		.line{
+			margin-left: 0px;
+			margin-top: 11px;
+			width: 6px;
+			height: 6px;
+			border-radius: 0px;
+			background: @markColor;
+		}
+	}
+
+	.huicontent{
+		margin-bottom: 10px;
+		line-height: 25px;
+		background: #f2f2f2;
+		padding: 15px 60px;
+		margin-top: -5px;
+		.listcontent{
+			float: left;
+			width: 50%;
+			.title{
+				// color: ;
+			}
+		}
+	}
+	
+}
+.formgroup{
+	padding:0px 0px 0px 15px;
+	.row{
+		margin-bottom: 10px;
+	}
+
+	.agree{
+		line-height: 20px;
+		._clearfix();
+		padding-left: 56px;
+		margin-top: 10px;
+		a{
+			color: @markColor;
+		}
+		input[type='checkbox']{
+			float: left;
+			margin-top: 4px;
+			margin-right: 10px;
+		}
+
+	}
+
+
+
+	.vert{
+		height: 37px;
+		width: 123px;
+		margin-left: 10px;
+		
+	}
+	.listcontent{
+		._clearfix();
+		float: left;
+		width: 270px;
+		line-height: 35px;
+
+		&.fright{
+			float: right;
+		}
+		&.full{
+			width: 100%;
+			float: none;
+			textarea{
+				padding: 5px;
+				width: 87%;
+				height: 50px;
+				border:1px solid @inputBorderColor;
+			}
+			.discribe{
+				text-align: right;
+			}
+		}
+		.title{
+			color: @titleTextColor;
+			float: left;
+		}
+		@width:198px;
+		.inputbox{
+			float: left;
+			width: @width;
+			height: 35px;
+			position: relative;
+			.tag{
+				position: absolute;
+				right: 5px;
+				top: 0px;
+				line-height: 35px;
+
+			}
+			input{
+				width: @width - 10;
+				padding: 0px 5px;
+				height: 100%;
+				border:1px solid @inputBorderColor;
+			}
+		}
+	}
+
+}
+
+hr {
+  background: #ffffff;
+  border: none;
+  border-bottom: 1px dotted @borderColor;
+  margin-top: -8px;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+.tab_btn_defalut{
+    border-bottom: none;
+    // margin-top: 10px;
+    &.linkstyle{
+        height: auto;
+        margin-top: 15px;
+        ._clearfix();
+        padding: 0px 25px;
+        a{
+            padding-top: 0px;
+            padding: 0px 11px;
+            font-size: @titleBaseSize;
+            color: @baseTextColor;
+            border-radius: 3px;
+            margin-right: 0px;
+            float: left;
+            &.active{
+                 color: @baseTextColor;
+                border-bottom: none;
+                background: @borderColor;
+            }
+        }
+        span{
+            display: inline-block;
+            height: 20px;
+            width: 1px;
+            overflow: hidden;
+            background: @borderColor;
+            float: left;
+            margin:9px 20px;
+        }
+    }
+}
+

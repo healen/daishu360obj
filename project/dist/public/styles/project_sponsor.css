@@ -1,0 +1,442 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*llist*/
+.container {
+  background: #f5f5fa;
+  font-size: 16px;
+}
+.topbars {
+  padding: 20px;
+}
+.topbars .delete {
+  padding-left: 15px;
+}
+.icotitle {
+  height: 40px;
+  text-align: center;
+  margin: 40px auto 0px auto;
+}
+.icotitle span {
+  display: inline-block;
+  width: 211px;
+  height: 40px;
+  background: url("../images/title.png") no-repeat -211px 0px;
+  color: #595959;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.icotitle span.step_on {
+  color: #ffffff;
+  background-position: 0px 0px;
+}
+.project_sponsor {
+  min-height: 400px;
+  font-size: 16px;
+  border: 3px solid #ebebf5;
+  background: #ffffff;
+  margin: 20px 0px;
+  padding: 10px 24px;
+}
+.project_sponsor h2 {
+  font-size: 16px;
+  color: #595959;
+  line-height: 45px;
+  border-bottom: 1px solid #ebebf5;
+  padding: 0px 16px;
+}
+h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #595959;
+  line-height: 45px;
+  padding: 0px 16px;
+}
+.block {
+  display: block;
+  margin-top: -5px;
+}
+.formbox {
+  padding: 30px 30px;
+  min-height: 200px;
+}
+.formbox .inputlabel {
+  margin-bottom: 20px;
+  position: relative;
+}
+.formbox .titlabel {
+  text-align: right;
+  width: 116px;
+  font-size: 16px;
+  color: #595959;
+  float: left;
+  line-height: 40px;
+  padding-right: 5px;
+}
+.formbox input[type='file'] {
+  height: 40px;
+  width: 112px;
+  position: absolute;
+  left: 121px;
+  top: 0px;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  cursor: pointer;
+}
+.formbox .inputbox {
+  width: 800px;
+  float: left;
+  line-height: 40px;
+  *zoom: 1;
+}
+.formbox .inputbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.formbox .inputbox input[type='text'],
+.formbox .inputbox input[type='password'],
+.formbox .inputbox select,
+.formbox .inputbox textarea {
+  width: 580px;
+  padding: 0px 10px;
+  height: 38px;
+  border: 1px solid #a6a6a6;
+  margin-right: 10px;
+}
+.formbox .inputbox input[type='text']:focus,
+.formbox .inputbox input[type='password']:focus,
+.formbox .inputbox select:focus,
+.formbox .inputbox textarea:focus {
+  border-color: #3fd4bb;
+}
+.formbox .inputbox input[type='text'].min,
+.formbox .inputbox input[type='password'].min,
+.formbox .inputbox select.min,
+.formbox .inputbox textarea.min {
+  width: 70px;
+}
+.formbox .inputbox textarea {
+  height: 64px;
+  padding: 10px 10px;
+}
+.formbox .inputbox select {
+  background: #ffffff;
+  width: 602px;
+}
+.formbox .inputbox span {
+  line-height: 40px;
+}
+.formbox .inputbox .tysq {
+  line-height: 40px;
+  margin-right: 0px;
+  *zoom: 1;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.formbox .inputbox .tysq:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.formbox .inputbox .tysq input[type='checkbox'],
+.formbox .inputbox .tysq input[type='radio'] {
+  float: left;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.formbox .inputbox .picebox {
+  width: 256px;
+  height: 144px;
+  line-height: 144px;
+  background: #323847;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+.formbox .inputbox .picebox img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+.formbox .inputbox .picebox .close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 2;
+  right: -8px;
+  top: -8px;
+  cursor: pointer;
+  background: url("../images/ico1.png") no-repeat -50px -227px;
+}
+.ms {
+  width: 685px;
+  margin: 0px auto;
+}
+.ms .inputbox {
+  width: 500px;
+  float: left;
+  line-height: 40px;
+  *zoom: 1;
+}
+.ms .inputbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.ms .inputbox input[type='text'],
+.ms .inputbox input[type='password'],
+.ms .inputbox select,
+.ms .inputbox textarea {
+  width: 480px;
+  padding: 0px 10px;
+  height: 38px;
+  border: 1px solid #a6a6a6;
+  margin-right: 10px;
+}
+.ms .inputbox input[type='text']:focus,
+.ms .inputbox input[type='password']:focus,
+.ms .inputbox select:focus,
+.ms .inputbox textarea:focus {
+  border-color: #3fd4bb;
+}
+.ms .inputbox input[type='text'].min,
+.ms .inputbox input[type='password'].min,
+.ms .inputbox select.min,
+.ms .inputbox textarea.min {
+  width: 70px;
+}
+.ms .inputbox textarea {
+  height: 64px;
+  padding: 10px 10px;
+}
+.ms .inputbox select {
+  background: #ffffff;
+  width: 602px;
+}
+.ms .inputbox span {
+  line-height: 40px;
+}
+.ms .inputbox .tysq {
+  line-height: 40px;
+  margin-right: 0px;
+  *zoom: 1;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.ms .inputbox .tysq:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.ms .inputbox .tysq input[type='checkbox'],
+.ms .inputbox .tysq input[type='radio'] {
+  float: left;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.ms .inputbox .picebox {
+  width: 256px;
+  height: 144px;
+  line-height: 144px;
+  background: #323847;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+.ms .inputbox .picebox img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.showmsg {
+  display: none;
+}
+.showmsg .formbox {
+  padding: 0px 30px;
+}
+.showmsg .formbox .inputbox {
+  width: 800px;
+  float: left;
+  line-height: 40px;
+  *zoom: 1;
+}
+.showmsg .formbox .inputbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.showmsg .formbox .inputbox input[type='text'],
+.showmsg .formbox .inputbox input[type='password'],
+.showmsg .formbox .inputbox select,
+.showmsg .formbox .inputbox textarea {
+  width: 580px;
+  padding: 0px 10px;
+  height: 38px;
+  border: 1px solid #a6a6a6;
+  margin-right: 10px;
+}
+.showmsg .formbox .inputbox input[type='text']:focus,
+.showmsg .formbox .inputbox input[type='password']:focus,
+.showmsg .formbox .inputbox select:focus,
+.showmsg .formbox .inputbox textarea:focus {
+  border-color: #3fd4bb;
+}
+.showmsg .formbox .inputbox input[type='text'].min,
+.showmsg .formbox .inputbox input[type='password'].min,
+.showmsg .formbox .inputbox select.min,
+.showmsg .formbox .inputbox textarea.min {
+  width: 70px;
+}
+.showmsg .formbox .inputbox textarea {
+  height: 64px;
+  padding: 10px 10px;
+}
+.showmsg .formbox .inputbox select {
+  background: #ffffff;
+  width: 602px;
+}
+.showmsg .formbox .inputbox span {
+  line-height: 40px;
+}
+.showmsg .formbox .inputbox .tysq {
+  line-height: 40px;
+  margin-right: 0px;
+  *zoom: 1;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.showmsg .formbox .inputbox .tysq:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.showmsg .formbox .inputbox .tysq input[type='checkbox'],
+.showmsg .formbox .inputbox .tysq input[type='radio'] {
+  float: left;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.showmsg .formbox .inputbox .picebox {
+  width: 256px;
+  height: 144px;
+  line-height: 144px;
+  background: #323847;
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+.showmsg .formbox .inputbox .picebox img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.btnbox {
+  width: 280px;
+  margin: 0px auto;
+}
+.btnbox .btn {
+  margin-bottom: 10px;
+}
+.smaile {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
+}
+.smaile img {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.smaile h2 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3fd4bb;
+  border-bottom: none;
+}
+.smaile p {
+  border-bottom: none;
+}
+table.botbor {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+table.botbor thead td {
+  background-color: #ebebf5;
+  color: #595959;
+}
+table.botbor thead td.frist {
+  width: 10%;
+}
+table.botbor td {
+  background: #ffffff;
+  border-bottom: 1px solid #ebebf5;
+  line-height: 40px;
+}
+table.botbor tr:last-child td {
+  line-height: 40px;
+}
+table.txleft {
+  text-align: left;
+  width: 100%;
+}
+table.txleft td {
+  border-bottom: 1px solid #ebebf5;
+  line-height: 40px;
+}
+table.txleft td div {
+  *zoom: 1;
+}
+table.txleft td div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+table.txleft td div.pdr {
+  padding-left: 44px;
+}
+table.txleft tr:last-child td {
+  border-bottom: none;
+  line-height: 40px;
+}

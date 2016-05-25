@@ -1,0 +1,240 @@
+/*首页样式*/
+html {
+  height: 100%;
+  background: none;
+}
+body {
+  background: url("../images/new3bg.png");
+  height: 100%;
+}
+.banner1 {
+  height: 878px;
+  min-width: 1200px;
+  background: url("../images/new3/banner1.png") no-repeat center center;
+}
+.banner2 {
+  height: 440px;
+  min-width: 1200px;
+  background: url("../images/new3/banner2.png") no-repeat center center;
+}
+.banner3 {
+  height: 575px;
+  min-width: 1200px;
+  background: url("../images/new3/banner3.png") no-repeat center center;
+}
+.title {
+  font-size: 30px;
+  color: #323847;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+.new3content .list {
+  margin-bottom: 30px;
+  *zoom: 1;
+  color: #323847;
+}
+.new3content .list:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.new3content .list .icobox {
+  width: 68px;
+  height: 68px;
+  margin-right: 26px;
+  float: left;
+  background: url("../images/new3/ico.png") no-repeat 0px 0px;
+  text-align: center;
+  line-height: 68px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.new3content .list .icobox.qa {
+  background: none;
+}
+.new3content .list .contentbox {
+  float: left;
+  width: 1106px;
+}
+.new3content .list .contentbox h2 {
+  line-height: 68px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.new3content .list .contentbox p {
+  font-size: 18px;
+  padding: 5px 0px;
+}
+.new3content .list .contentbox p i {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 10px;
+  background: url("../images/new3/ico.png") no-repeat -1px -75px;
+}
+.proess {
+  height: 295px;
+  min-width: 1200px;
+  background: url("../images/new3/process.png") no-repeat center center;
+  padding: 25px 0px;
+}
+.listbox {
+  width: 1265px;
+  *zoom: 1;
+  padding: 42px 0px;
+}
+.listbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.listbox > a {
+  display: block;
+  width: 544px;
+  float: left;
+  border: 3px solid #ebebf5;
+  background: #ffffff;
+  margin-right: 50px;
+  position: relative;
+}
+.listbox > a .tip {
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #3fd4bb;
+}
+.listbox > a img {
+  width: 100%;
+}
+.listbox > a .content {
+  padding: 20px 10px;
+}
+.listbox > a .content .head {
+  color: #323847;
+  font-size: 16px;
+}
+.listbox > a .content .tag {
+  padding: 10px 0px;
+}
+.listbox > a .content .tag span {
+  padding: 5px 10px;
+  line-height: 25px;
+  color: #3fd4bb;
+  border: 1px solid #3fd4bb;
+}
+.listbox > a .content p {
+  font-size: 14px;
+  color: #a6a6a6;
+}
+.listbox > a .content .info {
+  *zoom: 1;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.listbox > a .content .info:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.listbox > a .content .info > div {
+  text-align: center;
+  width: 33.33%;
+  float: left;
+  color: #595959;
+}
+.listbox > a .content .info > div .titles {
+  color: #a6a6a6;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.telbox {
+  height: 122px;
+  background: #333333;
+  color: #ffffff;
+}
+.telbox .l {
+  width: 45%;
+  float: left;
+}
+.telbox .l .telboxs {
+  *zoom: 1;
+  padding-top: 26px;
+}
+.telbox .l .telboxs:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.telbox .l .telboxs .telico {
+  width: 74px;
+  height: 74px;
+  display: block;
+  background: url("../images/new3/ico.png") no-repeat 1px -98px;
+  float: left;
+  margin-right: 25px;
+}
+.telbox .l .telboxs .rib {
+  float: left;
+}
+.telbox .l .telboxs .rib p {
+  font-size: 18px;
+}
+.telbox .l .telboxs .rib h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.telbox .r {
+  float: 55%;
+  float: left;
+}
+.telbox .r .formbox {
+  margin-top: 26px;
+}
+.telbox .r .formbox input[type='text'] {
+  width: 218px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  padding: 0px 10px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.telbox .r .formbox input[type='text']:focus {
+  border-color: #3fd4bb;
+}
+.telbox .r .formbox input[type='button'] {
+  background: #f23d40;
+  color: #ffffff;
+  line-height: 42px;
+  text-align: center;
+  width: 100px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.telbox .r .formbox input[type='button']:hover {
+  background: #ec1013;
+}
+.telbox .r p {
+  font-size: 18px;
+  color: #a6a6a6;
+  margin-top: 10px;
+}

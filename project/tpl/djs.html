@@ -1,0 +1,88 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/about.css" type="text/css">
+
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="aboutbox">
+			{% inc='about_left.tpl' %}
+			<div class="r">
+				<div class="tit">
+					<span>法律法规</span>
+				</div>
+
+
+				<div class="djs" data-time="02/22/2016 10:49"></div>
+				<div class="djs" data-time="02/23/2016 10:49"></div>
+				<div class="djs" data-time="03/22/2016 10:49"></div>
+				<div class="djs" data-time="02/22/2016 12:49"></div>
+				<div class="djs" data-time="02/22/2016 15:49"></div>
+
+			</div>
+			
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/about.js"></script>
+<script type="text/javascript">
+function timelose(surrentTime,element){
+	function showTime(){
+		var deadline= new Date(surrentTime) //开幕倒计时  
+		var now = new Date()  
+		var diff = -480 - now.getTimezoneOffset() //是北京时间和当地时间的时间差  
+		var leave = (deadline.getTime() - now.getTime()) + diff*60000
+		var day = Math.floor(leave / (1000 * 60 * 60 * 24))  
+		var hour = Math.floor(leave / (1000*3600)) - (day * 24)  
+		var minute = Math.floor(leave / (1000*60)) - (day * 24 *60) - (hour * 60)  
+		var second = Math.floor(leave / (1000)) - (day * 24 *60*60) - (hour * 60 * 60) - (minute*60) 
+		if(leave<0){
+			element.html("结束");
+		}else{
+			element.html(day+"天"+hour+"小时"+minute+"分"+second +"秒"  );
+		  	setTimeout(showTime,1000);
+		}
+	}
+	showTime()
+}
+$(function(){
+	$(".djs").each(function(){
+		var timeer= $(this).attr("data-time");
+		timelose(timeer,$(this));
+
+	})
+})
+
+
+	
+</script>
+
+</body>
+</html>

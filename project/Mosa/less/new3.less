@@ -1,0 +1,241 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/button";
+
+/*首页样式*/
+html{
+    height: 100%;
+    background: none;
+}
+body{
+    background: url("@{img}/new3bg.png");
+    height: 100%;
+}
+
+.banner1{
+    height: 878px;
+    min-width: @documentWidth;
+    background: url("@{img}/new3/banner1.png") no-repeat center center;
+}
+
+.banner2{
+    height: 440px;
+    min-width: @documentWidth;
+    background: url("@{img}/new3/banner2.png") no-repeat center center;
+}
+
+
+.banner3{
+    height: 575px;
+    min-width: @documentWidth;
+    background: url("@{img}/new3/banner3.png") no-repeat center center;
+}
+
+
+ .title{
+        font-size: 30px;
+        color: #323847;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0px;
+        margin-top: 10px;
+    }
+.new3content{
+   
+    .list{
+        margin-bottom: 30px;
+        ._clearfix();
+        color: #323847;
+        .icobox{
+            width: 68px;
+            height: 68px;
+            margin-right: 26px;
+            float: left;
+            background: url("@{img}/new3/ico.png") no-repeat 0px 0px;
+            text-align: center;
+            line-height: 68px;
+            font-size: 24px;
+            font-weight: bold;
+            &.qa{
+                background: none;
+            }
+        }
+        .contentbox{
+            float: left;
+            width: @documentWidth - 68 - 26;
+            h2{
+                line-height: 68px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            p{
+                font-size: 18px;
+                padding: 5px 0px;
+                i{
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    background: url("@{img}/new3/ico.png") no-repeat -1px -75px;
+                }
+            }
+
+        }
+    }
+
+}
+.proess{
+    height: 295px;
+    min-width: @documentWidth;
+    background: url("@{img}/new3/process.png") no-repeat center center;
+    padding: 25px 0px;
+}
+
+.listbox{
+    width: @documentWidth + 65;
+    ._clearfix();
+    padding: 42px 0px;
+    &>a{
+        display: block;
+        width:@documentWidth/2 - 6 - 50;
+        float: left; 
+        border:3px solid @borderColor;
+        background: #ffffff;
+        // height: 520px;
+        margin-right: 50px;
+        position: relative;
+        .tip{
+            width: 120px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: @markColor;
+        }
+        img{
+            width: 100%;
+        }
+        .content{
+            padding: 20px 10px;
+            .head{
+                color: #323847;
+                font-size: 16px;
+            }
+            .tag{
+                padding: 10px 0px;
+                span{
+                    padding: 5px 10px;
+                    line-height: 25px;
+                    color: @markColor;
+                    border:1px solid @markColor;
+                }
+            }
+            p{
+                
+      
+                font-size: 14px;
+                color: @baseTextColor;
+                // padding-bottom: 20px;
+            }
+            .info{
+                ._clearfix();
+                font-size: 14px;
+                padding-top: 5px;
+                &>div{
+                    text-align: center;
+                    width: 33.33%;
+                    float: left;
+                    color: @titleTextColor;
+                    .titles{
+                        color: @baseTextColor;
+
+                        
+                        margin-bottom: 5px;
+                        margin-top: 5px;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+.telbox{
+    height: 122px;
+    background: #333333;
+    color: #ffffff;
+    .l{
+        width: 45%;
+        float: left;
+        .telboxs{
+            ._clearfix();
+            padding-top: 26px;
+            .telico{
+                width: 74px;
+                height: 74px;
+                display: block;
+                background: url("@{img}/new3/ico.png") no-repeat 1px -98px;
+                float: left;
+                margin-right: 25px;
+            }
+            .rib{
+                float: left;
+           
+                p{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .r{
+        float: 55%;
+        float: left;
+        .formbox{
+            margin-top: 26px;
+            input[type='text']{
+                width: 218px;
+                height: 40px;
+                line-height: 40px;
+                border:1px solid #ffffff;
+                background: #ffffff;
+                padding: 0px 10px;
+                margin-right: 10px;
+                font-size: 18px;
+                &:focus{
+                    border-color: @markColor;
+                }
+
+
+
+            }
+            input[type='button']{
+                background: #f23d40;
+                color: #ffffff;
+                line-height: 42px;
+                line-height: 42px;
+                text-align: center;
+                width: 100px;
+                border: none;
+                font-size: 18px;
+                cursor: pointer;
+                &:hover{
+                    background: darken(#f23d40, 10%)
+                }
+            }
+        }
+        p{
+            font-size: 18px;
+            color: @baseTextColor;
+            margin-top: 10px;
+        }
+    }
+
+}

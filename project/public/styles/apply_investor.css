@@ -1,0 +1,90 @@
+/*llist*/
+.container {
+  background: #f5f5fa;
+}
+.apply_investor {
+  font-size: 14px;
+  border: 3px solid #ebebf5;
+  background: #ffffff;
+  margin: 36px 0px;
+  padding: 35px 50px;
+}
+.apply_investor h2 {
+  font-size: 18px;
+  color: #595959;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.apply_investor h3 {
+  font-size: 16px;
+  color: #595959;
+  margin-bottom: 20px;
+}
+.apply_investor .where {
+  margin-bottom: 20px;
+}
+.apply_investor .where label {
+  *zoom: 1;
+  display: block;
+  margin-bottom: 20px;
+}
+.apply_investor .where label:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.apply_investor .where label input[type='radio'] {
+  float: left;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.apply_investor .where label textarea {
+  display: block;
+  padding: 5px;
+  height: 260px;
+  width: 100%;
+}
+.apply_investor .where.hangye label {
+  *zoom: 1;
+  display: inline-block;
+  margin-right: 30px;
+}
+.apply_investor .where.hangye label:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.apply_investor .where.hangye label input[type='checkbox'] {
+  float: left;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+label.tysq {
+  margin-right: 0px;
+  *zoom: 1;
+  display: inline-block;
+}
+label.tysq:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+label.tysq input[type='checkbox'] {
+  float: left;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.btnbox {
+  width: 280px;
+  margin: 0px auto;
+}
+.btnbox .btn {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,142 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+.addresslist{
+    border: 3px solid @borderColor;
+    padding: 37px 25px 17px 25px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    ._clearfix();
+    font-size: 14px;
+
+    .lable{
+        margin-bottom: 18px;
+        width: 50%;
+        float: left;
+        
+        .title{
+            display: inline-block;
+            width: 60px;
+            color: @titleTextColor;
+        }
+    }
+
+    .tools{
+        position: absolute;
+        right: 6px;
+        bottom: 15px;
+        a{
+            padding: 0px 10px;
+            color: @baseTextColor;
+            &.mark{
+                color: @markColor;
+            }
+        }
+    }
+    .defbtn{
+        display: inline-block;
+    }
+
+
+    .defalut{
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 20px;
+        background: @markColor;
+        position: absolute;
+        right: -3px;
+        top: -3px;
+        color: #fff;
+        font-size: @navSize;
+        display: none;
+    }
+
+    &.def{
+        border-color: @markColor;
+        .defalut{
+            display: block!important;
+        }
+        .defbtn{
+            display: none;
+        }
+
+    }
+
+
+}
+
+ .add_addressbtn{
+        height: 46px;
+        line-height: 46px;
+        background: @borderColor;
+        font-size:@navSize;
+        text-align: center; 
+        cursor: pointer;
+        span{
+            display: inline-block;
+             i{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                // background: #ff0000;
+                background: url("@{img}/ico.png") no-repeat -1px -617px;
+                float: left;
+                margin-top: 15px;
+                margin-right: 5px;
+            }
+
+        }
+       
+    }
+
+._form_group(form_group);
+
+
+
+
+
+.form_group{
+    
+    .row{
+        font-size: 14px;
+        width: 380px;
+        height: auto;
+        margin-bottom: 0px;
+        // height: 62px;
+        margin-bottom: 10px;
+        .title{
+            width: 110px;
+            line-height: 38px;
+            .input{
+                height: 36px;
+                border: 1px solid @borderColor;
+                &.lang{
+                    width: 220px;
+                }
+                &.verty{
+                    width: 100px;
+                    margin-right: 10px; 
+                    float: left;
+                }
+            }
+            .alert{
+                line-height: 22px;
+                padding: 0px 10px;
+                display: none;
+                color: @auxColor;
+                &.show{
+                    display: block;
+                }
+            }
+            .btnbox{
+                width: 100%!important;
+            }
+        }
+    }
+}
+
+
+
+
+

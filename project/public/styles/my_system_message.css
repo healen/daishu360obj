@@ -1,0 +1,35 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+.borderbtn {
+  border-bottom: 1px solid #ebebf5;
+  padding: 20px 44px;
+  font-size: 14px;
+}
+.borderbtn .list {
+  float: left;
+  width: 25%;
+}
+.borderbtn .list.last {
+  text-align: right;
+  width: 25%;
+  float: right;
+}
+.borderbtn .list.frist {
+  width: 50%;
+}
+.borderbtn .list a {
+  color: #3fd4bb;
+}
+.rzgl {
+  padding-bottom: 10px;
+}
+.mylistcontent {
+  padding: 0px 0px;
+}
+.borderbtn {
+  padding: 20px 0px 20px 30px;
+}

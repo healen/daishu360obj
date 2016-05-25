@@ -1,0 +1,65 @@
+@import "../variables";
+@import "../lib/basic";
+
+
+@import "../lib/element";
+
+/*首页样式*/
+
+
+.righttop{
+    border-bottom: 2px solid @borderColor;
+    padding: 25px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+    & > .row{
+        color: @titleFtColor;
+        .d2{
+             width: 65%;
+             float: left;
+             ._clearfix();
+            h2{
+                font-size: @navSize;
+                color: @baseTextColor;
+                margin-bottom: 8px;
+            }
+            .clomn2{
+                width: 50%;
+                float: left;
+                p{
+                	font-weight: bold;
+                }
+
+            }
+            .icopice{
+                width: 40px;
+                height: 23px;
+                display: inline-block;
+                margin-left: 10px;
+                 margin-left: 10px;
+                 background: url("@{img}/ico.png") no-repeat -52px -422px;
+                 float: left;
+                 margin-top: 4px;
+
+            }
+
+        }
+        .d3{
+            text-align:center;
+             width: 35%;
+             float: left;
+             ._clearfix();
+             margin-top: 16px;
+             .btn-primary{
+             	margin-right: 60px;
+             }
+
+        }
+    }
+}
+
+
+
+
+
+

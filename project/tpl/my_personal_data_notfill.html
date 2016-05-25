@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_personal_data_notfill.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/layer/layer.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="mywarp">
+						<div class="title rzgl borderbottom2">
+							<h2>个人资料</h2>
+						</div>
+						<div class="mycontent">
+		                    	<div class="mylistcontent">
+		                    		<div class="right_div">
+		                    			<div class="dl">
+		                    				<h2>头像</h2>
+		                    			</div>
+
+		                    			<div class="headphoto">
+											<img src="../public/img/headp.png" alt="">
+										</div>
+
+										<div class="d3">
+											<label for="img" class="btn btn_mark">
+												选择图片
+											</label>
+												<input type="file" id="img" style="display:none;"/>
+										</div>
+
+		                    		</div>
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+		                    				<div class="list frist">用户名</div>
+		                    				<div class="list lang">
+		                    					<input type="text" class="input" value="云飞同学">
+		                    				</div>
+		                    			</div>
+		                    			
+		                    		</div>
+
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+
+		                    				<div class="list frist">性别</div>
+		                    				<div class="list lang">
+		                    						<label><input name="sex" type="radio">男</label>
+		                    						<label><input name="sex" type="radio">女</label>
+		                    				</div>		                    				
+		                    			</div>
+						              
+		                    		</div>
+
+
+
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+
+		                    				<div class="list frist">出生日期</div>
+		                    				<div class="list lang">
+		                    					
+													<select name="YYYY"  class="input">  
+													<option value="">年</option>  
+													</select>  
+													<select name="MM"  class="input min">  
+													<option value="">月</option>  
+													</select>  
+													<select name="DD"  class="input min">  
+													<option value="">日</option>  
+													</select>  
+											
+											</div>
+		                    				
+		                    			</div>
+
+		                    		</div>
+
+
+
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+
+		                    				<div class="list frist">联系电话</div>
+		                    				<div class="list lang">
+		                    					<input type="text" value="17744553009">
+		                    				</div>
+		                    				
+		                    			</div>
+		                    			
+		                    		</div>
+
+
+
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+
+		                    				<div class="list frist">常用邮箱</div>
+		                    				<div class="list lang">
+		                    					<input type="text" value="未绑定">
+		                    				</div>
+		                    				
+		                    			</div>
+		                    			
+		                    		</div>
+
+
+
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+
+		                    				<div class="list frist">所在地区</div>
+		                    				<div class="list lang">
+		                    					<input type="text" value="北京">
+		                    				</div>
+		                    				
+		                    			</div>
+		                    			
+		                    		</div>
+
+
+
+		                    		<div class="borderbtn">
+		                    			<div class="row">
+
+		                    				<div class="list frist">个人简介</div>
+		                    				<div class="list lang1">
+		                    					<textarea>未填写</textarea>
+		                    				</div>
+		                    				
+		                    			</div>
+		                    			
+		                    		</div>
+
+
+		                    		<div class="inputwarp">
+	                					    <a href="javascript:void(0)" id="recharge" class="btn">修改</a>
+	                				</div>
+		                    		
+
+								</div>
+						</div>
+
+					
+					</div>
+				</div>       
+			</div>
+
+			
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+
+
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+
+<script type="text/javascript">
+
+
+</script>
+
+
+
+
+</body>       
+</html>

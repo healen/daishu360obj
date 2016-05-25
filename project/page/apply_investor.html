@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/apply_investor.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+
+                    <div class="linklist">
+                        <a href="">新手指引</a>
+                        <a href="about_us.html">关于我们</a>
+                        <a href="login.html" class="user login">登录</a>
+                        <a href="regrist.html" class="user regst">注册</a>
+
+
+                    </div>
+
+                  
+
+
+
+                    <div class="search">
+
+                        <i class="icon searchico">
+                            
+                        </i>
+                        <input type="text" class="searchinput" placeholder="请输入关键字">
+
+                        <div class="close">
+                            
+                        </div>
+
+                    </div>
+
+                     <a href="project_sponsor.html" class="btn smal">+发起项目</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="index.html"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="stock_crowdfunding_list.html"><span>股权众筹</span></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="frist_crowdfunding_list.html">优先股众筹</a>
+                                    <a href="stock_crowdfunding_list.html">股权众筹</a>
+                                </div>
+                            </li>
+                            <li id="new3">
+                                <a href="new3.html"><span>新三板定增</span> </a>
+                            </li>
+                            <li class="toggle" id="product_crowdfunding_list">
+                                <a href="product_crowdfunding_list.html"><span>产品众筹</span></a>
+                            </li>
+                            <li id="shop_crowdfunding_list">
+                                <a href="shop_crowdfunding_list.html"><span>店铺众筹</span> </a>
+                            </li>
+                            <li id="transfer_list">
+                                <a href="transfer_list.html"><span>转让专区</span> </a>
+                            </li>
+
+                            <li id="Preheating">
+                                <a href="Preheating.html"><span>预热专区</span> </a>
+                            </li>
+                            
+                            <li id="my_index">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+   </div>
+
+   <script type="text/javascript">
+   $(".searchico").on("click",function(){
+        var paren=$(this).parents(".search");
+        if(!paren.hasClass("on")){
+            paren.addClass("on");
+        }else{
+            paren.removeClass("on");
+        }
+   })
+
+   $(".search .close").on("click",function(){
+        var paren=$(this).parents(".search");
+        paren.removeClass("on");
+
+
+   })
+
+   </script>
+ <!-----header.tpl读取完成---->
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="apply_investor">
+				<h2>申请成为领投人</h2>
+
+				<div class="where">
+					<h3>您需要满足以下任一条件：</h3>
+					<label>
+						<input type="radio" name="where1">
+						两年以上天使基金、早期VC基金经理级以上岗位从业经验。
+					</label>
+					<label>
+						<input type="radio" name="where1">
+						两年以上创业经验（只限第一创始人经验）
+					</label>
+					<label>
+						<input type="radio" name="where1">
+						三年以上企业总监级以上岗位工作经验。
+					</label>
+					<label>
+						<input type="radio" name="where1">
+						五年以上企业经理级岗位工作经验。
+					</label>
+					<label>
+						<input type="radio" name="where1">
+						两个以上天使投资案例。
+					</label>
+
+				</div>
+
+
+				<div class="where">
+					<h3>请填写个人申请资料 / 机构简介：</h3>
+					<label>
+						<textarea name=""></textarea>
+						
+					</label>
+					
+					
+				</div>
+
+
+				<div class="where hangye">
+					<h3>请选择领投项目行业：（至少选择一项、最多不超过三项）：</h3>
+					<label>
+
+						<input type="checkbox" name="where1">
+						PC互联网
+						
+					</label>
+					<label>
+
+						<input type="checkbox" name="where1">
+						移动互联网
+						
+					</label>
+					<label>
+
+						<input type="checkbox" name="where1">
+						IT软件/硬件
+						
+					</label>
+					<label>
+
+						<input type="checkbox" name="where1">
+						服务业
+						
+					</label>
+
+					<label>
+
+						<input type="checkbox" name="where1">
+						文化创意
+						
+					</label>
+
+					<label>
+
+						<input type="checkbox" name="where1">
+						节能环保
+						
+					</label>
+
+					<label>
+
+						<input type="checkbox" name="where1">
+						新能源
+						
+					</label>
+
+					<label>
+
+						<input type="checkbox" name="where1">
+						生物医药
+						
+					</label>
+					
+					
+				</div>
+
+
+
+				<div class="btnbox">
+					<input type="button" value="提交申请" class="btn btn_big">
+
+					<label class="tysq">
+						<input type="checkbox" name="where1">
+						我已阅读并同意《领投人协议》
+						<a href="" class="mark">点击查看</a>
+					</label>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+<div class="footer">
+    <div class="ftbody">
+        <div class="inwarp">
+                <div class="ftflink">
+
+                    合作伙伴：   
+                    <a href="">贷鼠网</a>
+                    <a href="">网贷之家</a>
+                    <a href="">搜狐互联网金融</a>
+                    <a href="">老虎财经</a>
+                    <a href="">慧博咨询</a>
+                    <a href="">网贷之眼</a>
+                </div>
+            
+
+        </div>
+
+        <div class="footbot">
+            <div class="l">
+                <div class="link">
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">服务协议</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作专区</a> 
+                </div>
+
+                <div class="follow"> 服务热线：010-53677696 (9:00-21:00)</div>
+
+               
+
+                <div class="follow">
+                    <div class="title">关注我们：</div>
+                    <a href="" class="weibo"></a>
+                    <a href="" class="qq"></a>
+                    <a href="" class="tieba"></a>
+                    <a href="" class="douban"></a>
+                </div>
+            </div>
+          
+            <div class="r">
+                <img src="../public/img/erweima.png" alt="">
+                <img src="../public/img/erweima.png" alt="">
+                
+            </div>
+
+              <div class="c">©2015 贷鼠网 All Rights Reserved. 京ICP备</div>
+        </div>
+
+     
+ 
+    </div>
+
+</div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/swipe.js"></script>
+<script src="../public/scripts/lib/chaffle.min.js"></script> 
+<script src="../public/scripts/lib/slick.min.js"></script> 
+<script type="text/javascript">
+/**
+ *
+ * 筛选条件JS
+ */
+$(".where a").on("click",function(){
+	$(this).addClass("on").siblings().removeClass("on")
+})
+
+$(".where .sort").on("click",function(){
+	if(!$(this).hasClass("asc")){
+		$(this).addClass("asc").removeClass("desc");
+	}else{
+		$(this).removeClass("asc").addClass("desc");
+	}
+})
+
+
+
+$(".tip").on("mouseover",function(){
+	layer.tips('<span style="color:#a6a6a6">凡是投资的用户将获得价值投资额10%的消费券，在众筹项目完成后可到本店消费抵现使用。</span>', this, {
+        tips: [2, '#f5f5fa']
+    });
+
+})
+
+
+
+
+</script>
+
+</body>       
+</html>

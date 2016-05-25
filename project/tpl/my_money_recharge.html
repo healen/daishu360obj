@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_money_recharge.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/layer/layer.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/laydate/laydate.js"></script>
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				{% inc='my_left.tpl' %}
+				<div class="my_right_init">
+					<div class="mywarp">
+						<div class="title">
+							<h2>账户充值</h2>
+						</div>
+
+						<div class="my_form_group">
+							<div class="input_group">
+                			<div class="input_row">
+                				<div class="title mt10">支付方式</div>
+	                				<div class="inputwarp">
+	                					<div class="bankbox active">
+	                						<img src="../public/img/bank/yebao.png" alt="">
+	                						<span></span>
+	                						
+	                					</div>
+	                				</div>
+	                			</div>
+
+	                			<div class="input_row">
+	                				<div class="title">可用余额</div>
+	                				<div class="inputwarp">
+	                					<span class="mark  bold">2.33</span>元
+	                				</div>
+	                			</div>
+	                			<div class="input_row">
+	                				<div class="title">充值金额</div>
+	                				<div class="inputwarp">
+	                					<input type="text">
+	                					元
+	                				</div>
+	                			</div>
+	                			<div class="input_row">
+	                				<div class="title">&nbsp;</div>
+	                				<div class="inputwarp">
+	                					    <a href="javascript:void(0)" id="recharge" class="btn">立即充值</a>
+	                					    <br>
+	                					    <p class="ft-sz-12">充值后账户金额： 0.00元</p>
+	                				</div>
+	                			</div>
+	                		</div>
+							
+						</div>
+
+
+						<div class="title">
+							<h2>充值记录</h2>
+						</div>
+                    	<div class="my_top_list">
+                			<div class="row top_list">
+                				<div class="inputgroup">
+                					<input type="text" class="j-xl timebg" placeholder="请选择充值日期" onclick="laydate();">
+                    				<span>到</span>
+                    				<input type="text" class="j-xl timebg" placeholder="请选择充值日期" onclick="laydate();">
+                				</div>
+								<div class="inputgroup ml50">
+									<input type="text" class="j-xl" placeholder="最低充值金额">
+                    				<span>到</span>
+                    				<input type="text" class="j-xl" placeholder="最高充值金额">
+								</div>
+								<div class="d3">
+					                <a href="#" class="btn search">筛选</a>
+				                </div>
+                			</div>
+                		</div>
+                    	
+                    	<table class="botbor">
+							<thead>
+								<tr>
+									<td>充值类型</td>
+									<td>充值金额</td>
+									<td>实际充值金额</td>
+									<td>手续费</td>
+									<td>充值时间</td>
+
+									<td>充值状态</td>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>连连支付</td>
+									<td>100.00元</td>
+									<td>50元</td>
+									<td>5元</td>
+									<td>2015-10-16 21:22:42</td>
+
+									<td>充值成功</td>
+									
+								</tr>
+
+								<tr>
+									<td>连连支付</td>
+									<td>100.00元</td>
+									<td>50元</td>
+									<td>5元</td>
+									<td>2015-10-16 21:22:42</td>
+
+									<td>充值成功</td>
+									
+								</tr>
+
+
+								<tr>
+									<td>连连支付</td>
+									<td>100.00元</td>
+									<td>50元</td>
+									<td>5元</td>
+									<td>2015-10-16 21:22:42</td>
+
+									<td>充值成功</td>
+									
+								</tr>
+
+
+								<tr>
+									<td>连连支付</td>
+									<td>100.00元</td>
+									<td>50元</td>
+									<td>5元</td>
+									<td>2015-10-16 21:22:42</td>
+
+									<td>充值成功</td>
+									
+								</tr>
+								
+							</tbody>
+						</table>
+						<div class="no_record">
+							<div></div>
+							<p>暂无记录</p>
+							
+						</div>
+
+						<div class="center">
+							<div class="pagination">
+								<a class="first">首页</a>
+								<a class="prev"><</a>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<span class="current">5</span>
+								<a>6</a>
+								<span>...</span>
+								<a>20</a>
+								<a>21</a>
+								<a class="next">></a>
+								<a class="last">尾页</a>
+							</div>
+						</div>
+								
+			              
+
+
+						
+						
+					
+					</div>
+				</div>       
+			</div>
+
+			
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+
+
+
+
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+
+
+</body>       
+</html>

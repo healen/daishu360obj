@@ -1,0 +1,210 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*首页样式*/
+.piceword {
+  margin-bottom: 30px;
+  position: relative;
+}
+.piceword .waitpay {
+  height: 28px;
+  width: 66px;
+  line-height: 28px;
+  color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #3fd4bb;
+  text-align: center;
+}
+.piceword > div {
+  position: relative;
+  overflow: hidden;
+}
+.piceword > div img {
+  position: absolute;
+  top: 50%;
+  margin-top: -56px;
+}
+.piceword > div .ri {
+  margin-left: 222px;
+}
+.piceword > div .ri .l > p {
+  margin-bottom: 20px;
+}
+.piceword > div .ri .l:hover {
+  color: #a6a6a6;
+}
+.piceword > div .ri .r .inr {
+  padding-left: 30px;
+}
+.debt {
+  color: #ffbc4b;
+}
+.popupdebt {
+  font-size: 14px;
+  padding: 20px;
+}
+.popupdebt .right_title {
+  height: 35px;
+  line-height: 30px;
+  border-bottom: none;
+  padding-bottom: 10px;
+  color: #3fd4bb;
+}
+.popupdebt .right_title h2 {
+  font-size: 16px;
+}
+.popupdebt .right_title .line {
+  margin-left: 0px;
+  margin-top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 0px;
+  background: #3fd4bb;
+}
+.popupdebt .huicontent {
+  margin-bottom: 10px;
+  line-height: 25px;
+  background: #f2f2f2;
+  padding: 15px 60px;
+  margin-top: -5px;
+}
+.popupdebt .huicontent .listcontent {
+  float: left;
+  width: 50%;
+}
+.formgroup {
+  padding: 0px 0px 0px 15px;
+}
+.formgroup .row {
+  margin-bottom: 10px;
+}
+.formgroup .agree {
+  line-height: 20px;
+  *zoom: 1;
+  padding-left: 56px;
+  margin-top: 10px;
+}
+.formgroup .agree:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.formgroup .agree a {
+  color: #3fd4bb;
+}
+.formgroup .agree input[type='checkbox'] {
+  float: left;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+.formgroup .vert {
+  height: 37px;
+  width: 123px;
+  margin-left: 10px;
+}
+.formgroup .listcontent {
+  *zoom: 1;
+  float: left;
+  width: 270px;
+  line-height: 35px;
+}
+.formgroup .listcontent:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.formgroup .listcontent.fright {
+  float: right;
+}
+.formgroup .listcontent.full {
+  width: 100%;
+  float: none;
+}
+.formgroup .listcontent.full textarea {
+  padding: 5px;
+  width: 87%;
+  height: 50px;
+  border: 1px solid #d9d9d9;
+}
+.formgroup .listcontent.full .discribe {
+  text-align: right;
+}
+.formgroup .listcontent .title {
+  color: #595959;
+  float: left;
+}
+.formgroup .listcontent .inputbox {
+  float: left;
+  width: 198px;
+  height: 35px;
+  position: relative;
+}
+.formgroup .listcontent .inputbox .tag {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  line-height: 35px;
+}
+.formgroup .listcontent .inputbox input {
+  width: 188px;
+  padding: 0px 5px;
+  height: 100%;
+  border: 1px solid #d9d9d9;
+}
+hr {
+  background: #ffffff;
+  border: none;
+  border-bottom: 1px dotted #ebebf5;
+  margin-top: -8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.tab_btn_defalut {
+  border-bottom: none;
+}
+.tab_btn_defalut.linkstyle {
+  height: auto;
+  margin-top: 15px;
+  *zoom: 1;
+  padding: 0px 25px;
+}
+.tab_btn_defalut.linkstyle:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tab_btn_defalut.linkstyle a {
+  padding-top: 0px;
+  padding: 0px 11px;
+  font-size: 14px;
+  color: #a6a6a6;
+  border-radius: 3px;
+  margin-right: 0px;
+  float: left;
+}
+.tab_btn_defalut.linkstyle a.active {
+  color: #a6a6a6;
+  border-bottom: none;
+  background: #ebebf5;
+}
+.tab_btn_defalut.linkstyle span {
+  display: inline-block;
+  height: 20px;
+  width: 1px;
+  overflow: hidden;
+  background: #ebebf5;
+  float: left;
+  margin: 9px 20px;
+}

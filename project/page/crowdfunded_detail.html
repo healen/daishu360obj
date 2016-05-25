@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/crowdfunded_detail.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/lib/slick.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/layer/layer.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+
+                    <div class="linklist">
+                        <a href="">新手指引</a>
+                        <a href="about_us.html">关于我们</a>
+                        <a href="login.html" class="user login">登录</a>
+                        <a href="regrist.html" class="user regst">注册</a>
+                    </div>
+
+                  
+
+
+
+                    <div class="search">
+
+                        <i class="icon searchico">
+                            
+                        </i>
+                        <input type="text" class="searchinput" placeholder="请输入关键字">
+
+                        <div class="close">
+                            
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="index.html"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="stock_crowdfunding_list.html"><span>股权众筹</span></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="frist_crowdfunding_list.html">优先股众筹</a>
+                                    <a href="stock_crowdfunding_list.html">股权众筹</a>
+                                </div>
+                            </li>
+                            <li id="borrow">
+                                <a href="borrow.html"><span>新三板定增</span> </a>
+                            </li>
+                            <li class="toggle" id="product_crowdfunding_list">
+                                <a href="product_crowdfunding_list.html"><span>产品众筹</span></a>
+                            </li>
+                            <li id="shop_crowdfunding_list">
+                                <a href="shop_crowdfunding_list.html"><span>店铺众筹</span> </a>
+                            </li>
+                            <li id="transfer_list">
+                                <a href="transfer_list.html"><span>转让专区</span> </a>
+                            </li>
+
+                            <li id="my">
+                                <a href="my_index.html"><span>预热专区</span> </a>
+                            </li>
+                            
+                            <li id="my_index">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <script type="text/javascript">
+   $(".searchico").on("click",function(){
+        var paren=$(this).parents(".search");
+        if(!paren.hasClass("on")){
+            paren.addClass("on");
+        }else{
+            paren.removeClass("on");
+        }
+   })
+
+   $(".search .close").on("click",function(){
+        var paren=$(this).parents(".search");
+        paren.removeClass("on");
+
+
+   })
+
+   </script>
+ <!-----header.tpl读取完成---->
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="crowhead">
+				<div class="top">
+					<h1>【手工剪纸】故宫带你重拾传统年味</h1>
+					<a href="javascript:void(0)" class="tag">文化</a>
+					<a href="javascript:void(0)" class="tag">设计</a>
+					<a href="javascript:void(0)" class="tag">传统</a>
+				</div>
+				<div class="bot">
+					<div><i class="address"></i>北京-北京市</div>
+					<div><i class="weihua"></i>文化</div>
+					
+				</div>
+			</div>
+			<div class="content1">
+				<div class="picebox">
+					<img src="../public/img/banner.png" alt="">
+					<div class="rtmark"></div>
+					<div class="sj"></div>
+				</div>
+				<div class="r">
+					<div>
+						<div class="syl">
+							<div class="warrp">
+								<h2>8%</h2>
+								<p>年化收益</p>
+							</div>
+
+							<div class="warrp plus">
+								<h2>+</h2>
+							</div>
+
+							<div class="warrp">
+								<h2>10%</h2>
+								<p>项目产品消费券</p>
+								<i class="tip"></i>
+							</div>
+
+							
+							
+						</div>
+
+
+						<div class="contant">
+							<div class="title">
+								<div>
+									<h2>￥17,400</h2>
+									<p>已筹款</p>
+								</div>
+								<div>
+									<h2>1800</h2>
+									<p>支持人数</p>
+								</div>
+							</div>
+							<div class="progress">
+								<div class="bar" style="width:40%"></div>
+							</div>
+
+							<div class="describe">
+								<p>剩余时间：<span>27天</span></p>
+								<p class="right">目标筹资：<span>300,000元</span></p>
+							</div>
+
+
+
+
+						</div>
+						<input type="button" class="btn" value="立即投资">
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="content2">
+				<div class="l">
+					<div class="tab">
+						<div class="tab_lab">
+							<a href="javascript:void(0)" class="on">项目详情</a>
+							<a href="javascript:void(0)">项目进展</a>
+							<a href="javascript:void(0)">评论</a>
+							<a href="javascript:void(0)">支持记录</a>
+							<a href="javascript:void(0)">项目分红</a>
+						</div>
+
+						<div class="tab_content" style="display:block">
+							<img src="../public/img/xq.png" alt="">
+						</div>
+						<div class="tab_content">
+							1
+						</div>
+						<div class="tab_content">
+							2
+						</div>
+						<div class="tab_content">
+							3
+						</div>
+						<div class="tab_content">
+							4
+						</div>
+						
+					</div>
+				</div>
+				<div class="r">
+					<div class="top">
+						<div class="head">
+							<div class="p1">
+								<i></i>
+								<p>发起人评估</p>
+							</div>
+							<div class="p2">
+								<i></i>
+								<p>律师评估</p>
+							</div>
+							<div class="p3">
+								<i></i>
+								<p>财务审计</p>
+							</div>
+						</div>
+						<div class="describe">
+							<p>项目方出资<span>27.5%</span></p>
+							<p class="right">投资方出资<span>27.5%</span></p>
+							<p>项目方收益<span>27.5%</span></p>
+							<p class="right">投资方收益<span>27.5%</span></p>
+							
+						</div>
+						
+					</div>
+
+
+					<div class="top list">
+
+
+						<div class="topbar">
+							<div>
+								<p class="title">支持 <span>￥1</span></p>
+								<p>1788位支持者</p>
+							</div>
+
+							<div>限额 <span>2000</span>位 丨 剩余 <span>222</span>位</div>
+							
+						</div>
+
+						<div class="block">
+							<h2>【翁】茶叶罐---人文茶仓</h2>
+							<p>
+								谢谢您的支持，我们将在项目众筹完成后，每100人中抽取一人，不满100人按100人抽取，您将获得：景德镇纯手工制作小号【翁】茶叶罐一个；（适合装50g茶叶），手作陶品每一个尺寸及细节略有差别，整体保持一致；罐身保留手作痕迹。活动结束后在项目详情中进行公布
+							</p>
+							<img src="../public/img/cat.png" alt="">
+
+							<p><span class="title">陪送费用：</span>免配送费</p>
+							<p><span class="title">预计回报发送时间：</span>项目众筹成功后30天内</p>
+
+
+							<input type="button" value="支持￥1元" class="btn">
+							
+						</div>
+						
+						
+						
+					</div>
+					<div class="top list">
+
+
+						<div class="topbar">
+							<div>
+								<p class="title">支持 <span>￥1</span></p>
+								<p>1788位支持者</p>
+							</div>
+
+							<div>限额 <span>2000</span>位 丨 剩余 <span>222</span>位</div>
+							
+						</div>
+
+						<div class="block">
+							<h2>【翁】茶叶罐---人文茶仓</h2>
+							<p>
+								谢谢您的支持，我们将在项目众筹完成后，每100人中抽取一人，不满100人按100人抽取，您将获得：景德镇纯手工制作小号【翁】茶叶罐一个；（适合装50g茶叶），手作陶品每一个尺寸及细节略有差别，整体保持一致；罐身保留手作痕迹。活动结束后在项目详情中进行公布
+							</p>
+							<img src="../public/img/cat.png" alt="">
+
+							<p><span class="title">陪送费用：</span>免配送费</p>
+							<p><span class="title">预计回报发送时间：</span>项目众筹成功后30天内</p>
+
+
+							<input type="button" value="支持￥1元" class="btn">
+							
+						</div>
+						
+						
+						
+					</div>
+					<div class="top list">
+
+
+						<div class="topbar">
+							<div>
+								<p class="title">支持 <span>￥1</span></p>
+								<p>1788位支持者</p>
+							</div>
+
+							<div>限额 <span>2000</span>位 丨 剩余 <span>222</span>位</div>
+							
+						</div>
+
+						<div class="block">
+							<h2>【翁】茶叶罐---人文茶仓</h2>
+							<p>
+								谢谢您的支持，我们将在项目众筹完成后，每100人中抽取一人，不满100人按100人抽取，您将获得：景德镇纯手工制作小号【翁】茶叶罐一个；（适合装50g茶叶），手作陶品每一个尺寸及细节略有差别，整体保持一致；罐身保留手作痕迹。活动结束后在项目详情中进行公布
+							</p>
+							<img src="../public/img/cat.png" alt="">
+
+							<p><span class="title">陪送费用：</span>免配送费</p>
+							<p><span class="title">预计回报发送时间：</span>项目众筹成功后30天内</p>
+
+
+							<input type="button" value="支持￥1元" class="btn">
+							
+						</div>
+						
+						
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+<div class="footer">
+    <div class="ftbody">
+        <div class="inwarp">
+                <div class="ftflink">
+
+                    合作伙伴：   
+                    <a href="">贷鼠网</a>
+                    <a href="">网贷之家</a>
+                    <a href="">搜狐互联网金融</a>
+                    <a href="">老虎财经</a>
+                    <a href="">慧博咨询</a>
+                    <a href="">网贷之眼</a>
+                </div>
+            
+
+        </div>
+
+        <div class="footbot">
+            <div class="l">
+                <div class="link">
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">服务协议</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作专区</a> 
+                </div>
+
+                <div class="follow"> 服务热线：010-53677696 (9:00-21:00)</div>
+
+               
+
+                <div class="follow">
+                    <div class="title">关注我们：</div>
+                    <a href="" class="weibo"></a>
+                    <a href="" class="qq"></a>
+                    <a href="" class="tieba"></a>
+                    <a href="" class="douban"></a>
+                </div>
+            </div>
+          
+            <div class="r">
+                <img src="../public/img/erweima.png" alt="">
+                <img src="../public/img/erweima.png" alt="">
+                
+            </div>
+
+              <div class="c">©2015 贷鼠网 All Rights Reserved. 京ICP备</div>
+        </div>
+
+     
+ 
+    </div>
+
+</div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/swipe.js"></script>
+<script src="../public/scripts/lib/chaffle.min.js"></script> 
+<script src="../public/scripts/lib/slick.min.js"></script> 
+<script type="text/javascript">
+/**
+ *
+ * 筛选条件JS
+ */
+$(".where a").on("click",function(){
+	$(this).addClass("on").siblings().removeClass("on")
+})
+
+$(".where .sort").on("click",function(){
+	if(!$(this).hasClass("asc")){
+		$(this).addClass("asc").removeClass("desc");
+	}else{
+		$(this).removeClass("asc").addClass("desc");
+	}
+})
+
+
+
+$(".tip").on("mouseover",function(){
+	layer.tips('<span style="color:#a6a6a6">凡是投资的用户将获得价值投资额10%的消费券，在众筹项目完成后可到本店消费抵现使用。</span>', this, {
+                tips: [2, '#f5f5fa']
+            });
+
+})
+
+
+
+
+</script>
+
+</body>       
+</html>

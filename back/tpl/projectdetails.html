@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <title>众筹管理后台</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <!-- Le styles -->
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">
+	     
+	    <!--[if lte IE 7]>
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+	    <![endif]-->
+	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="bootstrap/js/html5.js"></script>
+	    <![endif]-->
+	    <link rel="stylesheet" type="text/css" href="css/frame.css">
+	    <link rel="stylesheet" type="text/css" href="css/user.css">
+	    <link rel="shortcut icon" href="img/ico/favicon.ico">
+
+	</head>
+	<body>
+
+		<div class="box">
+			{% inc='left.tpl' %}
+			{% inc='head.tpl' %}
+			<div class="containerme">
+
+				
+				
+				<div class="pagecontent" id="pagecontent">
+					<section class="crumbs">
+						<i class="ico-dibiao"></i><a href="home.html">首页</a> > <a href="javascript:void(0)">项目管理</a> > 项目详情
+					</section>
+					<div class="createUser">
+						
+						<!-- <div class="icotitle">
+							<span class="step_on">自然投资人</span>
+							<span>机构投资人</span>
+							<span>确认信息</span>
+							<span>项目方用户</span>
+						</div> -->
+
+						<div class="tabbox">
+							<div class="tabview">
+
+					           <a href="javascript:void(0)" class="active">项目详情</a>
+					           <a href="javascript:void(0)" class="">投资列表</a>
+					           <a href="javascript:void(0)">项目进展</a>
+					           <a href="javascript:void(0)">项目分红</a>
+					           <a href="javascript:void(0)">还款列表</a>
+					           <a href="javascript:void(0)">评论管理</a>
+					           <a href="javascript:void(0)">领投人管理</a>
+					           <a href="javascript:void(0)">商品详情</a>
+				            </div>
+				            <div class="viewbtnbox" style="display: block;">
+								<div class="detailbox">
+
+									<form action="" class="form-horizontal">
+										<div class="row-fluid myform">
+										    <label class="control-label span4" for="inputEmail">项目详情：&nbsp;&nbsp;</label>
+										    <div class="controls">
+										    	<textarea name="" id="" class="input-xxlarge" cols="30" rows="10" placeholder="富文本编辑器"></textarea>
+										    	<!-- <input type="text" class="input-xxlarge" id="inputEmail" placeholder=""> -->
+										    </div>
+										</div>
+
+
+										<div class="row-fluid myform">
+										    <label class="control-label span4" for="inputEmail">&nbsp;&nbsp;</label>
+										    <div class="controls">
+										     	<span class="rowbox">
+										     		<div class="row-fluid">
+										     			<div class="input-xxlarge">
+										     				<button class="btn btn-large btn-block btn-primary" id="createproject" type="button">保存</button>
+										     			</div>
+										     		</div>
+										     	</span>
+										    </div>
+										  </div>
+										
+									</form>
+
+									
+									
+								</div>
+				            </div>
+				            <div class="viewbtnbox" style="display: none; padding:0px 0px">
+				            	<div class="list-page-content">
+				            		
+				            		<form class="form-inline">
+
+
+ 
+  
+
+ 
+  
+
+
+										<div class="input-group">
+											<label class="checkbox">
+												投资人用户名：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+											
+										</div>
+
+										<div class="input-group">
+											<label class="checkbox">
+												投资人姓名：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+											
+										</div>
+
+
+					
+
+										
+
+										<div class="input-group">
+											<label class="checkbox">
+												投资金额：
+											</label>
+											<input type="text" class="input-small" placeholder="" > 至 
+											<input type="text" class="input-small" placeholder="" >
+									
+											
+											
+										</div>
+
+
+									
+
+
+
+
+
+										<div class="input-group">
+											<label class="checkbox">
+												投资时间：
+											</label>
+											<input type="text" class="input-small" placeholder="" onclick="laydate()"> 至 
+											<input type="text" class="input-small" placeholder="" onclick="laydate()">
+									
+											
+											
+										</div>
+
+
+
+										<div class="input-group">
+											<label class="checkbox">
+												投资状态：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+											
+										</div>
+
+										
+										
+										
+										<button type="button" class="btn btn-primary">搜索</button>
+
+
+
+									</form>
+
+
+									<table class="botbor table-hover">
+											<thead>
+												<tr>
+
+
+
+
+
+
+
+
+
+
+
+													<td>投资人用户名</td>
+													<td>投资人姓名</td>
+													<td>投资金额（元）</td>
+													<td>投资时间</td>
+													<td>投资状态</td>
+												
+
+													
+												</tr>
+											</thead>
+											<tbody>
+										
+
+												<tr>
+
+
+
+
+
+
+
+
+													<td>云飞同學</td>
+													<td>贺云飞</td>
+													<td>1,000,000,000.00</td>
+													<td>2016-1-28  10:56:14</td>
+													<td>
+														成功
+					
+													</td>
+												</tr>
+
+
+												<tr>
+
+
+
+
+
+
+
+
+													<td>云飞同學</td>
+													<td>贺云飞</td>
+													<td>1,000,000,000.00</td>
+													<td>2016-1-28  10:56:14</td>
+													<td>
+														成功
+					
+													</td>
+												</tr>
+
+												
+
+												
+											</tbody>
+									</table>
+									<div class="text-right">
+										<div class="pagination">
+										  <ul>
+										    <li><a href="#">上一页</a></li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下一页</a></li>
+										  </ul>
+										</div>
+										
+									</div>
+							    </div>
+				            </div>
+				           <div class="viewbtnbox" style="display: none; padding:24px 24px;">
+				   
+
+					            	<table class="botbor table-hover">
+										<thead>
+											<tr>
+
+
+
+
+
+												<td>日期</td>
+												<td>内容</td>
+								
+
+												<td>操作</td>
+												
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+										
+												<td>2015-10-16 21:22:42</td>
+												<td>500</td>
+
+												<td>
+													<a href="javascript:void(0)" class="btns edit">编辑</a>
+													<a href="javascript:void(0)" class="btns delete">删除</a>
+												</td>
+												
+											</tr>
+
+
+											<tr>
+									
+												<td>2015-10-16 21:22:42</td>
+												<td>500</td>
+
+												<td>
+													<a href="javascript:void(0)" class="btns edit">编辑</a>
+													<a href="javascript:void(0)" class="btns delete">删除</a>
+												</td>
+												
+											</tr>
+
+											
+
+											
+
+
+										
+											
+										</tbody>
+									</table>
+
+
+
+									<div>
+										<button class="btn btn-large btn-primary" id="addReturn" type="button">添加一条</button>
+									
+									</div>
+
+
+									<div class="showmsg" style="display:none">
+										<form class="form-horizontal">
+							
+
+											  <div class="row-fluid myform">
+											    <label class="control-label span4" for="inputEmail">日期：&nbsp;&nbsp;</label>
+											    <div class="controls">
+											      <input type="text" class="input-xxlarge" id="inputEmail" onclick="laydate()" placeholder=""> 
+											    </div>
+											  </div>
+
+
+
+											  <div class="row-fluid myform">
+											    <label class="control-label span4" for="inputEmail">内容：&nbsp;&nbsp;</label>
+											    <div class="controls">
+											    	<textarea name="" id="" cols="30" rows="10" class="input-xxlarge"></textarea>
+											      <!-- <input type="text" class="input-xxlarge" id="inputEmail" placeholder=""> -->
+											    </div>
+											  </div>
+											  <div class="row-fluid myform">
+											    <label class="control-label span4" for="inputEmail">&nbsp;&nbsp;</label>
+											    <div class="controls">
+											     	<span class="rowbox">
+											     		<div class="row-fluid">
+											     			<div class="input-xxlarge">
+											     				<button class="btn  btn-primary" id="submitadd" type="button">确定</button>
+
+											     				<button class="btn  btn-warning" id="canceladd" type="button">取消</button>
+											     			</div>
+											     		</div>
+											     	</span>
+											    </div>
+											  </div>
+									
+										
+										</form>
+										
+									</div>
+
+			            	</div>
+				            <div class="viewbtnbox" style="display: none;">
+								<div class="detailbox">
+
+									<form action="" class="form-horizontal">
+										<div class="row-fluid myform">
+										    <label class="control-label span4" for="inputEmail">项目详情：&nbsp;&nbsp;</label>
+										    <div class="controls">
+										    	<textarea name="" id="" class="input-xxlarge" cols="30" rows="10" placeholder="富文本编辑器"></textarea>
+										    	<!-- <input type="text" class="input-xxlarge" id="inputEmail" placeholder=""> -->
+										    </div>
+										</div>
+
+
+										<div class="row-fluid myform">
+										    <label class="control-label span4" for="inputEmail">&nbsp;&nbsp;</label>
+										    <div class="controls">
+										     	<span class="rowbox">
+										     		<div class="row-fluid">
+										     			<div class="input-xxlarge">
+										     				<button class="btn btn-large btn-block btn-primary" id="createproject" type="button">保存</button>
+										     			</div>
+										     		</div>
+										     	</span>
+										    </div>
+										  </div>
+										
+									</form>
+
+									
+									
+								</div>
+				            </div>
+				            <div class="viewbtnbox" style="display: none;">
+								<div class="detailbox">
+
+				            		<table class="botbor table-hover">
+										<thead>
+											<tr>
+												<td>项目名称</td>
+												<td>项目编号</td>
+												<td>期数</td>
+												<td>总期数</td>
+												<td>还款金额（元）</td>
+												<td>还款状态</td>
+												<td>应还款时间</td>
+												<td>操作</td>
+												
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>项目名称1</td>
+												<td>222</td>
+												<td>22</td>
+												<td>22</td>
+												<td>50.00</td>
+												<td>555</td>
+												<td>2015</td>
+												<td>
+													<a href="javascript:void(0)" class="btns edit">确认还款</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<div class="text-right">
+										<div class="pagination">
+										  <ul>
+										    <li><a href="#">上一页</a></li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下一页</a></li>
+										  </ul>
+										</div>
+										
+									</div>
+
+								</div>
+				            </div>
+				            <div class="viewbtnbox" style="display: none;">
+
+				            	<div class="list-page-content" style="padding:24px 0px">
+				            		
+				            		<form class="form-inline">
+										<div class="input-group">
+											<label class="checkbox">
+												项目名称：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+											
+										</div>
+
+										<div class="input-group">
+											<label class="checkbox">
+												评论人：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+										</div>
+										<div class="input-group">
+											<label class="checkbox">
+												评论内容：
+											</label>
+											<input type="text" class="input-small" placeholder="" > 至 
+											<input type="text" class="input-small" placeholder="" >
+										</div>
+										<div class="input-group">
+											<label class="checkbox">
+												评论时间：
+											</label>
+											<input type="text" class="input-small" placeholder="" onclick="laydate()"> 至 
+											<input type="text" class="input-small" placeholder="" onclick="laydate()">
+										</div>
+										<button type="button" class="btn btn-primary">搜索</button>
+									</form>
+									<table class="botbor table-hover">
+
+											<thead>
+												<tr>
+													<td>项目标号</td>
+													<td>项目名称</td>
+													<td>评论人</td>
+													<td>评论时间</td>
+													<td>评论内容</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>1</td>
+													<td>贺云飞</td>
+													<td>贺云飞</td>
+											
+													<td>2016-1-28  10:56:14</td>
+													<td>2016-1-28  10:56:14</td>
+													<td>
+														<a href="javascript:void(0)" class="btns">审核通过</a>
+														<a href="javascript:void(0)" class="btns">审核拒绝</a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>贺云飞</td>
+													<td>贺云飞</td>
+											
+													<td>2016-1-28  10:56:14</td>
+													<td>2016-1-28  10:56:14</td>
+													<td>
+														<a href="javascript:void(0)" class="btns">审核通过</a>
+														<a href="javascript:void(0)" class="btns">审核拒绝</a>
+					
+													</td>
+												</tr>
+											</tbody>
+									</table>
+									<div class="text-right">
+										<div class="pagination">
+										  <ul>
+										    <li><a href="#">上一页</a></li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下一页</a></li>
+										  </ul>
+										</div>
+										
+									</div>
+							    </div>
+								
+				            </div>
+				            <div class="viewbtnbox" style="display: none;">
+								<div class="list-page-content" style="padding:24px 0px">
+				            		
+				            		<form class="form-inline">
+										<div class="input-group">
+											<label class="checkbox">
+												项目名称：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+											
+										</div>
+
+										<div class="input-group">
+											<label class="checkbox">
+												申请人用户名：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+										</div>
+										<div class="input-group">
+											<label class="checkbox">
+												申请人姓名：
+											</label>
+											<input type="text" class="input-small" placeholder="" > 
+										</div>
+										<div class="input-group">
+											<label class="checkbox">
+												评论时间：
+											</label>
+											<input type="text" class="input-small" placeholder="" onclick="laydate()"> 至 
+											<input type="text" class="input-small" placeholder="" onclick="laydate()">
+										</div>
+										<button type="button" class="btn btn-primary">搜索</button>
+									</form>
+									<table class="botbor table-hover">
+
+											<thead>
+												<tr>
+
+													<td>项目标号</td>
+													<td>项目名称</td>
+													<td>申请人用户名</td>
+													<td>申请人姓名</td>
+													<td>申请人投资额（元）</td>
+													<td>申请时间</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>1</td>
+													<td>111</td>
+													<td>111</td>
+													<td>111</td>
+													<td>20.00</td>
+													<td>2016-1-28  10:56:14</td>
+													<td>
+														<a href="javascript:void(0)" class="btns">设置为领投人</a>
+													
+													</td>
+												</tr>
+
+											</tbody>
+									</table>
+									<div class="text-right">
+										<div class="pagination">
+										  <ul>
+										    <li><a href="#">上一页</a></li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下一页</a></li>
+										  </ul>
+										</div>
+										
+									</div>
+							    </div>
+				            </div>
+				            <div class="viewbtnbox" style="display: none;">
+								<div class="list-page-content" style="padding:24px 0px">
+				            		
+				            		<form class="form-inline">
+										<div class="input-group">
+											<label class="checkbox">
+												商品标题：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+											
+										</div>
+
+										<div class="input-group">
+											<label class="checkbox">
+												申请人用户名：
+											</label>
+											<input type="text" class="input-small" placeholder="">
+										</div>
+										<div class="input-group">
+											<label class="checkbox">
+												申请人姓名：
+											</label>
+											<input type="text" class="input-small" placeholder="" > 
+										</div>
+										<div class="input-group">
+											<label class="checkbox">
+												评论时间：
+											</label>
+											<input type="text" class="input-small" placeholder="" onclick="laydate()"> 至 
+											<input type="text" class="input-small" placeholder="" onclick="laydate()">
+										</div>
+										<button type="button" class="btn btn-primary">搜索</button>
+									</form>
+									<table class="botbor table-hover">
+
+											<thead>
+												<tr>
+													<td>交易单号</td>
+													<td>商品标题</td>
+													<td>商品金额</td>
+													<td>商品类型</td>
+													<td>投资人用户名</td>
+													<td>投资数量</td>
+													<td>操作</td>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>SP0022010</td>
+													<td>支持1,000.00元</td>
+													<td>1,000.00</td>
+											
+													<td>实物</td>
+													<td>云飞同學</td>
+													<td>2</td>
+													<td>
+														<a href="#myModal" data-toggle="modal" class="btns">上传快递单号</a>
+														<!-- <a href="javascript:void(0)" class="btns">审核拒绝</a> -->
+													</td>
+												</tr>
+
+											</tbody>
+									</table>
+									<div class="text-right">
+										<div class="pagination">
+										  <ul>
+										    <li><a href="#">上一页</a></li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li><a href="#">下一页</a></li>
+										  </ul>
+										</div>
+										
+									</div>
+							    </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			
+		</div>
+
+
+
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    <h3 id="myModalLabel">上传快递单号</h3>
+		  </div>
+		  <div class="modal-body">
+		  		<div class="popup">
+
+		  			<form class="form-horizontal">
+					
+							  <div class="row-fluid myform">
+							    <label class="control-label span4" for="inputEmail">请输入快递服务商：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+					
+
+
+							  <div class="row-fluid myform">
+							    <label class="control-label span4" for="inputEmail">请输入快递单号：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+
+
+							  <div class="row-fluid myform">
+							    <label class="control-label span4" for="inputEmail">请输入快递服务商：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+							  <div class="row-fluid myform">
+							    <label class="control-label span4" for="inputEmail">请输入快递单号：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text" id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+							</form>
+		  			
+			    	
+		  			
+		  		</div>
+		    	
+		    	
+		    	
+		  </div>
+
+		  <div class="modal-footer">
+		   
+		    <button class="btn btn-large btn-warning"  data-dismiss="modal" aria-hidden="true">取消</button>
+		    <button class="btn btn-large btn-primary"  data-dismiss="modal" aria-hidden="true">确认</button>
+		  </div>
+		</div>
+
+	
+
+		
+		<script type="text/javascript" src="js/vendor/jquery-1.7.2.min.js"></script>
+	    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="js/vendor/layer/layer.js"></script>
+	    <script type="text/javascript" src="js/vendor/laydate/laydate.js"></script>
+	    <script type="text/javascript" src="js/public.js"></script>
+
+	    <script type="text/javascript">
+	    	$("#addReturn").on("click",function(){
+
+				if($(".showmsg").is(":hidden")){
+					$(".showmsg").show();
+				}
+			})
+
+
+			$(".edit").on("click",function(){
+				if($(".showmsg").is(":hidden")){
+					$(".showmsg").show();
+				}
+
+			})
+
+			$("#submitadd").on("click",function(){
+				$(".showmsg").hide();
+			})
+
+			$("#canceladd").on("click",function(){
+				$(".showmsg").hide();
+			})
+
+
+
+			$(".delete").live("click",function(){
+				var box=$(this).parents("tr");
+				var id = $(this).parents("tr").index();
+				// alert(id)
+				layer.confirm('是否删除？', {
+				    btn: ['删除','不删除'] //按钮
+				}, function(){
+					box.eq(id).remove();
+				    layer.msg('删除成功');
+				});
+			})
+
+
+
+	$(".close").on("click",function(){
+		var p=$(this).parents(".picebox");
+		var piceLength=$(this).parents(".inputbox").find(".picebox").length;
+		if(piceLength>1){
+			p.remove();
+			layer.msg('删除成功');
+		}else{
+			$(this).hide();
+			p.find("img").remove();
+			layer.msg('删除成功');
+		}
+		
+	})
+
+	    </script>
+
+	
+
+	 
+	</body>
+</html>

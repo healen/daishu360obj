@@ -1,0 +1,109 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/button";
+
+/*llist*/
+.container{
+	background: @listBgColor;
+
+}
+
+.apply_investor{
+	font-size: 14px;
+
+	border: 3px solid @borderColor;
+	background: #ffffff;
+	margin: 36px 0px;
+	padding: 35px 50px;
+	h2{
+		font-size: 18px;
+		color: @titleTextColor;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 40px;
+
+	}
+	h3{
+		font-size: @navSize;
+		color: @titleTextColor;
+		margin-bottom: 20px;
+	}
+
+	.where{
+		margin-bottom: 20px;
+		label{
+			._clearfix();
+			display: block;
+			margin-bottom: 20px;
+			input[type='radio']{
+				float: left;
+				margin-top: 4px;
+				margin-right: 5px;
+			}
+			textarea{
+				display: block;
+				padding: 5px;
+				height: 260px;
+				width: 100%;
+			}
+		}
+		&.hangye{
+			label{
+				._clearfix();
+				display: inline-block;
+				margin-right: 30px;
+				input[type='checkbox']{
+					float: left;
+					margin-top: 4px;
+					margin-right: 5px;
+				}
+
+			}
+
+		}
+	}
+}
+
+label{
+	&.tysq{
+		margin-right: 0px;
+		._clearfix();
+		display: inline-block;
+
+		input[type='checkbox']{
+			float: left;
+			margin-top: 4px;
+			margin-right: 5px;
+		}
+
+	}
+	
+
+}
+
+.btnbox{
+	width: 280px;
+	margin: 0px auto;
+	.btn{
+		margin-bottom: 10px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+

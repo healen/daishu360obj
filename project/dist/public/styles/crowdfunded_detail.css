@@ -1,0 +1,875 @@
+/*llist*/
+.container {
+  background: #f5f5fa;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.crowhead {
+  padding: 25px 0px;
+}
+.crowhead .top {
+  *zoom: 1;
+}
+.crowhead .top:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.crowhead .top h1 {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  color: #595959;
+  margin-right: 30px;
+}
+.crowhead .top .tag {
+  display: inline-block;
+  padding: 2px 16px;
+  color: #3fd4bb;
+  border: 1px solid #3fd4bb;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.crowhead .bot {
+  *zoom: 1;
+  margin-top: 10px;
+}
+.crowhead .bot:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.crowhead .bot > div {
+  float: left;
+  *zoom: 1;
+  margin-right: 15px;
+}
+.crowhead .bot > div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.crowhead .bot > div i {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 12px;
+  background: url('../images/ico.png') no-repeat 0px 0px;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.crowhead .bot > div i.address {
+  background-position: -4px -108px;
+}
+.crowhead .bot > div i.weihua {
+  background-position: -28px -108px;
+  margin-top: 5px;
+}
+.content1 {
+  display: block;
+  border: 3px solid #ebebf5;
+  border-radius: 3px;
+  height: 446px;
+  background: #ffffff;
+  margin-bottom: 30px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.content1:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content1 .picebox {
+  width: 793px;
+  height: 446px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.content1 .picebox img {
+  width: 100%;
+}
+.content1 .picebox .rtmark {
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: url("../images/ico.png") no-repeat -2px -228px;
+}
+.content1 .picebox .rtmark.over {
+  background-position: -2px -696px;
+}
+.content1 .picebox .rtmark.hkz {
+  background-position: -2px -796px;
+}
+.content1 .picebox .sj {
+  width: 22px;
+  height: 42px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -21px;
+  background: url("../images/ico.png") no-repeat 0px -135px;
+}
+.content1 .r {
+  width: 400px;
+  float: left;
+}
+.content1 .r > div {
+  padding: 40px;
+}
+.content1 .r > div .syl {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebf5;
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.content1 .r > div .syl:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content1 .r > div .syl .warrp {
+  position: relative;
+  float: left;
+}
+.content1 .r > div .syl .warrp h2 {
+  font-size: 29px;
+  color: #3fd4bb;
+}
+.content1 .r > div .syl .warrp.plus {
+  padding: 0px 30px;
+}
+.content1 .r > div .syl .warrp i {
+  width: 18px;
+  height: 28px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  cursor: pointer;
+  background: url("../images/ico.png") no-repeat -51px -100px;
+}
+.content1 .r > div .contant {
+  background: #f5f5fa;
+  padding: 20px 16px;
+  margin-bottom: 37px;
+}
+.content1 .r > div .contant .title {
+  *zoom: 1;
+  margin-bottom: 15px;
+}
+.content1 .r > div .contant .title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content1 .r > div .contant .title > div {
+  float: left;
+  width: 50%;
+}
+.content1 .r > div .contant .title > div h2 {
+  color: #595959;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.content1 .r > div .contant .progress {
+  margin-bottom: 18px;
+  height: 8px;
+}
+.content1 .r > div .contant .progress .bar {
+  height: 8px;
+}
+.content1 .r > div .contant .describe {
+  *zoom: 1;
+}
+.content1 .r > div .contant .describe:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content1 .r > div .contant .describe > p {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+.content1 .r > div .contant .describe > p.right {
+  text-align: right;
+}
+.content1 .r > div .contant .describe > p span {
+  color: #3fd4bb;
+}
+.content1 .r > div .btn {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin-top: -20px;
+  margin-right: 0px;
+}
+.content2 {
+  *zoom: 1;
+  margin-bottom: 47px;
+}
+.content2:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content2 .l {
+  width: 790px;
+  float: left;
+  border: 3px solid #ebebf5;
+  border-radius: 3px 0px 3px 3px;
+  background: #ffffff;
+}
+.content2 .r {
+  width: 401px;
+  float: left;
+  border-radius: 0px 3px 3px 0px;
+  background: #ffffff;
+  border: 3px solid #ebebf5;
+  border-left: none;
+}
+.content2 .r .top {
+  padding: 37px 28px;
+}
+.content2 .r .top .head {
+  *zoom: 1;
+  height: 100px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.content2 .r .top .head:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content2 .r .top .head > a {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  background: #ebebf5;
+  border-radius: 50px;
+  text-align: center;
+}
+.content2 .r .top .head > a i {
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  width: 32px;
+  height: 32px;
+  background: url("../images/ico.png") no-repeat 0px 0px;
+}
+.content2 .r .top .head > a p {
+  font-size: 14px;
+}
+.content2 .r .top .head .p1 {
+  left: 0px;
+  top: 0px;
+}
+.content2 .r .top .head .p1 i {
+  background-position: -40px -139px;
+}
+.content2 .r .top .head .p2 {
+  top: 0px;
+  left: 50%;
+  margin-left: -50px;
+}
+.content2 .r .top .head .p2 i {
+  background-position: -80px -139px;
+}
+.content2 .r .top .head .p3 {
+  right: 0px;
+  top: 0px;
+}
+.content2 .r .top .head .p3 i {
+  background-position: 1px -189px;
+}
+.content2 .r .top .describe {
+  font-size: 14px;
+  *zoom: 1;
+}
+.content2 .r .top .describe:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content2 .r .top .describe p {
+  margin-bottom: 10px;
+  width: 50%;
+  float: left;
+}
+.content2 .r .top .describe p span {
+  color: #3fd4bb;
+  font-weight: bold;
+  padding-left: 16px;
+}
+.content2 .r .top .describe p.right {
+  text-align: right;
+}
+.content2 .r .top.list {
+  border-bottom: 3px solid #ebebf5;
+}
+.content2 .r .top.list:last-child {
+  border-bottom: none;
+}
+.content2 .r .top.list .topbar {
+  margin-bottom: 15px;
+}
+.content2 .r .top.list .topbar > div {
+  *zoom: 1;
+  line-height: 30px;
+}
+.content2 .r .top.list .topbar > div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.content2 .r .top.list .topbar > div span {
+  color: #3fd4bb;
+}
+.content2 .r .top.list .topbar > div p {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+.content2 .r .top.list .topbar > div p.title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #595959;
+}
+.content2 .r .top.list .block {
+  padding: 25px 12px;
+  background: #ebebf5;
+  position: relative;
+}
+.content2 .r .top.list .block h2 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #595959;
+  font-weight: bold;
+}
+.content2 .r .top.list .block p {
+  font-size: 14px;
+}
+.content2 .r .top.list .block p .title {
+  color: #595959;
+}
+.content2 .r .top.list .block img {
+  width: 100px;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.content2 .r .top.list .block .btn {
+  margin-top: 10px;
+}
+table.botbor {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+table.botbor thead td {
+  background-color: #ebebf5;
+  color: #595959;
+  width: 1%;
+}
+table.botbor td {
+  background: #ffffff;
+  border-bottom: 1px solid #ebebf5;
+  line-height: 40px;
+}
+table.botbor tr:last-child td {
+  border-bottom: none;
+  line-height: 40px;
+}
+.contentDiv1 {
+  width: 800px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "微软雅黑";
+}
+.contentDiv1 .ul-1 {
+  list-style: none;
+  padding-top: 66px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.contentDiv1 .ul-1 li {
+  margin-bottom: 92px;
+  color: #a6a6a6;
+  font-size: 12px;
+}
+.contentDiv1 .jz {
+  width: 84px;
+  height: 34px;
+  background: #3fd4bb;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 80px;
+  position: absolute;
+}
+.ul-2 {
+  list-style: none;
+  margin-left: 123px;
+  padding-left: 20px;
+  color: #a6a6a6;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-left: 1px solid #3fd4bb;
+}
+.ul-2 li {
+  position: relative;
+  margin-bottom: 50px;
+  width: 527px;
+}
+.ul-2 li .dian {
+  width: 7px;
+  height: 7px;
+  display: block;
+  border: 1px solid #3fd4bb;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: -25px;
+}
+.ul-2 li .time {
+  height: 20px;
+  line-height: 20px;
+  width: 120px;
+  text-align: right;
+  position: absolute;
+  top: 2px;
+  left: -162px;
+}
+.contentDiv2 {
+  width: 790px;
+  height: 730px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "微软雅黑";
+}
+.content {
+  width: 755px;
+  height: 230px;
+  background: #ebebf5;
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 0px;
+}
+.content .textarea {
+  width: 613px;
+  height: 137px;
+  margin-top: 22px;
+  margin-left: 110px;
+  color: #a6a6a6;
+  font-size: 14px;
+  border: none;
+}
+.content p {
+  margin-left: 110px;
+  margin-top: 5px;
+  color: #595959;
+}
+.content span {
+  color: #3fd4bb;
+}
+.ul {
+  list-style: none;
+  margin-left: 45px;
+  margin-top: 30px;
+}
+.ul li {
+  width: 725px;
+  height: 80px;
+  border-bottom: 1px solid #ebebf5;
+  margin-top: 20px;
+}
+.contentDiv2 {
+  width: 800px;
+  height: 1000px;
+}
+.contentDiv2 .content img {
+  margin-left: 27px;
+  position: absolute;
+  margin-top: 27px;
+}
+.contentDiv2 p {
+  font-size: 16px;
+  color: #595959;
+  margin-top: 10px;
+}
+.contentDiv2 ul li .p {
+  color: #3fd4bb;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-top: -60px;
+  margin-left: 82px;
+}
+.contentDiv2 ul li .p1 {
+  color: #a6a6a6;
+  font-size: 14px;
+  margin-left: 165px;
+  margin-top: -23px;
+}
+.contentDiv2 ul li .img {
+  margin-left: 636px;
+  margin-top: -16px;
+}
+.contentDiv2 ul li .p2 {
+  font-weight: bolder;
+  margin-left: 655px;
+  margin-top: -45px;
+}
+.contentDiv2 ul li .p3 {
+  color: #a6a6a6;
+  font-size: 14px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.d3 {
+  margin-left: 616px;
+  margin-top: -18px;
+}
+.io {
+  background: #f5f5fa;
+  margin-top: 8px;
+  position: relative;
+  border: 1px solid #ebebf5;
+  display: none;
+}
+.io p {
+  padding: 10px 20px;
+}
+.io .sanjiao1 {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #ebebf5;
+  border-left: 12px solid transparent;
+  margin-left: 20px;
+  position: absolute;
+  top: -12px;
+  left: -1px;
+}
+.io .sanjiao {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f5f5fa;
+  border-left: 10px solid transparent;
+  margin-left: 20px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+.io .p4 {
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  margin-left: 20px;
+}
+.aa {
+  color: #3fd4bb;
+  font-size: 14px;
+}
+.djs {
+  margin-top: -34px;
+  font-size: 26px;
+  color: #3fd4bb;
+  font-weight: bold;
+}
+.daojishi .imga {
+  width: 45px;
+  padding: 0px 140px;
+  margin-top: -22px;
+}
+.daojishi p {
+  color: #3fd4bb;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+}
+.comment {
+  padding: 30px 16px;
+  font-size: 14px;
+}
+.comment .comment_top {
+  height: 193px;
+  background: #ebebf5;
+  padding: 20px 20px 20px 40px;
+  *zoom: 1;
+  margin-bottom: 30px;
+}
+.comment .comment_top:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.comment .comment_top .headerpice {
+  width: 62px;
+  height: 193px;
+  overflow: hidden;
+  border: none;
+  float: left;
+  margin-right: 20px;
+}
+.comment .comment_top .headerpice img {
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  margin-top: 8px;
+  background: #ffffff;
+}
+.comment .comment_top .forms {
+  width: 582px;
+  height: 193px;
+  border: none;
+  float: left;
+}
+.comment .comment_top .forms .textareabox {
+  position: relative;
+  width: 582px;
+  height: 138px;
+}
+.comment .comment_top .forms .textareabox textarea {
+  padding: 10px;
+  width: 562px;
+  height: 118px;
+  border: none;
+  background: #ffffff;
+}
+.comment .comment_top .forms .comment_tool {
+  *zoom: 1;
+}
+.comment .comment_top .forms .comment_tool:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.comment .comment_top .forms .comment_tool .msg {
+  color: #595959;
+  float: left;
+  width: 50%;
+  margin-top: 5px;
+}
+.comment .comment_top .forms .comment_tool .msg .num {
+  color: #3fd4bb;
+}
+.comment .comment_top .forms .comment_tool .btn {
+  float: right;
+  margin-top: 15px;
+}
+.comment .comment_top .forms .sanjiaol {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #ffffff;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+.comment .comment_mid h2 {
+  color: #595959;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.comment .comment_mid .comment_list {
+  border-bottom: 1px solid #ebebf5;
+  padding: 0px 20px;
+  *zoom: 1;
+}
+.comment .comment_mid .comment_list:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.comment .comment_mid .comment_list .headerpice {
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+  border: none;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.comment .comment_mid .comment_list .headerpice img {
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+  display: block;
+  border-radius: 50%;
+  background: #ebebf5;
+}
+.comment .comment_mid .comment_list .replay {
+  *zoom: 1;
+}
+.comment .comment_mid .comment_list .replay:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.comment .comment_mid .comment_list .replay i {
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ico.png") no-repeat 0px -647px;
+}
+.comment .comment_mid .comment_list .replayfrom {
+  background: #ebebf5;
+  padding: 5px;
+  margin-top: 5px;
+  display: none;
+}
+.comment .comment_mid .comment_list .replayfrom textarea {
+  padding: 5px;
+  background: #ffffff;
+  border: none;
+  width: 580px;
+  margin-bottom: 10px;
+}
+.comment .comment_mid .comment_list .replayfrom .relay_tools input .cancel {
+  background: #ffbc4b !important;
+}
+.comment .comment_mid .borderbtn {
+  float: left;
+  width: 600px;
+  padding: 20px 0px;
+  font-size: 14px;
+}
+.comment .comment_mid .borderbtn .message {
+  padding: 10px 0px;
+}
+.comment .comment_mid .borderbtn .list {
+  float: left;
+}
+.comment .comment_mid .borderbtn .list.last {
+  float: right;
+}
+.comment .comment_mid .borderbtn .list.frist {
+  width: 65%;
+}
+.comment .comment_mid .borderbtn .list.frist span {
+  color: #595959;
+}
+.comment .comment_mid .borderbtn .list a {
+  color: #3fd4bb;
+}
+.timer {
+  margin-top: -34px;
+  font-size: 26px;
+  color: #3fd4bb;
+  font-weight: bold;
+}
+.lingtouren {
+  padding: 37px 44px;
+  border-bottom: 3px solid #ebebf5;
+  *zoom: 1;
+}
+.lingtouren:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.lingtouren .detail {
+  float: left;
+  width: 215px;
+}
+.lingtouren img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+.lingtouren .title {
+  *zoom: 1;
+  font-size: 16px;
+  color: #595959;
+  width: auto;
+  border: none;
+  margin-bottom: 10px;
+}
+.lingtouren .title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.lingtouren .title .le {
+  float: left;
+}
+.lingtouren .title .ri {
+  float: right;
+}
+.lingtouren .title .ri a {
+  font-size: 14px;
+  color: #ffffff;
+  background: #3fd4bb;
+  padding: 0px 10px;
+  border-radius: 3px;
+}
+.lingtouren .title .ri a:hover {
+  background: #29b79f;
+}
+.lingtouren p {
+  font-size: 14px;
+}

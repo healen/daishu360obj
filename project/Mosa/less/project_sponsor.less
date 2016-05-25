@@ -1,0 +1,362 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/button";
+@import "../lib/element";
+
+/*llist*/
+.container{
+	background: @listBgColor;
+	font-size: 16px;
+
+}
+
+.topbars{
+	padding: 20px;
+	.delete{
+		padding-left: 15px;
+	}
+}
+
+.icotitle{
+	height: 40px;
+	text-align: center;
+	
+	margin: 40px auto 0px auto;
+	span{
+		display: inline-block;
+		width: 211px;
+		height: 40px;
+		background: url("@{img}/title.png") no-repeat -211px 0px;
+		color: @titleTextColor;
+		font-size: @navSize;
+		line-height: 40px;
+		text-align: center;
+		&.step_on{
+			color: #ffffff;
+			background-position: 0px 0px;
+		}
+	}
+}
+.project_sponsor{
+	min-height: 400px;
+	font-size: 16px;
+	border: 3px solid @borderColor;
+	background: #ffffff;
+	margin: 20px 0px;
+	padding:10px 24px;
+	h2{
+		font-size: @navSize;
+		color: @titleTextColor;
+		line-height: 45px;
+		border-bottom: 1px solid @borderColor;
+		padding: 0px 16px;
+	}
+}
+h3{
+	text-align: center;
+	font-size: @navSize;
+	color: @titleTextColor;
+	line-height: 45px;
+	padding: 0px 16px;
+
+}
+
+.block{
+	display: block;
+	margin-top: -5px;
+}
+
+.formbox{
+	padding: 30px 30px;
+	min-height: 200px;
+	.inputlabel{
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.titlabel{
+		text-align: right;
+		width: 116px;
+		font-size: @navSize;
+		color:  @titleTextColor;
+		float: left;
+		line-height: 40px;
+		padding-right: 5px;
+	}
+		input[type='file']{
+			height: 40px;
+			width: 112px;
+			position: absolute;
+			left: 121px;
+			top: 0px;
+			.-text ._opacity(0);
+			cursor: pointer;
+
+
+		}
+	.inputbox{
+		width: 800px;
+		float: left;
+		line-height: 40px;
+		._clearfix();
+		input[type='text'],input[type='password'],select,textarea{
+			width: 580px;
+			padding: 0px 10px;
+			height: 38px;
+			border:1px solid @baseTextColor;
+			&:focus{
+				border-color: @markColor;
+			}
+			margin-right: 10px;
+
+			&.min{
+				width: 70px;
+			}
+		}
+	
+		textarea{
+			height: 64px;
+			padding: 10px 10px;
+		}
+		select{
+			background: #ffffff;
+			width: 602px;
+		}
+		span{
+			line-height: 40px;
+		}
+		.tysq{
+			line-height: 40px;
+			margin-right: 0px;
+			._clearfix();
+			display: inline-block;
+			margin-right: 20px;
+			font-size: 16px;
+
+			input[type='checkbox'],input[type='radio']{
+				float: left;
+				margin-top: 13px;
+				margin-right: 5px;
+			}
+
+		}
+		.picebox{
+			width: 256px;
+			height: 144px;
+			line-height: 144px;
+			// text-align: center;
+			background: @activeTextColor;
+			color: #ffffff;
+			position: relative;
+			text-align: center;
+			margin-bottom: 10px;
+			float: left;
+			margin-right: 10px;
+			img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 1;
+			}
+			.close{
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				z-index: 2;
+				right: -8px;
+				top: -8px;
+				cursor: pointer;
+				background: url("@{img}/ico1.png") no-repeat -50px -227px;
+			}
+		}
+	}
+}
+
+
+.ms{
+	width: 685px;
+
+	margin: 0px auto;
+	.inputbox{
+			width: 500px;
+			float: left;
+			line-height: 40px;
+			._clearfix();
+			input[type='text'],input[type='password'],select,textarea{
+				width: 480px;
+				padding: 0px 10px;
+				height: 38px;
+				border:1px solid @baseTextColor;
+				&:focus{
+					border-color: @markColor;
+				}
+				margin-right: 10px;
+
+				&.min{
+					width: 70px;
+				}
+			}
+		
+			textarea{
+				height: 64px;
+				padding: 10px 10px;
+			}
+			select{
+				background: #ffffff;
+				width: 602px;
+			}
+			span{
+				line-height: 40px;
+			}
+			.tysq{
+				line-height: 40px;
+				margin-right: 0px;
+				._clearfix();
+				display: inline-block;
+				margin-right: 20px;
+				font-size: 16px;
+
+				input[type='checkbox'],input[type='radio']{
+					float: left;
+					margin-top: 13px;
+					margin-right: 5px;
+				}
+
+			}
+			.picebox{
+				width: 256px;
+				height: 144px;
+				line-height: 144px;
+				// text-align: center;
+				background: @activeTextColor;
+				color: #ffffff;
+				position: relative;
+				text-align: center;
+				margin-bottom: 10px;
+				float: left;
+				margin-right: 10px;
+				img{
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+				}
+			}
+		}
+}
+
+.showmsg{
+	display: none;
+	.formbox{
+		padding: 0px 30px;
+		.inputbox{
+			width: 800px;
+			float: left;
+			line-height: 40px;
+			._clearfix();
+			input[type='text'],input[type='password'],select,textarea{
+				width: 580px;
+				padding: 0px 10px;
+				height: 38px;
+				border:1px solid @baseTextColor;
+				&:focus{
+					border-color: @markColor;
+				}
+				margin-right: 10px;
+
+				&.min{
+					width: 70px;
+				}
+			}
+		
+			textarea{
+				height: 64px;
+				padding: 10px 10px;
+			}
+			select{
+				background: #ffffff;
+				width: 602px;
+			}
+			span{
+				line-height: 40px;
+			}
+			.tysq{
+				line-height: 40px;
+				margin-right: 0px;
+				._clearfix();
+				display: inline-block;
+				margin-right: 20px;
+				font-size: 16px;
+
+				input[type='checkbox'],input[type='radio']{
+					float: left;
+					margin-top: 13px;
+					margin-right: 5px;
+				}
+
+			}
+			.picebox{
+				width: 256px;
+				height: 144px;
+				line-height: 144px;
+				// text-align: center;
+				background: @activeTextColor;
+				color: #ffffff;
+				position: relative;
+				text-align: center;
+				margin-bottom: 10px;
+				float: left;
+				margin-right: 10px;
+				img{
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+.btnbox{
+	width: 280px;
+	margin: 0px auto;
+	.btn{
+		margin-bottom: 10px;
+	}
+}
+
+
+.smaile{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 16px;
+	img{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 18px;
+		color: @markColor;
+		border-bottom: none;
+	}
+	p{
+		border-bottom: none;
+	}
+
+}
+
+
+._table(table,botbor);
+._table(table,txleft);
+

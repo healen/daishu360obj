@@ -1,0 +1,264 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/element";
+
+/*首页样式*/
+
+html,body{
+	background: #ffffff;
+}
+.novicebanner{
+	min-width: @documentWidth;
+	height: 350px;
+	background: url("@{img}/novice_bg.png") no-repeat center center #fff3d9;
+}
+
+.midarea{
+	padding: 30px 0px 50px 0px;
+	h2{
+		font-size: 30px;
+		text-align: center;
+		color: @titleFtColor;
+		padding-bottom: 50px;
+	}
+	p.discirbe{
+		font-size: 14px;
+	}
+	&.bghui{
+		background: @listBgColor;
+	}
+
+	@mrw:0px;
+	.listboxwarp{
+		width: @documentWidth;
+		.boxwarp{
+			width: @documentWidth + @mrw + 20;
+			._clearfix();
+			.boxlist{
+				width: 50%;
+				height: 70px;
+				float: left;
+				overflow: hidden;
+				margin-right: @mrw;
+				margin-bottom: 60px;
+				._clearfix();
+				// background: #ff0000;
+				text-align: left;
+
+				img{
+					display: block;
+					margin: 0px auto;
+					float: left;
+					margin-right: 20px;
+				}
+				h3{
+					font-size: 16px;
+					color: @titleFtColor;
+					padding: 0px 0px 0px 0px;
+					padding-right: 20px;
+
+				}
+				p{
+					line-height: 20px;
+					text-align: left;
+					padding-right: 20px;
+					font-size: 14px;
+					&.center{
+						text-align: center;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+.novice{
+	width: @documentWidth;
+	margin: 0px auto;
+	padding-bottom: 43px;
+	h2{
+		margin-top: 30px;
+		font-size: 30px;
+		text-align: center;
+		color: @titleFtColor;
+		padding-bottom: 50px;
+	}
+
+	.f3{
+		h2{
+			
+		}
+		.slidebox{
+			width: 870px;
+			height: 410px;
+			// overflow: hidden;
+			position: relative;
+			// background: #FF0000;
+			margin: 0px auto 20px auto;
+			.slidewarp{
+				width: 907px;
+				height: 410px;
+				position: relative;
+				margin: 0px auto;
+				overflow: hidden;
+				.front{
+					width: 410px;
+					height: 410px;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					background: url('@{img}/novice_v.png') no-repeat 0px 0px;
+					z-index: 2;
+
+				}
+				.imglist{
+					width: 907px;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					z-index: 1;
+					li{
+						width: 907px;
+						height: 352px;
+						overflow: hidden;
+						float: left;
+						img{
+							width: 907px;
+							height: 352px;
+						}
+					}
+
+
+				}
+
+
+
+			}
+			.slidebtn{
+				width: 56px;
+				height: 90px;
+				position: absolute;
+				z-index: 4;
+				top: 50%;
+				margin-top: -45px;
+				background-image: url("@{img}/slidebtn.png");
+				cursor: pointer;
+				&.next{
+					right: -120px;
+					background-position: -56px 0px;
+					&:hover{
+						background-position: -56px -98px;
+					}
+				}
+				&.prov{
+					left: -80px;
+					background-position: 0px 0px;
+					&:hover{
+						background-position: 0px -98px;
+					}
+				}
+			}
+		}
+
+		.crumbs{
+
+			width: 1000px;
+			height: 110px;
+			margin:0px auto;
+			margin-top: 0px;
+			margin-bottom: 20px;
+			._clearfix();
+			.icolist{
+				text-align: center;
+				font-size: 16px;
+				display: block;
+				width: 100px;
+				height: 110px;
+				float: left;
+				@y:75px;
+				@x:-76px;
+				color: @baseTextColor;
+
+				.ico{
+					width: 74px;
+					display: block;
+					margin: 0px auto;
+					height: 74px;
+					background: url("@{img}/noviceico.png") no-repeat;
+					&.i1{
+						background-position: 0px 0px;
+					}
+					&.i2{
+						background-position: 0px (0 - @y*1);
+					}
+					&.i3{
+						background-position: 0px (0 - @y*2);
+					}
+					&.i4{
+						background-position: 0px (0 - @y*3);
+					}
+					&.i5{
+						background-position: 0px (0 - @y*4);
+					}
+
+				}
+
+				&.active{
+					.ico{
+					
+
+					&.i1{
+						background-position: @x 0px;
+
+					}
+					&.i2{
+						background-position: @x (0 - @y*1);
+						
+					}
+					&.i3{
+						background-position: @x (0 - @y*2);
+					}
+					&.i4{
+						background-position: @x (0 - @y*3);
+					}
+					&.i5{
+						background-position: @x (0 - @y*4);
+					}
+
+				}
+				
+				p{
+					color: @markColorLighten;
+				}
+				}
+				&:hover{
+					color: @baseTextColor;
+				}
+			}
+			.jt{
+				width: 118px;
+				height: 18px;
+				float: left;
+				background: url("@{img}/noviceico.png") no-repeat 40px -379px;
+				margin-top: 30px;
+			}
+
+		}
+
+		.btnbox{
+			padding: 20px 0px;
+
+			.inlinebtn{
+				height: 50px;
+				line-height: 50px;
+				font-size: 18px;
+				padding-left:44px;
+				padding-right: 44px;
+			}
+		}
+	}
+}
+
+
+

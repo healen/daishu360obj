@@ -1,0 +1,744 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+body {
+  background: #f5f5fa;
+}
+.mybox {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.mywarp {
+  padding: 40px;
+}
+.title h2 {
+  line-height: 50px;
+  font-size: 16px;
+  color: #595959;
+  font-weight: bold;
+}
+.title > div {
+  *zoom: 1;
+  color: #3fd4bb;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.title > div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.title > div .dian {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #3fd4bb;
+  float: left;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+.title > div a {
+  float: right;
+  color: #3fd4bb;
+  padding-right: 20px;
+}
+.huiwall {
+  background: #f5f5fa;
+  margin-bottom: 10px;
+}
+table.botbor thead td {
+  height: 44px;
+}
+table.botbor td {
+  height: 52px;
+}
+.btss {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.disthead {
+  margin-bottom: 38px;
+  margin-top: 10px;
+}
+.right_title {
+  *zoom: 1;
+  height: 70px;
+  border-bottom: 2px solid #ebebf5;
+  line-height: 70px;
+  color: #595959;
+  font-size: 14px;
+}
+.right_title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.right_title h2 {
+  float: left;
+}
+.right_title .line {
+  height: 20px;
+  width: 4px;
+  border-radius: 2px;
+  background: #ffc13c;
+  float: left;
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+.mycontent {
+  min-height: 550px;
+}
+.my_form_group .input_group .input_row {
+  *zoom: 1;
+  line-height: 40px;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+.my_form_group .input_group .input_row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.my_form_group .input_group .input_row .title {
+  float: left;
+  line-height: 40px;
+  text-align: right;
+  width: 120px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: #595959;
+}
+.my_form_group .input_group .input_row .inputwarp {
+  float: left;
+  position: relative;
+  line-height: 38px;
+}
+.my_form_group .input_group .input_row .inputwarp a.text-link {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: #3fd4bb;
+  font-size: 12px;
+}
+.my_form_group .input_group .input_row .inputwarp a.btn {
+  width: 128px!important;
+}
+.my_form_group .input_group .input_row .inputwarp input[type='text'],
+.my_form_group .input_group .input_row .inputwarp input[type='password'],
+.my_form_group .input_group .input_row .inputwarp select {
+  padding: 0px 10px;
+  height: 38px;
+  border: 1px solid #a6a6a6;
+  width: 250px;
+}
+.my_form_group .input_group .input_row .inputwarp input[type='text']:focus,
+.my_form_group .input_group .input_row .inputwarp input[type='password']:focus,
+.my_form_group .input_group .input_row .inputwarp select:focus {
+  border: 1px solid #3fd4bb;
+}
+.my_form_group .input_group .input_row .inputwarp select {
+  width: 272px;
+}
+.mylistcontent {
+  padding: 0px 70px;
+}
+.my_top_list .top_list {
+  border-bottom: 1px solid #ebebf5;
+  font-size: 14px;
+  color: #595959;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  line-height: 30px;
+}
+.my_top_list .top_list .title {
+  float: left;
+  display: inline-block;
+  padding-right: 23px;
+}
+.my_top_list .top_list a {
+  float: left;
+  display: inline-block;
+  padding-right: 23px;
+  color: #a6a6a6;
+}
+.my_top_list .top_list a.active {
+  color: #3fd4bb;
+}
+.my_top_list .top_list span {
+  float: left;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.my_top_list .top_list input[type='text'] {
+  font-size: 12px;
+  float: left;
+  width: 140px;
+  padding: 0px 10px;
+  margin-right: 0px;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #a6a6a6;
+}
+.my_top_list .top_list input[type='text'].timebg {
+  width: 140px;
+  background: url('../images/time.png') no-repeat right 6px;
+}
+.my_top_list .top_list select {
+  font-size: 12px;
+  float: left;
+  width: 140px;
+  padding: 0px 10px;
+  margin-right: 0px;
+  height: 30px;
+  line-height: 28px;
+  margin-left: 20px;
+  color: #a6a6a6;
+  background: #ffffff;
+  border: 1px solid #a6a6a6;
+}
+.my_top_list .top_list .inputgroup {
+  *zoom: 1;
+  float: left;
+}
+.my_top_list .top_list .inputgroup:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.marktag {
+  padding: 8px 12px;
+  line-height: 22px;
+  background: #fff3d9;
+  color: #ffc13c;
+  position: relative;
+}
+.marktag .close {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  right: 5px;
+  background: url("../images/ico.png") 0px -673px;
+  cursor: pointer;
+}
+.tab_btn_defalut {
+  height: 54px;
+  line-height: 54px;
+}
+.tab_btn_defalut.init a {
+  display: inline-block;
+  padding-right: 10px;
+  color: #aaaaaa;
+  font-size: 14px;
+  *zoom: 1;
+}
+.tab_btn_defalut.init a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.tab_btn_defalut.init a span {
+  float: left;
+  padding-left: 10px;
+  line-height: 52px;
+}
+.tab_btn_defalut.init a.active {
+  color: #ffbc4b;
+}
+.tab_btn_defalut.linkstyle {
+  background: #ffffff;
+  height: 44px;
+  line-height: 35px;
+  padding: 0px 50px;
+  margin-top: 22px;
+}
+.tab_btn_defalut.linkstyle a {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 0px 10px;
+  padding-top: 7px;
+}
+.tab_btn_defalut.linkstyle a span {
+  display: none;
+}
+.tab_btn_defalut.linkstyle a.active {
+  border-bottom: 2px solid #3fd4bb;
+  color: #3fd4bb;
+}
+.tab_btn_defalut.linkstyle {
+  margin-top: 0px;
+  height: 43px;
+}
+.tab_btn_defalut.linkstyle a.active {
+  color: #595959;
+}
+.invinwarp {
+  margin: 0px 25px;
+}
+.invtablebox {
+  margin-top: 35px;
+}
+.invtablebox h2 {
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+.invtablebox h2 .center {
+  text-align: center;
+}
+.invtablebox h2 .center .mark {
+  text-decoration: underline;
+}
+table .openr {
+  background: #ffbc4b;
+  display: inline-block;
+  padding: 0px 0px;
+  color: #ffffff;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  min-width: 80px;
+  border-radius: 3px;
+  border: none;
+}
+table .openr.disable {
+  background: #a6a6a6;
+}
+table .openr:hover {
+  background: #ffcf7e;
+  color: #ffffff;
+}
+input[type='text']:focus,
+textarea:focus {
+  border-color: #3fd4bb !important;
+}
+a.btn.search {
+  font-size: 14px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 40px;
+  height: 28px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #a6a6a6;
+  color: #a6a6a6;
+  background: #FFFFFF;
+  padding: 0px 10px;
+  margin-left: 17px;
+}
+a.btn.search:hover {
+  color: #3fd4bb;
+  border-color: #3fd4bb;
+}
+.piceword {
+  padding: 16px 22px;
+}
+.piceword > div {
+  display: block;
+  *zoom: 1;
+  color: #a6a6a6;
+}
+.piceword > div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.piceword > div img {
+  float: left;
+  width: 200px;
+  height: 112px;
+  margin-right: 25px;
+}
+.piceword > div .ri {
+  *zoom: 1;
+  width: 637px;
+  float: left;
+}
+.piceword > div .ri:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.piceword > div .ri .l {
+  width: 46%;
+  float: left;
+  font-size: 14px;
+}
+.piceword > div .ri .l h2 {
+  color: #595959;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.piceword > div .ri .r {
+  width: 48%;
+  float: right;
+}
+.piceword > div .ri .r .inr {
+  width: 90%;
+}
+.piceword > div .ri .r .inr .title {
+  *zoom: 1;
+}
+.piceword > div .ri .r .inr .title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.piceword > div .ri .r .inr .title > div {
+  *zoom: 1;
+  float: left;
+  width: 50%;
+}
+.piceword > div .ri .r .inr .title > div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.piceword > div .ri .r .inr .title > div h2 {
+  color: #595959;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+.piceword > div .ri .r .inr .title > div p {
+  color: #a6a6a6;
+}
+.piceword .describe {
+  *zoom: 1;
+}
+.piceword .describe:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.piceword .describe > p {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+}
+.piceword .describe > p.right {
+  text-align: right;
+}
+.piceword .describe > p span {
+  color: #3fd4bb;
+}
+.progress {
+  height: 8px;
+}
+.progress .bar {
+  height: 8px;
+}
+.progress .jindu {
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  text-align: center;
+}
+.my_left_init {
+  float: left;
+  width: 210px;
+  margin-right: 0px;
+  background: #ebebf5;
+}
+.my_left_init ul.nav {
+  padding-bottom: 50px;
+}
+.my_left_init ul.nav > li {
+  position: relative;
+}
+.my_left_init ul.nav > li a {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+  color: #595959;
+  padding-left: 20px;
+  *zoom: 1;
+}
+.my_left_init ul.nav > li a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.my_left_init ul.nav > li a .dian {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #3fd4bb;
+  float: left;
+  margin-top: 17px;
+  margin-right: 12px;
+}
+.my_left_init ul.nav > li > ul {
+  min-height: 1px;
+}
+.my_left_init ul.nav > li > ul li {
+  position: relative;
+}
+.my_left_init ul.nav > li > ul li a {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  color: #a6a6a6;
+  padding-left: 40px;
+  display: block;
+  *zoom: 1;
+  font-size: 14px;
+}
+.my_left_init ul.nav > li > ul li a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.my_left_init ul.nav > li > ul li a span {
+  height: 40px;
+  line-height: 40px;
+  float: left;
+}
+.my_left_init ul.nav > li > ul li a .acti {
+  float: right;
+  margin-right: 20px;
+  width: 12px;
+  height: 15px;
+  background: url("../images/ico.png") no-repeat -86px -405px;
+  margin-top: 12px;
+  display: none;
+}
+.my_left_init ul.nav > li > ul li a:hover {
+  color: #3fd4bb;
+}
+.my_left_init ul.nav > li > ul li.active > a {
+  background: #ffffff;
+  color: #a6a6a6;
+}
+.my_left_init ul.nav > li > ul li.active > a .acti {
+  display: block;
+}
+.my_right_init {
+  float: left;
+  background: #ffffff;
+  min-height: 400px;
+  border: 3px solid #ebebf5;
+  border-left: none;
+  width: 987px;
+}
+.my_top_init {
+  position: relative;
+  z-index: 999;
+  clear: both;
+  *zoom: 1;
+  padding-bottom: 12px;
+}
+.my_top_init:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.my_top_init .topsider {
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  background: #ebebf5;
+}
+.my_top_init .topsider > div {
+  width: 10px;
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: -9px;
+  background: url('../images/ico.png') no-repeat -73px -405px;
+}
+.my_top_init .headphoto {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 45px;
+  background: #ffffff;
+  margin: 0px auto 10px auto;
+}
+.my_top_init .headphoto img {
+  width: 100%;
+  height: 100%;
+}
+.my_top_init .r {
+  padding: 10px 0px 20px 0px;
+}
+.my_top_init .d1 {
+  *zoom: 1;
+}
+.my_top_init .d1:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.my_top_init .d1 h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #595959;
+}
+.my_top_init .d1 .icogroup {
+  *zoom: 1;
+  text-align: center;
+}
+.my_top_init .d1 .icogroup:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.my_top_init .d1 .icogroup .ico {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  display: inline-block;
+  margin: 0px 10px;
+  background: url('../images/ico.png') no-repeat 0px 0px;
+  cursor: pointer;
+}
+.my_top_init .d1 .icogroup .ico.tel {
+  background-position: -1px -400px;
+}
+.my_top_init .d1 .icogroup .ico.tel.success {
+  background-position: -33px -400px;
+}
+.my_top_init .d1 .icogroup .ico.my {
+  background-position: -1px -421px;
+}
+.my_top_init .d1 .icogroup .ico.my.success {
+  background-position: -33px -421px;
+}
+.my_top_init .d1 .icogroup .ico.suo {
+  background-position: -1px -461px;
+}
+.my_top_init .d1 .icogroup .ico.suo.success {
+  background-position: -33px -461px;
+}
+.my_top_init .d1 .icogroup .ico.xin {
+  background-position: -1px -442px;
+}
+.my_top_init .d1 .icogroup .ico.xin.success {
+  background-position: -33px -442px;
+}
+.my_top_init .d1 .icogroup .ico .titlename {
+  width: 193px;
+  height: 48px;
+  position: absolute;
+  background: url("../images/titlename.png") no-repeat 0px 0px;
+  top: 18px;
+  left: -6px;
+  color: #ffffff;
+}
+.my_top_init .d1 .icogroup .ico .titlename p {
+  text-align: center;
+  padding-top: 17px;
+}
+.my_top_init .d1 .icogroup .ico .titlename p a {
+  color: #ffffff;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+.my_top_init .d1 .icogroup .ico .titlename p a:hover {
+  color: #3fd4bb;
+}
+.my_top_init .d1 .icogroup .ico .titlename .close {
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 3px;
+  top: 10px;
+  background: url("../images/ico.png") no-repeat -73px -433px;
+  cursor: pointer;
+}
+table.botbor {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+table.botbor thead td {
+  background-color: #ebebf5;
+  color: #595959;
+}
+table.botbor thead td.frist {
+  width: 10%;
+}
+table.botbor td {
+  background: #ffffff;
+  border-bottom: 1px solid #ebebf5;
+  line-height: 40px;
+}
+table.botbor tr:last-child td {
+  line-height: 40px;
+}
+table.txleft {
+  text-align: left;
+  width: 100%;
+}
+table.txleft td {
+  border-bottom: 1px solid #ebebf5;
+  line-height: 40px;
+}
+table.txleft td div {
+  *zoom: 1;
+}
+table.txleft td div:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+table.txleft td div.pdr {
+  padding-left: 44px;
+}
+table.txleft tr:last-child td {
+  border-bottom: none;
+  line-height: 40px;
+}

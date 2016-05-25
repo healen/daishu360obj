@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/novice_area.css" type="text/css">
+
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+
+                    <div class="linklist">
+                        <a href="">新手指引</a>
+                        <a href="about_us.html">关于我们</a>
+                        <a href="login.html" class="user login">登录</a>
+                        <a href="regrist.html" class="user regst">注册</a>
+
+
+                    </div>
+
+                  
+
+
+
+                    <div class="search">
+
+                        <i class="icon searchico">
+                            
+                        </i>
+                        <input type="text" class="searchinput" placeholder="请输入关键字">
+
+                        <div class="close">
+                            
+                        </div>
+
+                    </div>
+
+                     <a href="project_sponsor.html" class="btn smal">+发起项目</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="index.html"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="stock_crowdfunding_list.html"><span>股权众筹</span></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="frist_crowdfunding_list.html">优先股众筹</a>
+                                    <a href="stock_crowdfunding_list.html">股权众筹</a>
+                                </div>
+                            </li>
+                            <li id="new3">
+                                <a href="new3.html"><span>新三板定增</span> </a>
+                            </li>
+                            <li class="toggle" id="product_crowdfunding_list">
+                                <a href="product_crowdfunding_list.html"><span>产品众筹</span></a>
+                            </li>
+                            <li id="shop_crowdfunding_list">
+                                <a href="shop_crowdfunding_list.html"><span>店铺众筹</span> </a>
+                            </li>
+                            <li id="transfer_list">
+                                <a href="transfer_list.html"><span>转让专区</span> </a>
+                            </li>
+
+                            <li id="Preheating">
+                                <a href="Preheating.html"><span>预热专区</span> </a>
+                            </li>
+                            
+                            <li id="my_index">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+   </div>
+
+   <script type="text/javascript">
+   $(".searchico").on("click",function(){
+        var paren=$(this).parents(".search");
+        if(!paren.hasClass("on")){
+            paren.addClass("on");
+        }else{
+            paren.removeClass("on");
+        }
+   })
+
+   $(".search .close").on("click",function(){
+        var paren=$(this).parents(".search");
+        paren.removeClass("on");
+
+
+   })
+
+   </script>
+ <!-----header.tpl读取完成---->
+ 	<!--读取头部文件结束-->
+ 		<div class="container">
+		<div class="novicebanner"></div>
+		<div class="midarea">
+			<div class="inwarp">
+				<h2>法律让投融资更安全高效</h2>
+				<p class="discirbe">
+					律众投是盈科环球控股公司旗下的互联网非公开股权融资的网络平台，致力于为投资人和融资者搭建一个公平、透明、安全、高效的互联网投融资服务平台。采取领投+跟投的模式，由律众投认可的专业机构领投，经实名认证的合格投资人可以跟投项目。
+				</p>
+			</div>
+		</div>
+
+
+		<div class="midarea bghui">
+			<div class="inwarp">
+				<h2>我们的六大优势</h2>
+				<div class="listboxwarp">
+					<div class="boxwarp">
+						<div class="boxlist">
+							<img src="../public/img/novice/n1.png" alt="">
+							<h3>收益高</h3>
+							<p>最高15%年化收益、高于银行活期42倍、是余额宝收益的5倍。</p>
+						</div>
+						<div class="boxlist">
+							<img src="../public/img/novice/n2.png" alt="">
+							<h3>第三方资金托管</h3>
+							<p>第三方资金托管实现资金流与信息流分离、高度保障用户资金安全。</p>
+						</div>
+						<div class="boxlist">
+							<img src="../public/img/novice/n3.png" alt="">
+							<h3>门槛低</h3>
+							<p>百元起投、人人可参与。</p>
+						</div>
+						<div class="boxlist">
+							<img src="../public/img/novice/n4.png" alt="">
+							<h3>选择多</h3>
+							<p>多种理财产品任你选、资金周转更灵活。</p>
+						</div>
+						<div class="boxlist">
+							<img src="../public/img/novice/n5.png" alt="">
+							<h3>更便捷</h3>
+							<p>移动理财随时随地掌握资产、债权转让随时调配个人资产。</p>
+						</div>
+						<div class="boxlist">
+							<img src="../public/img/novice/n6.png" alt="">
+							<h3>更安全</h3>
+							<p>雄厚担保机构、多重技术加密。</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="novice">
+
+			<div class="f3" id="f3">
+				<h2>简单的步骤，就可以赚钱啦</h2>
+				<div class="slider_o">
+
+					<div class="crumbs">
+						<a href ="regrist.html" class="icolist active">
+							<div class="ico i1"></div>
+							<p>注册</p>
+						</a>
+
+						<div class="jt"></div>
+
+						<a href ="my_account_overview.html" class="icolist">
+							<div class="ico i2"></div>
+							<p>实名认证</p>
+						</a>
+
+						<div class="jt"></div>
+
+
+						<a href ="my_money_recharge.html" class="icolist">
+							<div class="ico i3"></div>
+							<p>充值</p>
+						</a>
+
+						<div class="jt"></div>
+
+
+						<a href ="investment_list.html" class="icolist">
+							<div class="ico i4"></div>
+							<p>投资</p>
+						</a>
+
+						<div class="jt"></div>
+
+						<a href ="my_index.html" class="icolist">
+							<div class="ico i5"></div>
+							<p>获得收益</p>
+						</a>
+					</div>
+					<div class="slidebox">
+						<div class="slidewarp">
+							<div class="front"></div>
+							<ul class="imglist">
+								<li><img src="../public/img/novice/s1.png" ></li>
+								<li><img src="../public/img/novice/s2.png" ></li>
+								<li><img src="../public/img/novice/s3.png" ></li>
+								<li><img src="../public/img/novice/s4.png" ></li>
+								<li><img src="../public/img/novice/s5.png" ></li>
+							</ul>
+						</div>
+						<div class="slidebtn prov"></div>
+						<div class="slidebtn next"></div>
+					</div>
+					
+				</div>
+				<div class="center btnbox">
+					<a href="" class="inlinebtn mark">马上去投资</a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+<div class="footer">
+    <div class="ftbody">
+        <div class="inwarp">
+                <div class="ftflink">
+
+                    合作伙伴：   
+                    <a href="">贷鼠网</a>
+                    <a href="">网贷之家</a>
+                    <a href="">搜狐互联网金融</a>
+                    <a href="">老虎财经</a>
+                    <a href="">慧博咨询</a>
+                    <a href="">网贷之眼</a>
+                </div>
+            
+
+        </div>
+
+        <div class="footbot">
+            <div class="l">
+                <div class="link">
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">服务协议</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作专区</a> 
+                </div>
+
+                <div class="follow"> 服务热线：010-53677696 (9:00-21:00)</div>
+
+               
+
+                <div class="follow">
+                    <div class="title">关注我们：</div>
+                    <a href="" class="weibo"></a>
+                    <a href="" class="qq"></a>
+                    <a href="" class="tieba"></a>
+                    <a href="" class="douban"></a>
+                </div>
+            </div>
+          
+            <div class="r">
+                <img src="../public/img/erweima.png" alt="">
+                <img src="../public/img/erweima.png" alt="">
+                
+            </div>
+
+              <div class="c">©2015 贷鼠网 All Rights Reserved. 京ICP备</div>
+        </div>
+
+     
+ 
+    </div>
+
+</div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript">
+$(".slider_o").sliderFn(3000);
+
+	
+</script>
+
+</body>
+</html>

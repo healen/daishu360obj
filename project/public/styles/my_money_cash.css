@@ -1,0 +1,143 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*银行卡样式*/
+.rechargebox {
+  padding: 20px  40px;
+  padding-top: 0px;
+}
+.my_form_group .input_group .input_row {
+  line-height: 38px;
+}
+.my_form_group .input_group .input_row .inputwarp input[type='text'] {
+  width: 190px;
+  line-height: 38px;
+}
+.my_form_group .input_group .input_row .inputwarp a.btn {
+  width: 212px!important;
+  box-shadow: none;
+}
+.viewbtnbox {
+  padding: 30px 0px;
+}
+.bankbox {
+  width: 210px;
+  height: 58px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ebebf5;
+  margin-bottom: 0px;
+  position: relative;
+}
+.bankbox img {
+  height: 58px;
+  display: inline-block;
+}
+.bankbox span {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: none;
+  background: url('../images/ico.png') no-repeat -45px -167px;
+}
+.bankbox.active {
+  border: 1px solid #3fd4bb;
+}
+.bankbox.active span {
+  display: block;
+}
+.discribe {
+  border-top: 1px dotted #ebebf5;
+}
+.discribe h2 {
+  font-size: 14px;
+  color: #595959;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+.discribe p {
+  padding: 10px 0px;
+  *zoom: 1;
+}
+.discribe p:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.discribe p span {
+  float: left;
+}
+.discribe p a {
+  float: right;
+  color: #3fd4bb;
+}
+.pop_box {
+  *zoom: 1;
+  margin: 10px 0px;
+}
+.pop_box:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.pop_box .l,
+.pop_box .r {
+  width: 49%;
+  float: left;
+  height: 100%;
+  *zoom: 1;
+}
+.pop_box .l:after,
+.pop_box .r:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.pop_box .l .content,
+.pop_box .r .content {
+  width: 114px;
+  height: 93px;
+  margin: 0px auto;
+  text-align: center;
+}
+.pop_box .l .content a.btn,
+.pop_box .r .content a.btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%!important;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-right: 0px;
+}
+.pop_box .l h2,
+.pop_box .r h2 {
+  font-size: 16px;
+  color: #595959;
+}
+.pop_box .l {
+  border-right: 1px solid #ebebf5;
+}
+.my_top_list .top_list {
+  padding-top: 0px;
+}
+.my_form_group {
+  border-bottom: 2px solid #ebebf5;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.my_form_group .input_group {
+  width: 380px;
+  margin: 10px auto;
+}

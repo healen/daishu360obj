@@ -1,0 +1,326 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/project_sponsor.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/layer/layer.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="icotitle">
+				<span class="step_on">项目及发起人信息</span>
+				<span class="step_on">商品设置</span>
+				<span>确认信息</span>
+				<span>完成</span>
+				
+			</div>
+			<div class="project_sponsor">
+				<h2>商品设置</h2>
+
+				<div class="topbars">
+					<table class="botbor">
+						<thead>
+							<tr>
+								<td>序号</td>
+								<td>支持金额</td>
+								<td>名额</td>
+								<td>回报内容</td>
+								<td>回报时间</td>
+								<td>运费</td>
+								<td>操作</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>内容</td>
+								<td>2015-10-16 21:22:42</td>
+								<td>10</td>
+								<td>
+									<a href="javascript:void(0)" class="edit">编辑</a>
+									<a href="javascript:void(0)" class="delete">删除</a>
+								</td>
+							</tr>
+
+							<tr>
+								<td>1</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>内容</td>
+								<td>2015-10-16 21:22:42</td>
+								<td>10</td>
+								<td>
+									<a href="javascript:void(0)" class="edit">编辑</a>
+									<a href="javascript:void(0)" class="delete">删除</a>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>1</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>内容</td>
+								<td>2015-10-16 21:22:42</td>
+								<td>10</td>
+								<td>
+									<a href="javascript:void(0)" class="edit">编辑</a>
+									<a href="javascript:void(0)" class="delete">删除</a>
+								</td>
+							</tr>
+							
+							
+							
+						</tbody>
+					</table>
+
+					<div>
+						<input type="button" class="btn" id="addReturn" value="添加回报">
+					</div>
+					
+				</div>
+
+
+					<div class="showmsg">
+						<div class="formbox">
+								<div class="row inputlabel">
+									<div class="titlabel">商品类型：</div>
+									<div class="inputbox">
+										<label class="tysq">
+											<input type="radio" name="select">
+											实物
+										</label>
+										<label class="tysq">
+											<input type="radio" name="select">
+											虚拟物品
+										</label>
+									</div>
+								</div>
+								<div class="row inputlabel">
+									<div class="titlabel">支持金额：</div>
+									<div class="inputbox">
+										<input type="text" placeholder="">元
+
+										
+									</div>
+								</div>
+
+								<div class="row inputlabel">
+									<div class="titlabel">回报内容：</div>
+									<div class="inputbox">
+										<textarea placeholder=""></textarea>
+									</div>
+								</div>
+								<div class="row inputlabel">
+									<div class="titlabel">产品图片：</div>
+									<input type="file">
+									<div class="inputbox">
+
+										<input type="button" class="btn" value="上传列表图片">
+										支持jpg、jpeg、png、gif格式，大小：793 X 446px
+
+										
+									</div>
+								</div>
+
+
+								<div class="row inputlabel">
+									<div class="titlabel">&nbsp;</div>
+						
+									<div class="inputbox">
+										<div class="picebox">
+											照片缩略图
+											<div class="close"></div>
+										</div>
+										
+										
+									</div>
+								</div>
+
+
+
+								<div class="row inputlabel">
+									<div class="titlabel">商品数量：</div>
+									<div class="inputbox">
+										<input type="text" placeholder="">个
+
+										
+									</div>
+								</div>
+
+
+								<div class="row inputlabel">
+									<div class="titlabel">运费：</div>
+									<div class="inputbox">
+										项目结束后
+										<input type="text"  class="min" placeholder="">天，将会向支持者发送回报
+
+										
+									</div>
+								</div>
+
+
+								<div class="row inputlabel">
+									<div class="titlabel">优惠码上传：</div>
+									<input type="file" class="show">
+									<div class="inputbox">
+
+
+										<input type="button" class="btn samll" value="上传"> <span style="line-height:30px">xxx.xlsx</span>
+
+										<a href="" class="mark block">点击下载优惠码上传规范表.xlsx</a>
+									
+
+										
+									</div>
+								</div>
+
+
+								<div class="row inputlabel">
+									<div class="titlabel">&nbsp;</div>
+									<div class="inputbox">
+
+
+										<input type="button" class="btn samll" id="submitadd" value="确定">
+
+										&nbsp;
+										&nbsp;
+										&nbsp;
+										&nbsp;
+
+										<input type="button" class="btn btn-primary samll" id="canceladd" value="取消">
+									
+
+										
+									</div>
+								</div>
+
+
+						
+						</div>
+
+					</div>
+					
+			
+
+
+
+
+				<div class="btnbox">
+					<input type="button" class="btn" value="上一步" onclick="window.location.href='project_sponsor.html'">
+
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+
+					<input type="button" class="btn btn-primary" value="下一步" onclick="window.location.href='project_sponsor2.html'">
+				</div>
+
+
+				
+
+
+
+				
+
+
+				
+
+					
+			</div>
+
+
+				
+		</div>
+			
+	</div>
+		
+		
+
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+
+<script>
+	$("#addReturn").on("click",function(){
+
+		if($(".showmsg").is(":hidden")){
+			$(".showmsg").show();
+		}
+	})
+
+
+	$(".edit").on("click",function(){
+		if($(".showmsg").is(":hidden")){
+			$(".showmsg").show();
+		}
+
+	})
+
+	$("#submitadd").on("click",function(){
+		$(".showmsg").hide();
+	})
+
+	$("#canceladd").on("click",function(){
+		$(".showmsg").hide();
+	})
+
+
+
+	$(".delete").live("click",function(){
+		var box=$(this).parents("tr");
+		var id = $(this).parents("tr").index();
+		// alert(id)
+		layer.confirm('是否删除地址？', {
+		    btn: ['删除','不删除'] //按钮
+		}, function(){
+			box.eq(id).remove();
+		    layer.msg('删除成功');
+		});
+	})
+
+
+
+	$(".close").on("click",function(){
+		var p=$(this).parents(".picebox");
+		var piceLength=$(this).parents(".inputbox").find(".picebox").length;
+		if(piceLength>1){
+			p.remove();
+			layer.msg('删除成功');
+		}else{
+			$(this).hide();
+			p.find("img").remove();
+			layer.msg('删除成功');
+		}
+		
+	})
+
+
+</script>
+
+
+
+
+</body>       
+</html>

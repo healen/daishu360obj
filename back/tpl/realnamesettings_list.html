@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <title>众筹管理后台</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <!-- Le styles -->
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">
+	     
+	    <!--[if lte IE 7]>
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+	    <![endif]-->
+	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="bootstrap/js/html5.js"></script>
+	    <![endif]-->
+	    <link rel="stylesheet" type="text/css" href="css/frame.css">
+	    <link rel="stylesheet" type="text/css" href="css/user.css">
+	    <link rel="shortcut icon" href="img/ico/favicon.ico">
+	</head>
+	<body>
+
+		<div class="box">
+			{% inc='left.tpl' %}
+			{% inc='head.tpl' %}
+			<div class="containerme">
+
+				
+				
+				<div class="pagecontent" id="pagecontent">
+					<section class="crumbs">
+						<i class="ico-dibiao"></i><a href="home.html">首页</a> > <a href="javascript:void(0)">系统配置</a> > 系统参数配置 > 实名认证配置
+					</section>
+
+					<div class="list-page-content">
+
+						
+
+
+							<div class="text-right toobox">
+								<a href="#myModal" data-toggle="modal" type="button" class="btn btn-primary btn-large">+新建</a>
+								
+							</div>
+							
+					
+							
+
+					
+
+				
+
+
+
+
+						<table class="botbor table-hover">
+								<thead>
+									<tr>
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+										<td>实名认证服务商名称</td>
+										<td >认证ID</td>
+										<td>认证密钥Key</td>
+										<td>是否为默认</td>
+							
+										<td>操作</td>
+										
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>阿凡达数据</td>
+										<td>XXX</td>
+										<td>XXX</td>
+										<td>是</td>
+
+										<td>
+											<a href="#myModal" data-toggle="modal" class="btns">修改</a>
+
+											<a href="" class="btns">删除</a>
+
+
+											<a href="" class="btns">设为默认</a>
+											
+									
+										
+										</td>
+									</tr>
+									
+
+									
+								</tbody>
+						</table>
+
+
+						<div class="text-right">
+							<div class="pagination">
+							  <ul>
+							    <li><a href="#">上一页</a></li>
+							    <li><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">4</a></li>
+							    <li><a href="#">5</a></li>
+							    <li><a href="#">下一页</a></li>
+							  </ul>
+							</div>
+							
+						</div>
+						
+					</div>
+
+					
+
+					
+					
+				</div>
+			</div>
+
+			
+			
+		</div>
+
+
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    <h3 id="myModalLabel">实名认证配置</h3>
+		  </div>
+		  <div class="modal-body">
+		  		<div class="popup">
+
+		  			<form class="form-horizontal">
+					
+							  <div class="row-fluid myform">
+							    <label class="control-label span5" for="inputEmail">实名认证服务商名称：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+							  <div class="row-fluid myform">
+							    <label class="control-label span5" for="inputEmail">认证ID：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+
+							  <div class="row-fluid myform">
+							    <label class="control-label span5" for="inputEmail">认证密钥Key：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+
+
+							
+							  <div class="row-fluid myform">
+							    <label class="control-label span5" for="inputEmail">是否默认：&nbsp;&nbsp;</label>
+							    <div class="controls">
+
+
+							    	<div class="row radusbox">
+
+							    		<label class="radio pull-left">
+							            	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">是
+							            </label>
+
+							            <label class="radio pull-left">
+							            	<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">否
+							            </label>
+
+							    		
+							    	</div>
+							     
+							    </div>
+							  </div>
+
+
+
+
+
+
+
+						
+							</form>
+		  			
+			    	
+		  			
+		  		</div>
+		    	
+		    	
+		    	
+		  </div>
+
+		  <div class="modal-footer">
+		   
+		    <button class="btn btn-large btn-warning"  data-dismiss="modal" aria-hidden="true">取消</button>
+
+		    <button class="btn btn-large btn-primary"  data-dismiss="modal" aria-hidden="true">添加</button>
+		  </div>
+		</div>
+
+		
+		<script type="text/javascript" src="js/vendor/jquery-1.7.2.min.js"></script>
+	    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="js/vendor/laydate/laydate.js"></script>
+	    <script type="text/javascript" src="js/public.js"></script>
+
+	 
+	</body>
+</html>

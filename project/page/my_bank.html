@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/my_bank.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/layer/layer.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/laydate/laydate.js"></script>
+
+</head>
+<body>
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+
+                    <div class="linklist">
+                        <a href="">新手指引</a>
+                        <a href="about_us.html">关于我们</a>
+                        <a href="login.html" class="user login">登录</a>
+                        <a href="regrist.html" class="user regst">注册</a>
+
+
+                    </div>
+
+                  
+
+
+
+                    <div class="search">
+
+                        <i class="icon searchico">
+                            
+                        </i>
+                        <input type="text" class="searchinput" placeholder="请输入关键字">
+
+                        <div class="close">
+                            
+                        </div>
+
+                    </div>
+
+                     <a href="project_sponsor.html" class="btn smal">+发起项目</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="index.html"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="stock_crowdfunding_list.html"><span>股权众筹</span></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="frist_crowdfunding_list.html">优先股众筹</a>
+                                    <a href="stock_crowdfunding_list.html">股权众筹</a>
+                                </div>
+                            </li>
+                            <li id="new3">
+                                <a href="new3.html"><span>新三板定增</span> </a>
+                            </li>
+                            <li class="toggle" id="product_crowdfunding_list">
+                                <a href="product_crowdfunding_list.html"><span>产品众筹</span></a>
+                            </li>
+                            <li id="shop_crowdfunding_list">
+                                <a href="shop_crowdfunding_list.html"><span>店铺众筹</span> </a>
+                            </li>
+                            <li id="transfer_list">
+                                <a href="transfer_list.html"><span>转让专区</span> </a>
+                            </li>
+
+                            <li id="Preheating">
+                                <a href="Preheating.html"><span>预热专区</span> </a>
+                            </li>
+                            
+                            <li id="my_index">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+   </div>
+
+   <script type="text/javascript">
+   $(".searchico").on("click",function(){
+        var paren=$(this).parents(".search");
+        if(!paren.hasClass("on")){
+            paren.addClass("on");
+        }else{
+            paren.removeClass("on");
+        }
+   })
+
+   $(".search .close").on("click",function(){
+        var paren=$(this).parents(".search");
+        paren.removeClass("on");
+
+
+   })
+
+   </script>
+ <!-----header.tpl读取完成---->
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="row mybox">
+				<div class="my_left_init">
+
+	<div class="my_top_init">
+		<div class="topsider">
+			<div></div>
+		</div>
+		
+		<div class="r">
+			<div class="headphoto">
+				<img src="../public/img/headp.png" alt="">
+			</div>
+			<div class="d1">
+					<h2>张晓东</h2>
+					<div class="icogroup">
+						<a href="my_account_overview.html" class="ico tel success" title="手机号认证">
+							
+						</a>
+						<div class="ico my" title="实名认证">
+							
+							<div class="titlename">
+								<p>进行实名认证 <a href="my_account_overview.html">立即认证</a></p>
+								<span class="close">
+									
+								</span>
+							</div>
+						</div>
+						
+
+
+						<a href="my_account_overview.html"class="ico xin" title="绑定银行卡">
+							
+						</a>
+
+
+						<a href="my_account_repassword.html" class="ico suo" title="修改密码">
+							
+						</a>
+						
+						
+					</div>
+				</div>
+		</div>			
+	</div>
+	<ul class="nav" id="leftNavSider">
+	
+		<li data-role="my_account">
+			<a href="javascript:void(0)">
+				<span class="dian"></span>
+				我的账户
+			</a>
+			<ul>
+				<li data-role="my_index" class="active">
+					<a href="my_index.html">
+						<span>个人中心</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_balance">
+					<a href="my_balance.html">		
+						<span>账户余额</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_money_recharge">
+					<a href="my_money_recharge.html">
+						<span>账户充值</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_money_cash">
+					<a href="my_money_cash.html">
+						<span>账户提现</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+			</ul>
+		</li>
+
+		<li data-role="my_account">
+			<a href="javascript:void(0)">
+				<span class="dian"></span>
+				订单管理
+			</a>
+			<ul>
+				<li data-role="my_order_stock">
+					<a href="my_order_stock.html">
+						<span>优先股订单</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_order_stock_right">
+					<a href="my_order_stock_right.html">
+						<span>股权订单</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_order_product">
+					<a href="my_order_product.html">
+						<span>产品订单</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_order_shop">
+					<a href="my_order_shop.html">
+						<span>店铺订单</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+			</ul>
+		</li>
+
+
+		<li data-role="my_account">
+			<a href="javascript:void(0)">
+				<span class="dian"></span>
+				消息管理
+			</a>
+			<ul>
+				<li data-role="my_review">
+					<a href="my_review.html">
+						<span>我的评论</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_system_message">
+					<a href="my_system_message.html">
+						<span>系统消息</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+			
+				
+			</ul>
+		</li>
+
+
+		<li data-role="my_account">
+			<a href="javascript:void(0)">
+				<span class="dian"></span>
+				个人设置
+			</a>
+			<ul>
+				<li data-role="my_personal">
+					<a href="my_personal_data.html">
+						<span>个人资料</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+				<li data-role="my_repassword">
+					<a href="my_repassword.html">
+						<span>修改密码</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+
+				<li data-role="my_address">
+					<a href="my_address.html">
+						<span>收货地址</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+
+
+				<li data-role="my_bank">
+					<a href="my_bank_empty.html">
+						<span>银行账户设置</span>
+						<div class="acti"></div>
+					</a>
+					
+				</li>
+			
+				
+			</ul>
+		</li>
+
+
+
+	
+
+		
+	</ul>
+</div>
+
+
+				<div class="my_right_init">
+					<div class="mywarp">
+						<div class="title rzgl">
+							<h2>银行账户设置</h2>
+						</div>
+
+						<div class="mycontent">
+		                    	<div class="mybankbox">
+		                    		<div class="content">
+		                    			<a href="my_money_bind_bank_add.html" class="add">
+		                    				<i class="icon"></i>
+		                    				<p>添加一张银行卡</p>
+		                    			</a>
+
+
+		                    			<div class="bankcart">
+		                    				<div class="title">
+		                    					<span class="l"><i><img src="../public/img/bc.png" alt=""></i>中国银行</span>
+		                    					<span class="r">默认提现卡</span>
+		                    				</div>
+		                    				<div class="incontant">
+		                    					<div class="row">
+		                    						<span class="ellipsis">开户行：中国银行中关村支行中国银行中关村支行</span>
+		                    						<a href="my_bank_edit.html">修改</a>
+		                    					</div>
+		                    					<div class="row hei">姚琳</div>
+		                    					<div class="row hei">**** **** **** *** 6130</div>
+		                    				</div>
+		                    			</div>
+
+
+		                    		</div>
+		                    	</div>
+		                  
+	                    	
+	                    </div>
+
+
+						
+
+
+
+
+					
+
+
+
+				
+                   
+						
+
+						
+								
+			              
+
+
+						
+						
+					
+					</div>
+				</div>       
+			</div>
+
+			
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+<div class="footer">
+    <div class="ftbody">
+        <div class="inwarp">
+                <div class="ftflink">
+
+                    合作伙伴：   
+                    <a href="">贷鼠网</a>
+                    <a href="">网贷之家</a>
+                    <a href="">搜狐互联网金融</a>
+                    <a href="">老虎财经</a>
+                    <a href="">慧博咨询</a>
+                    <a href="">网贷之眼</a>
+                </div>
+            
+
+        </div>
+
+        <div class="footbot">
+            <div class="l">
+                <div class="link">
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">服务协议</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作专区</a> 
+                </div>
+
+                <div class="follow"> 服务热线：010-53677696 (9:00-21:00)</div>
+
+               
+
+                <div class="follow">
+                    <div class="title">关注我们：</div>
+                    <a href="" class="weibo"></a>
+                    <a href="" class="qq"></a>
+                    <a href="" class="tieba"></a>
+                    <a href="" class="douban"></a>
+                </div>
+            </div>
+          
+            <div class="r">
+                <img src="../public/img/erweima.png" alt="">
+                <img src="../public/img/erweima.png" alt="">
+                
+            </div>
+
+              <div class="c">©2015 贷鼠网 All Rights Reserved. 京ICP备</div>
+        </div>
+
+     
+ 
+    </div>
+
+</div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+</div>
+
+
+
+
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/my.js"></script>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+
+
+</body>       
+</html>

@@ -1,0 +1,66 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*首页样式*/
+.righttop {
+  border-bottom: 2px solid #ebebf5;
+  padding: 25px;
+  padding-top: 0px;
+  margin-bottom: 10px;
+}
+.righttop > .row {
+  color: #595959;
+}
+.righttop > .row .d2 {
+  width: 65%;
+  float: left;
+  *zoom: 1;
+}
+.righttop > .row .d2:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.righttop > .row .d2 h2 {
+  font-size: 16px;
+  color: #a6a6a6;
+  margin-bottom: 8px;
+}
+.righttop > .row .d2 .clomn2 {
+  width: 50%;
+  float: left;
+}
+.righttop > .row .d2 .clomn2 p {
+  font-weight: bold;
+}
+.righttop > .row .d2 .icopice {
+  width: 40px;
+  height: 23px;
+  display: inline-block;
+  margin-left: 10px;
+  background: url("../images/ico.png") no-repeat -52px -422px;
+  float: left;
+  margin-top: 4px;
+}
+.righttop > .row .d3 {
+  text-align: center;
+  width: 35%;
+  float: left;
+  *zoom: 1;
+  margin-top: 16px;
+}
+.righttop > .row .d3:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.righttop > .row .d3 .btn-primary {
+  margin-right: 60px;
+}

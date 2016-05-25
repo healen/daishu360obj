@@ -1,0 +1,554 @@
+
+@import "../variables";
+
+@import "../lib/basic";
+
+/*首页样式*/
+
+html,body{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background-attachment:fixed;
+	background-image: url("@{img}/about.jpg");
+	min-width: @documentWidth;
+	font-size: 14px;
+}
+.name_yanzheng{
+	display: none;
+}
+
+.header{
+
+	.l{
+		h1{
+			._clearfix();
+			float: left;
+		}
+		.usertitle{
+			float: left;
+			line-height: 40px;
+			height: 40px;
+			padding: 0px 20px;
+			border-left: 1px solid @borderColor;
+			margin-left: 20px;
+			margin-top: 25px;
+			font-size: @titleBaseSize+2;
+		}
+	}
+}
+
+.footer{
+	background-color: rgba(0,0,0,0.8);
+	
+}
+.loginbox{
+	// height: 538px;
+	margin: 50px auto;
+	.inwarp{
+		position: relative;
+		.login_form_control{
+			position: absolute;
+			width: @documentWidth - 856;
+			height: 599px;
+			padding:0px;
+			background: #ffffff;
+			border:2px solid @borderColor;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+		}
+	}
+	.forminput{
+		min-height: 150px;
+		// padding-top: 45px;
+		padding: 23px 35px;
+
+		.inputbox{
+			position: relative;
+			height: 38px;
+			background: #ffffff;
+			border: 1px solid @inputBorderColor;
+			// border-radius: 3px;
+			._clearfix();
+			-webkit-transition: all 200ms;
+			-o-transition: all 200ms;
+			transition: all 200ms;
+			&.focus{
+				border-color: @markColor;
+				
+				i{
+					border-color: @markColor;
+					&.ico_username{
+					background-position: -23px -285px;
+					}
+					&.ico_password{
+						background-position: -22px -315px;
+					}
+					&.ico_password_comfrim{
+						background-position: -22px -446px;
+					}
+
+					&.ico_tel{
+						background-position: -22px -343px;
+					}
+					&.ico_tel_verfiy{
+						background-position: -23px -398px;
+					}
+
+					&.ico_img_verfiy{
+						background-position: -21px -367px;
+					}
+
+
+					&.ico_qq{
+						background-position: -26px -708px;
+					}
+
+					&.ico_bid{
+					background-position: -26px -736px;
+					}
+					&.ico_email{
+						background-position: -26px -905px;
+					}
+
+					&.ico_money{
+						background-position: -26px -765px;
+					}
+
+
+					&.ico_objective{
+						background-position: -26px -794px;
+					}
+
+					&.ico_date{
+						background-position: -26px -824px;
+					}
+					&.ico_address{
+						background-position: -26px -852px;
+					}
+					&.ico_msg_viy{
+						background-position: -26px -880px;
+					}
+					&.ico_zichan{
+						background-position: -22px -473px;
+					}
+					&.ico_jigou{
+						background-position: -22px -473px;
+					}
+					&.ico_jigou{
+						background-position: -21px -500px;
+					}
+					&.ico_jigou_name{
+						background-position: -21px -525px;
+					}
+				}
+			}
+			&.error{
+				border-color: #ff6666;
+				i{
+					border-color: #ff0000;
+					&.ico_username{
+					background-position: -51px -285px;
+					}
+					&.ico_password{
+						background-position: -50px -315px;
+					}
+					&.ico_password_comfrim{
+						background-position: -50px -446px;
+					}
+					&.ico_tel{
+						background-position: -50px -343px;
+					}
+					&.ico_tel_verfiy{
+						background-position: -50px -398px;
+					}
+
+					&.ico_img_verfiy{
+						background-position: -51px -367px;
+					}
+					&.ico_qq{
+						background-position: -60px -708px;
+					}
+
+					&.ico_bid{
+						background-position: -60px -736px;
+					}
+					&.ico_email{
+						background-position: -60px -905px;
+					}
+
+					&.ico_money{
+						background-position: -60px -765px;
+					}
+
+
+					&.ico_objective{
+						background-position: -60px -794px;
+					}
+
+					&.ico_date{
+						background-position: -60px -824px;
+					}
+					&.ico_address{
+						background-position: -60px -398px;
+					}
+					&.ico_msg_viy{
+						background-position: -60px -880px;
+					}
+
+					&.ico_zichan{
+						background-position: -51px -473px;
+					}
+					&.ico_jigou{
+						background-position: -51px -500px;
+					}
+					&.ico_jigou_name{
+						background-position: -50px -525px;
+					}
+
+				}
+			}
+			i{
+				margin-top: 7px;
+				display: block;
+				float: left;
+				width: 35px;
+				height: 24px;
+				border-right: 1px solid @inputBorderColor;
+				background: url('@{img}/ico1.png') no-repeat;
+
+				&.ico_username{
+				background-position: 8px -285px;
+				}
+				&.ico_password{
+					background-position: 9px -315px;
+				}
+				&.ico_password_comfrim{
+					background-position: 8px -446px;
+				}
+				&.ico_tel{
+					background-position: 9px -343px;
+				}
+				&.ico_tel_verfiy{
+					background-position: 9px -398px;
+				}
+
+				&.ico_img_verfiy{
+					background-position: 9px -367px;
+				}
+				&.ico_qq{
+					background-position: 6px -708px;
+				}
+
+				&.ico_bid{
+					background-position: 6px -736px;
+				}
+				&.ico_email{
+					background-position: 6px -905px;
+				}
+
+				&.ico_money{
+					background-position: 6px -765px;
+				}
+
+
+				&.ico_objective{
+					background-position: 6px -794px;
+				}
+
+				&.ico_date{
+					background-position: 6px -824px;
+				}
+				&.ico_address{
+					background-position: 6px -852px;
+				}
+				&.ico_msg_viy{
+					background-position: 6px -880px;
+				}
+
+				&.ico_zichan{
+					background-position: 8px -473px;
+				}
+				&.ico_jigou{
+					background-position: 8px -500px;
+				}
+				&.ico_jigou_name{
+					background-position: 9px -525px;
+				}
+
+			}
+			
+			.text_control{
+				margin-top: 7px;
+				border: none;
+				height: 24px;
+				float: left;
+				display: block;
+				line-height: 24px;
+				padding: 0px 10px;
+				width: 212px;
+				border:none;
+				background: #ffffff;
+
+			}
+			select{
+				&.text_control{
+					.-text ._opacity(0);
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					left: 40px;
+				}
+			}
+			
+		}
+
+		label{
+			display: block;
+			margin-bottom: 15px;
+			&.dubinput{
+				._clearfix();
+				margin-bottom: 15px;
+
+				.inputbox{
+					position: relative;
+					float: left;
+					width: 170px;
+					margin-right: 7px;
+					.text_control{
+						width: 110px;
+					}
+
+				}
+
+				.rightbtn{
+					width: 93px;
+					float: left;
+					height: 36px;
+					img{
+						width: 93px;
+						height: 38px;
+						border:1px solid @inputBorderColor;
+						border-radius: 3px;
+					}
+				}
+
+			}
+		}
+
+
+		.alert{
+			height: 20px;
+			line-height: 20px;
+			font-size: 12px;
+			clear: both;
+			color: #ff0000;
+		}
+	}
+
+	.fogetpass{
+		._clearfix();
+		.l{
+			float: left;
+		}
+		.r{
+			float: right;
+			text-align: right;
+			a{
+				color: @markColor;
+				&:hover{
+					color: @auxColor;
+				}
+			}
+		}
+		.mem{
+			cursor: pointer;
+			// color: #b1917a;
+			._clearfix();
+			i{
+				float: left;
+				display:inline-block;
+				height: 20px;
+				width: 20px;
+				margin-right: 5px;
+				background: url('@{img}/ico1.png') no-repeat 0px -424px;
+
+
+			}
+			&.empty{
+				i{
+					background: url('@{img}/ico1.png') no-repeat -20px -424px;
+				}
+				
+			}
+		}
+
+	}
+}
+.login_bar{
+	display: block;
+	margin:0px auto;
+	margin-top: 130px;
+	margin-bottom: 10px;
+
+}
+.sf{
+	width: 270px;
+	margin:0px auto;
+}
+.porint{
+	margin-top: 7px;
+	text-align: right;
+	height: 25px;
+	line-height: 25px;
+	// padding: 0px 5px;
+	a{
+		padding: 0px 5px;
+		color: @markColor;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+.loginbg{
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 853px;
+	height: 603px;
+}
+
+
+.footer {
+    min-width: 1008px;
+    padding: 15px 0px 20px 0px;
+    background: #262626;
+    &.big-height{
+    	position: fixed;
+	    left: 0px;
+	    width: 100%;
+	    bottom: 0px;
+
+    }
+}
+
+.mt72{
+	margin-top: 72px;
+}
+
+
+.header .l .usertitle {
+    float: left;
+    line-height: 20px;
+    height: 20px;
+    padding: 0px 20px;
+    border-left: 1px solid #e6e6e6;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+.btn.btn_info{
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+
+	&:disabled{
+		font-size: 14px;
+	}
+}
+	.follow{
+    			padding-top: 10px;
+    			._clearfix();
+    
+    			a{
+    				display: block;
+    				border-right: none;
+    			
+    				float: left;
+    				width: 24px;
+    				height: 24px;
+    				margin-right:10px; 
+    				background-image: url("@{img}/follow1.png");
+    				background-repeat: no-repeat;
+    				padding: 0px 0px;
+    				&.weibo{
+    					background-position: 0px 0px;
+    					&:hover{
+    							background-position: -24px 0px;
+    					}
+
+    				}
+    				&.qq{
+						background-position: 0px -24px;
+						&:hover{
+    							background-position: -24px -24px;
+    					}
+    				}
+    				&.zfb{
+    					background-position: 0px -98px;
+						&:hover{
+    							background-position: -25px -98px;
+    					}
+
+    				}
+    				&.weixin{
+    					background-position: 0px -124px;
+						&:hover{
+    							background-position: -24px -123px;
+    					}
+
+    				}
+    				&.tieba{
+						background-position: 0px -48px;
+						&:hover{
+    							background-position: -24px -48px;
+    					}
+    				}
+    				&.douban{
+    					background-position: 0px -72px;
+    					&:hover{
+    							background-position: -24px -72px;
+    					}
+
+    				}
+
+    			}
+    		}
+.btn{
+	width: 100%;
+}
+
+.tabview{
+	height: 50px;
+	line-height: 50px;
+	font-size: @navSize;
+	background: @borderColor;
+	a{
+		display: inline-block;
+		text-align: center;
+		width: (@documentWidth - 866)/3;
+		&.active{
+			background: #ffffff;
+		}
+		&:hover{
+			color: @titleTextColor;
+		}
+
+	}
+}
+
+.acti{
+    position: absolute;
+    right:0px;
+    top: 0px;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    background: url("../images/ico.png") no-repeat -100px -405px;
+    margin-top: 12px;
+
+}

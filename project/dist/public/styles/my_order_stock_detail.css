@@ -1,0 +1,156 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*首页样式*/
+.invinwarp {
+  margin: 0px 0px;
+}
+.investment_info {
+  font-size: 14px;
+}
+.investment_info .left {
+  float: left;
+  width: 50%;
+}
+.investment_info .left h2 {
+  font-size: 18px;
+  float: left;
+  color: #595959;
+}
+.investment_info .left .status {
+  line-height: 20px;
+  margin-top: 7px;
+}
+.investment_info .right {
+  float: right;
+  width: 50%;
+  line-height: 35px;
+}
+.investment_info .titles {
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.investment_info .infoc {
+  padding: 15px;
+}
+.investment_info .infoc h2 {
+  line-height: 35px;
+}
+.investment_info .infoc h2 span {
+  color: #a6a6a6;
+  font-weight: 100;
+}
+.investment_info .infoc .row {
+  margin-bottom: 10px;
+}
+.investment_info .infoc .row > div {
+  float: left;
+}
+.investment_info .infoc .row > div .title {
+  float: left;
+  height: 100%;
+}
+.investment_info .infoc .row > div .con {
+  float: left;
+}
+.investment_info .infoc .row.last {
+  margin-bottom: 0px;
+}
+.investment_info .infoc .b2 {
+  width: 20%;
+  *zoom: 1;
+}
+.investment_info .infoc .b2:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.investment_info .infoc .b3 {
+  width: 30%;
+  *zoom: 1;
+}
+.investment_info .infoc .b3:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.investment_info .infoc .b4 {
+  width: 40%;
+  *zoom: 1;
+}
+.investment_info .infoc .b4:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.investment_info .infoc .b5 {
+  width: 50%;
+  *zoom: 1;
+}
+.investment_info .infoc .b5:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.investment_info .infoc .b {
+  width: 100%;
+  float: none;
+}
+.investment_info .right_title {
+  height: auto;
+  line-height: 30px;
+  border-bottom: none;
+  padding: 20px 15px;
+  color: #3fd4bb;
+}
+.investment_info .right_title .line {
+  margin-top: 13px;
+  background: #3fd4bb;
+  margin-left: 0px;
+  border-radius: 0px;
+  height: 6px;
+  width: 6px;
+}
+.stat {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+  background: url('../images/ico1.png') no-repeat -48px -136px;
+}
+.stat.no {
+  background: url('../images/ico1.png') no-repeat -48px -151px;
+}
+.progress {
+  margin-top: 10px;
+  width: 295px;
+  background: #ebebf5;
+  position: relative;
+  margin-left: 66px;
+}
+.progress .bar {
+  width: 0px;
+  position: absolute;
+  background: #3fd4bb;
+}
+.progress .title {
+  width: 66px;
+  position: absolute;
+  left: -66px;
+  top: -6px;
+}
+table.botbor {
+  margin: 0px 15px;
+}

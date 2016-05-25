@@ -1,0 +1,342 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+/*llist*/
+.container {
+  background: #f5f5fa;
+  font-size: 16px;
+}
+.topbars {
+  padding: 20px;
+}
+.topbars .delete {
+  padding-left: 15px;
+}
+.icotitle {
+  height: 40px;
+  text-align: center;
+  margin: 30px auto 30px auto;
+}
+.icotitle span {
+  display: inline-block;
+  width: 211px;
+  height: 40px;
+  background: url("../images/title.png") no-repeat -211px 0px;
+  color: #595959;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+}
+.icotitle span.step_on {
+  color: #ffffff;
+  background-position: 0px 0px;
+}
+.project_sponsor {
+  min-height: 400px;
+  font-size: 16px;
+  border: 3px solid #ebebf5;
+  background: #ffffff;
+  margin: 30px 0px;
+  padding: 10px 24px;
+}
+.project_sponsor h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #595959;
+  line-height: 45px;
+  padding: 0px 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #595959;
+  line-height: 45px;
+  padding: 0px 16px;
+}
+.block {
+  display: block;
+  margin-top: -5px;
+}
+.mid {
+  width: 890px;
+  margin: 0px auto;
+}
+.mid .block {
+  text-align: left;
+  margin-top: 0px;
+  padding: 25px 20px 25px 20px;
+  background: #ebebf5;
+  position: relative;
+}
+.mid .block h2 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #595959;
+  font-weight: bold;
+  text-align: left;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.mid .block p {
+  font-size: 14px;
+}
+.mid .block p .title {
+  color: #595959;
+}
+.mid .block .imgbox {
+  padding: 20px 0px;
+}
+.mid .block img {
+  width: 100px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mid .block .btn {
+  margin-top: 10px;
+}
+.mid .block .w280box {
+  width: 280px;
+  margin: 0px auto;
+}
+.mid .block .w280box img {
+  width: 280px;
+  height: 158px;
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+.mid .block .w280box .list {
+  margin-bottom: 10px;
+  *zoom: 1;
+}
+.mid .block .w280box .list:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.mid .block .w280box .list .label {
+  font-size: 14px;
+  color: #595959;
+  text-align: right;
+  float: left;
+}
+.mid .block .w280box .list span {
+  font-size: 16px;
+}
+.mid .block .w280box .list span.minus {
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.mid .block .w280box .list span.puls {
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+.mid .block .w280box .list span.num {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3fd4bb;
+}
+.input_group {
+  width: 350px;
+  margin: 10px auto;
+}
+.input_group .input_row {
+  *zoom: 1;
+  line-height: 40px;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+.input_group .input_row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.input_group .input_row .title {
+  float: left;
+  line-height: 40px;
+  text-align: right;
+  width: 82px;
+  padding-right: 10px;
+  font-size: 16px;
+  color: #595959;
+  font-weight: bold;
+}
+.input_group .input_row .inputwarp {
+  float: left;
+  position: relative;
+  line-height: 38px;
+}
+.input_group .input_row .inputwarp a.text-link {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: #3fd4bb;
+  font-size: 12px;
+}
+.input_group .input_row .inputwarp a.btn {
+  width: 128px!important;
+}
+.input_group .input_row .inputwarp input[type='text'],
+.input_group .input_row .inputwarp input[type='password'],
+.input_group .input_row .inputwarp select {
+  padding: 0px 10px;
+  height: 38px;
+  border: 1px solid #a6a6a6;
+}
+.input_group .input_row .inputwarp input[type='text']:focus,
+.input_group .input_row .inputwarp input[type='password']:focus,
+.input_group .input_row .inputwarp select:focus {
+  border: 1px solid #3fd4bb;
+}
+.input_group .input_row .inputwarp select {
+  width: 272px;
+}
+.bankbox {
+  width: 210px;
+  height: 58px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ebebf5;
+  margin-bottom: 0px;
+  position: relative;
+}
+.bankbox img {
+  height: 58px;
+  display: inline-block;
+}
+.bankbox span {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: none;
+  background: url('../images/ico1.png') no-repeat -45px -167px;
+}
+.bankbox.active {
+  border: 1px solid #3fd4bb;
+}
+.bankbox.active span {
+  display: block;
+}
+.addresslist {
+  margin-top: 30px;
+  border: 3px solid #ebebf5;
+  padding: 37px 25px 17px 25px;
+  background: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+  *zoom: 1;
+  font-size: 14px;
+}
+.addresslist:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.addresslist .lable {
+  margin-bottom: 18px;
+  width: 50%;
+  float: left;
+}
+.addresslist .lable .title {
+  display: inline-block;
+  width: 60px;
+  color: #595959;
+}
+.addresslist .tools {
+  position: absolute;
+  right: 6px;
+  bottom: 15px;
+}
+.addresslist .tools a {
+  padding: 0px 10px;
+  color: #a6a6a6;
+}
+.addresslist .tools a.mark {
+  color: #3fd4bb;
+}
+.addresslist .defbtn {
+  display: inline-block;
+}
+.addresslist .defalut {
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 20px;
+  background: #3fd4bb;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  color: #fff;
+  font-size: 16px;
+  display: none;
+}
+.addresslist.def {
+  border-color: #3fd4bb;
+}
+.addresslist.def .defalut {
+  display: block!important;
+}
+.btnboxb {
+  margin-bottom: 30px;
+}
+.btnboxb .btn {
+  width: 100%;
+}
+.pdx5 {
+  padding: 0px 5px!important;
+}
+.pdy100 {
+  padding: 100px 0px;
+}
+.pay {
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+.pay span {
+  color: #3fd4bb;
+}
+.smaile {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+.smaile img {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.smaile h2 {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: none;
+  margin-top: 0px;
+}
+.smaile p {
+  border-bottom: none;
+  font-size: 14px;
+}

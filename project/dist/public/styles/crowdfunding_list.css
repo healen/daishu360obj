@@ -1,0 +1,113 @@
+/*llist*/
+.timer {
+  margin-left: 90px;
+  margin-top: -23px;
+  font-size: 16px;
+  color: #3fd4bb;
+}
+.daojishi {
+  width: 240px;
+}
+.daojishi .imga {
+  max-width: 20px;
+  height: 20px;
+}
+.daojishi p {
+  color: #3fd4bb;
+  font-size: 16px;
+  margin-left: 36px;
+  margin-top: -22px;
+}
+.text {
+  width: 200px;
+  padding: 0px 60px;
+  margin-top: -26px;
+}
+.image-project-list {
+  font-size: 14px;
+}
+.image-project-list ul {
+  width: 1228px;
+  *zoom: 1;
+}
+.image-project-list ul:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.image-project-list ul li {
+  display: block;
+  float: left;
+  width: 280px;
+  margin-right: 26px;
+  overflow: hidden;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #ebebf5;
+}
+.image-project-list ul li > .link {
+  display: block;
+}
+.image-project-list ul li > .link img {
+  width: 100%;
+}
+.image-project-list ul li > .link .content {
+  border: 1px solid #ebebf5;
+  border-top: none;
+  border-bottom: none;
+  background: #ffffff;
+  height: auto;
+  overflow: hidden;
+}
+.image-project-list ul li > .link .content .inc {
+  padding: 20px 15px;
+}
+.image-project-list ul li > .link .content .inc h2 {
+  font-size: 14px;
+  color: #595959;
+  margin-bottom: 15px;
+}
+.image-project-list ul li > .link .content .inc .tag-group {
+  margin-bottom: 15px;
+}
+.image-project-list ul li > .link .content .inc .tag-group span {
+  display: inline-block;
+  padding: 0px 5px;
+  height: 25px;
+  line-height: 25px;
+  color: #3fd4bb;
+  border: 1px solid #3fd4bb;
+  margin-right: 10px;
+}
+.image-project-list ul li > .link .content .inc .decribe {
+  height: 52px;
+  overflow: hidden;
+  color: #a6a6a6;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.image-project-list ul li > .link .content .inc .info {
+  *zoom: 1;
+  font-size: 12px;
+}
+.image-project-list ul li > .link .content .inc .info:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.image-project-list ul li > .link .content .inc .info > div {
+  width: 33.33%;
+  float: left;
+  color: #595959;
+}
+.image-project-list ul li > .link .content .inc .info > div .title {
+  color: #a6a6a6;
+  margin-bottom: 5px;
+}
+.image-project-list ul li:hover {
+  -webkit-box-shadow: 1px 1px 15px #ddd;
+  box-shadow: 1px 1px 15px #ddd;
+}

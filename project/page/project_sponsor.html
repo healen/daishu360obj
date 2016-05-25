@@ -1,0 +1,546 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+	<link rel="stylesheet" href="../public/styles/project_sponsor.css" type="text/css">
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../public/scripts/lib/layer/layer.js"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	<!--header.tpl开始读取---->
+   <div class="header">
+        <div class="topbar">
+            <div class="inwarp">
+                <div class="l">
+                    欢迎致电：<span class="tel">400-0546-966</span>
+                </div>
+
+                <div class="r">
+
+                    <div class="linklist">
+                        <a href="">新手指引</a>
+                        <a href="about_us.html">关于我们</a>
+                        <a href="login.html" class="user login">登录</a>
+                        <a href="regrist.html" class="user regst">注册</a>
+
+
+                    </div>
+
+                  
+
+
+
+                    <div class="search">
+
+                        <i class="icon searchico">
+                            
+                        </i>
+                        <input type="text" class="searchinput" placeholder="请输入关键字">
+
+                        <div class="close">
+                            
+                        </div>
+
+                    </div>
+
+                     <a href="project_sponsor.html" class="btn smal">+发起项目</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="hbody">
+            <div class="inwarp">
+                <div class="l">
+                    <h1>
+                        <a href="index.html"><img src="../public/img/logo.png" alt="" height="60"></a>
+                        <img src="../public/img/slogn.png" alt="" height="60">
+                    </h1>
+                </div>
+
+                <div class="r">
+                    <div class="navbox">
+
+                        <ul>
+                            <li id="index">
+                                <a href="index.html"><span>首页</span> </a>
+                            </li>
+                            <li id="investment" class="toggle">
+                                <a href="stock_crowdfunding_list.html"><span>股权众筹</span></a>
+                                <div class="showbox">
+                                    <span class="sanjiao"></span>
+                                    <a href="frist_crowdfunding_list.html">优先股众筹</a>
+                                    <a href="stock_crowdfunding_list.html">股权众筹</a>
+                                </div>
+                            </li>
+                            <li id="new3">
+                                <a href="new3.html"><span>新三板定增</span> </a>
+                            </li>
+                            <li class="toggle" id="product_crowdfunding_list">
+                                <a href="product_crowdfunding_list.html"><span>产品众筹</span></a>
+                            </li>
+                            <li id="shop_crowdfunding_list">
+                                <a href="shop_crowdfunding_list.html"><span>店铺众筹</span> </a>
+                            </li>
+                            <li id="transfer_list">
+                                <a href="transfer_list.html"><span>转让专区</span> </a>
+                            </li>
+
+                            <li id="Preheating">
+                                <a href="Preheating.html"><span>预热专区</span> </a>
+                            </li>
+                            
+                            <li id="my_index">
+                                <a href="my_index.html"><span>我的账户</span> </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+   </div>
+
+   <script type="text/javascript">
+   $(".searchico").on("click",function(){
+        var paren=$(this).parents(".search");
+        if(!paren.hasClass("on")){
+            paren.addClass("on");
+        }else{
+            paren.removeClass("on");
+        }
+   })
+
+   $(".search .close").on("click",function(){
+        var paren=$(this).parents(".search");
+        paren.removeClass("on");
+
+
+   })
+
+   </script>
+ <!-----header.tpl读取完成---->
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="inwarp">
+			<div class="icotitle">
+				<span class="step_on">项目及发起人信息</span>
+				<span>商品设置</span>
+				<span>确认信息</span>
+				<span>完成</span>
+				
+			</div>
+			<div class="project_sponsor">
+				<h2>项目信息</h2>
+
+				<div class="formbox">
+						<div class="row inputlabel">
+							<div class="titlabel">项目类型：</div>
+							<div class="inputbox">
+								<label class="tysq">
+									<input type="radio" name="select">
+									优先股众筹
+								</label>
+								<label class="tysq">
+									<input type="radio" name="select">
+									股权众筹
+								</label>
+								<label class="tysq">
+									<input type="radio" name="select">
+									产品众筹
+								</label>
+								<label class="tysq">
+									<input type="radio" name="select">
+									店铺众筹
+								</label>
+								<!-- <input type="text" placeholder="请输入项目标题"> -->
+
+								
+							</div>
+						</div>
+						<div class="row inputlabel">
+							<div class="titlabel">项目标题：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">
+
+								
+							</div>
+						</div>
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目简介：</div>
+							<div class="inputbox">
+								<textarea placeholder=""></textarea>
+							
+
+								
+							</div>
+						</div>
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目标签：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目类型：</div>
+							<div class="inputbox">
+								<select name="" id="">
+									<option value="">农业</option>
+									<option value="">出版</option>
+									<option value="">娱乐</option>
+									<option value="">艺术</option>
+									<option value="">店铺</option>
+									<option value="">房产</option>
+									<option value="">金融</option>
+								</select>
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目阶段：</div>
+							<div class="inputbox">
+								<select name="" id="">
+									<option value="">种子型</option>
+									<option value="">成长型</option>
+									<option value="">扩张型</option>
+									<option value="">成熟型</option>
+									
+								</select>
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">公司规模：</div>
+							<div class="inputbox">
+								<select name="" id="">
+									<option value="">少于10人</option>
+									<option value="">10人 - 50人</option>
+									<option value="">50人 - 100人</option>
+									<option value="">100人 - 500人</option>
+									
+								</select>
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">所在地区：</div>
+							<div class="inputbox">
+								<select name="" id="">
+									<option value="">北京</option>
+								
+									
+								</select>
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">年化收益：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">%
+							
+
+								
+							</div>
+						</div>
+
+						<div class="row inputlabel">
+							<div class="titlabel">筹资金额：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">元
+							
+
+								
+							</div>
+						</div>
+
+						<div class="row inputlabel">
+							<div class="titlabel">投资份数：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">份
+							
+
+								
+							</div>
+						</div>
+
+						<div class="row inputlabel">
+							<div class="titlabel">筹资天数：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">天
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目方出资：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">%
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目方收益：</div>
+							<div class="inputbox">
+								<input type="text" placeholder="">%
+							
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">列表页图片：</div>
+							<input type="file">
+							<div class="inputbox">
+
+								<input type="button" class="btn" value="上传列表图片">
+								支持jpg、jpeg、png、gif格式，大小：280 X 256px
+
+								
+							</div>
+						</div>
+
+						<div class="row inputlabel">
+							<div class="titlabel">&nbsp;</div>
+				
+							<div class="inputbox">
+								<div class="picebox">
+									照片缩略图
+									<img src="../public/img/003.png" alt="">
+									<div class="close"></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目图片：</div>
+							<input type="file">
+							<div class="inputbox">
+
+								<input type="button" class="btn" value="上传列表图片">
+								支持jpg、jpeg、png、gif格式，大小：793 X 446px
+
+								
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">&nbsp;</div>
+				
+							<div class="inputbox">
+								<div class="picebox">
+									照片缩略图
+									<div class="close"></div>
+								</div>
+								<div class="picebox">
+									照片缩略图
+									<div class="close"></div>
+								</div>
+								<div class="picebox">
+									照片缩略图
+									<div class="close"></div>
+								</div>
+								<div class="picebox">
+									照片缩略图
+									<div class="close"></div>
+								</div>
+								<div class="picebox">
+									照片缩略图
+									<div class="close"></div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="row inputlabel">
+							<div class="titlabel">项目详情：</div>
+							<div class="inputbox">
+								<textarea placeholder="此处是富文本编辑器"></textarea>
+							
+
+								
+							</div>
+						</div>
+				</div>
+
+
+
+				<h2>发起人信息</h2>
+
+				<div class="formbox">
+					<div class="row inputlabel">
+						<div class="titlabel">自我介绍：</div>
+						<div class="inputbox">
+							<input type="text" placeholder="">
+
+							
+						</div>
+					</div>
+
+					<div class="row inputlabel">
+						<div class="titlabel">详情介绍：</div>
+						<div class="inputbox">
+							<textarea placeholder=""></textarea>
+						
+
+							
+						</div>
+					</div>
+
+
+					<div class="row inputlabel">
+						<div class="titlabel">联系电话：</div>
+						<div class="inputbox">
+							<input type="text" placeholder="">
+						</div>
+					</div>
+
+
+
+					<div class="row inputlabel">
+						<div class="titlabel">&nbsp;</div>
+						<div class="inputbox">
+							<input type="button" class="btn" style="width:600px" value="下一步" onclick="window.location.href='project_sponsor1.html'">
+						</div>
+					</div>
+					
+				</div>
+					
+			</div>
+
+
+				
+		</div>
+			
+	</div>
+		
+		
+
+	<!--读取尾部文件开始-->
+	<!--footer.tpl开始读取-->
+<div class="footer">
+    <div class="ftbody">
+        <div class="inwarp">
+                <div class="ftflink">
+
+                    合作伙伴：   
+                    <a href="">贷鼠网</a>
+                    <a href="">网贷之家</a>
+                    <a href="">搜狐互联网金融</a>
+                    <a href="">老虎财经</a>
+                    <a href="">慧博咨询</a>
+                    <a href="">网贷之眼</a>
+                </div>
+            
+
+        </div>
+
+        <div class="footbot">
+            <div class="l">
+                <div class="link">
+                    <a href="">关于我们</a>
+                    <a href="">联系我们</a>
+                    <a href="">服务协议</a>
+                    <a href="">帮助中心</a>
+                    <a href="">合作专区</a> 
+                </div>
+
+                <div class="follow"> 服务热线：010-53677696 (9:00-21:00)</div>
+
+               
+
+                <div class="follow">
+                    <div class="title">关注我们：</div>
+                    <a href="" class="weibo"></a>
+                    <a href="" class="qq"></a>
+                    <a href="" class="tieba"></a>
+                    <a href="" class="douban"></a>
+                </div>
+            </div>
+          
+            <div class="r">
+                <img src="../public/img/erweima.png" alt="">
+                <img src="../public/img/erweima.png" alt="">
+                
+            </div>
+
+              <div class="c">©2015 贷鼠网 All Rights Reserved. 京ICP备</div>
+        </div>
+
+     
+ 
+    </div>
+
+</div>
+<!--footer.tpl读取完成-->
+
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+
+
+<script type="text/javascript">
+	$(".close").on("click",function(){
+		var p=$(this).parents(".picebox");
+		var piceLength=$(this).parents(".inputbox").find(".picebox").length;
+		if(piceLength>1){
+			p.remove();
+			layer.msg('删除成功');
+		}else{
+			$(this).hide();
+			p.find("img").remove();
+			layer.msg('删除成功');
+		}
+		
+	})
+</script>
+
+</body>       
+</html>

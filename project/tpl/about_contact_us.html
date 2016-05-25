@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/about.css" type="text/css">
+
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=kjlUAawsuEK8jBNI7Y8r97rb"></script>
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+	<div class="container">
+		<div class="aboutbox">
+			{% inc='about_left.tpl' %}
+			<div class="r">
+					
+				<div class="tit">
+					<span>联系我们</span>
+				</div>
+
+
+				<div class="art">
+					<div id="allmap"></div>
+
+					<ul class="contact">
+						<li><img src="../public/img/about/i1.png" alt="">400-0546-996</li>
+						<li><img src="../public/img/about/i2.png" alt="">0546-8231313</li>
+						<li><img src="../public/img/about/i3.png" alt="">401993258</li>
+						<li><img src="../public/img/about/i4.png" alt="">dongyingdaicn@163.com</li>
+						<li><img src="../public/img/about/i5.png" alt="">山东省东营市东营区黄河路金领国际B座803</li>
+					</ul>
+				</div>
+
+
+
+
+
+
+
+
+
+
+			</div>
+			
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/about.js"></script>
+<script type="text/javascript">
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");            // 创建Map实例
+map.centerAndZoom(new BMap.Point(116.468, 39.890), 11);
+var local = new BMap.LocalSearch(map, {
+  renderOptions:{map: map, autoViewport:true}
+});
+local.searchNearby("北京普惠添翼网络科技有限公司", "劲松");
+
+
+</script>
+
+</body>
+</html>

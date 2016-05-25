@@ -1,0 +1,144 @@
+@import "../variables";
+@import "../lib/basic";
+
+
+@import "../lib/element";
+
+/*首页样式*/
+.invinwarp {
+	margin: 0px 0px;
+}
+.investment_info{
+	font-size: 14px;
+	.left{
+		float: left;
+		width: 50%;
+		h2{
+			font-size: 18px;
+			float: left;
+			color: @titleFtColor;
+		}
+		.status{
+			line-height: 20px;
+			margin-top: 7px;
+		}
+
+	}
+	.right{
+		float: right;
+		width: 50%;
+		
+		line-height: 35px;
+	}
+	.titles{
+		padding-top: 0px;
+		padding-bottom: 10px;
+	}
+
+	.infoc{
+		padding: 15px;
+		// background:@listBgColor; 
+		h2{
+			line-height: 35px;
+			span{
+				color: @baseTextColor;
+				font-weight: 100;
+			}
+		}
+		.row{
+			margin-bottom: 10px;
+			& > div{
+				float: left;
+				.title{
+					float: left;
+					height: 100%;
+
+				}
+				.con{
+					float: left;
+				}
+			}
+			&.last{
+				margin-bottom: 0px;
+			}
+		}
+		.b2{
+			width: 20%;
+			._clearfix();
+		}
+		.b3{
+			width: 30%;
+			._clearfix();
+		}
+		.b4{
+			width: 40%;
+			._clearfix();
+		}
+		.b5{
+			width: 50%;
+			._clearfix();
+		}
+		.b{
+			width: 100%;
+			float: none;
+		}
+	}
+
+
+	.right_title{
+		height: auto;
+		line-height: 30px;
+		border-bottom: none;
+		padding: 20px 15px;
+		color: @markColor;
+		.line{
+			margin-top:13px;
+			background: @markColor;
+			margin-left: 0px; 
+			border-radius: 0px;
+			height: 6px;
+			width: 6px;
+		}
+	}
+}
+
+
+.stat{
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+
+	margin-top: 5px;
+	margin-right: 5px;
+	background: url('@{img}/ico1.png') no-repeat -48px -136px;
+	&.no{
+		background: url('@{img}/ico1.png') no-repeat -48px -151px;
+	}
+}
+
+
+
+.progress{
+	margin-top: 10px;
+	width: 295px;
+	background: @borderColor;
+	position: relative;
+	.bar{
+		width: 0px;
+		position: absolute;
+		background: @markColor;
+	}
+	.title{
+		width: 66px;
+		position: absolute;
+		left: -66px;
+		top: -6px;
+	}
+
+	// margin-bottom: 10px;
+	margin-left: 66px;
+}
+
+table.botbor{
+	margin: 0px 15px;
+}

@@ -1,0 +1,372 @@
+@import "../variables";
+@import "../lib/basic";
+@import "../lib/button";
+@import "../lib/element";
+
+/*llist*/
+.container{
+	background: @listBgColor;
+	font-size: 16px;
+}
+
+.topbars{
+	padding: 20px;
+	.delete{
+		padding-left: 15px;
+	}
+}
+
+.icotitle{
+	height: 40px;
+	text-align: center;
+	
+	margin: 30px auto 30px auto;
+	span{
+		display: inline-block;
+		width: 211px;
+		height: 40px;
+		background: url("@{img}/title.png") no-repeat -211px 0px;
+		color: @titleTextColor;
+		font-size: @navSize;
+		line-height: 40px;
+		text-align: center;
+		&.step_on{
+			color: #ffffff;
+			background-position: 0px 0px;
+		}
+	}
+}
+.project_sponsor{
+	min-height: 400px;
+	font-size: 16px;
+	border: 3px solid @borderColor;
+	background: #ffffff;
+	margin: 30px 0px;
+	padding:10px 24px;
+	h2{
+		font-size: @navSize + 2;
+		font-weight: bold;
+		color: @titleTextColor;
+		line-height: 45px;
+		padding: 0px 16px;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+h3{
+	text-align: center;
+	font-size: @navSize;
+	color: @titleTextColor;
+	line-height: 45px;
+	padding: 0px 16px;
+
+}
+
+.block{
+	display: block;
+	margin-top: -5px;
+}
+
+
+.mid{
+	width: 890px;
+	margin: 0px auto;
+
+	.block{
+		text-align: left;
+		margin-top: 0px;
+		padding: 25px 20px 25px 20px;
+		background: @borderColor;
+		position: relative;
+		h2{
+			font-size: @navSize;
+			margin-bottom: 30px;
+			color: @titleTextColor;
+			font-weight: bold;
+			text-align: left;
+			padding: 0px 0px;
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+		p{
+			font-size: @titleBaseSize;
+			.title{
+				color:  @titleTextColor;
+			}
+		}
+		.imgbox{
+			padding: 20px 0px;
+		}
+		img{
+			width: 100px;
+			display: inline-block;
+			margin-right: 20px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+
+		}
+		.btn{
+			margin-top: 10px;
+
+		}
+
+		.w280box{
+			width: 280px;
+			margin: 0px auto;
+			img{
+				width: 280px;
+				height: 158px;
+				display: block;
+				margin-bottom: 30px;
+				margin-top: 0px;
+			}
+			.list{
+				margin-bottom: 10px;
+				._clearfix();
+				.label{
+					font-size: 14px;
+					color: @titleTextColor;
+					// width: 80px;
+					text-align: right;
+					float: left;
+				}
+				span{
+					
+					font-size: 16px;
+					&.minus{
+						cursor: pointer;
+						display: inline-block;
+						height: 24px;
+						width: 24px;
+						text-align: center;
+						font-weight: bold;
+					}
+					&.puls{
+						cursor: pointer;
+						display: inline-block;
+						height: 24px;
+						width: 24px;
+						text-align: center;
+						font-weight: bold;
+					}
+					&.num{
+						font-size: 20px;
+						font-weight: bold;
+						color: @markColor;
+					}
+				}
+			}
+		}
+	}
+}
+
+.input_group{
+	width: 350px;
+	margin:10px auto;
+
+
+	.input_row{
+		._clearfix();
+		// height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		color: #666666;
+		margin-bottom: 20px;
+		.title{
+			float: left;
+			line-height: 40px;
+			text-align: right;
+			width: 82px;
+			padding-right: 10px;
+			font-size: @baseFontSize + 4;
+			color: @titleTextColor;
+			font-weight: bold;
+		}
+		.inputwarp{
+
+			float: left;
+			position: relative;
+			line-height: 38px;
+			
+			a{
+				&.text-link{
+					position: absolute;
+					top: 0px;
+					right: 5px;
+					color: @markColor;
+					font-size: @baseFontSize;
+				}
+				&.btn{
+					width: 128px!important;
+				}
+				
+			}
+			input[type='text'],input[type='password'],select{
+				padding: 0px 10px;
+				height: 38px;
+				border:1px solid @baseTextColor;
+				// width: 250px;
+				&:focus{
+					border: 1px solid @markColor;
+					// -webkit-box-shadow: 0px 0px 2px @markColor;
+					// box-shadow: 0px 0px 2px @markColor;
+				}
+			}
+			select{
+				width: 272px;
+			}
+		}
+
+	}
+	
+
+}
+.bankbox{
+	width: 210px;
+	height: 58px;
+	text-align: center;
+	background: #ffffff;
+	border:1px solid @borderColor;
+	margin-bottom: 0px;
+	position: relative;
+	img{
+		height: 58px;
+		display: inline-block;
+
+	}
+
+	span{
+		width: 16px;
+		height: 16px;
+		display: block;
+		position: absolute;
+		bottom: 5px;
+		right: 5px;
+		display: none;
+		background: url('@{img}/ico1.png') no-repeat -45px -167px;
+	}
+
+	&.active{
+		border: 1px solid @markColor;
+		span{
+			display: block;
+		}
+	}
+
+}
+
+
+
+
+
+.addresslist{
+	margin-top: 30px;
+    border: 3px solid @borderColor;
+    padding: 37px 25px 17px 25px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    ._clearfix();
+    font-size: 14px;
+
+    .lable{
+        margin-bottom: 18px;
+        width: 50%;
+        float: left;
+        
+        .title{
+            display: inline-block;
+            width: 60px;
+            color: @titleTextColor;
+        }
+    }
+
+    .tools{
+        position: absolute;
+        right: 6px;
+        bottom: 15px;
+        a{
+            padding: 0px 10px;
+            color: @baseTextColor;
+            &.mark{
+                color: @markColor;
+            }
+        }
+    }
+    .defbtn{
+        display: inline-block;
+    }
+
+
+    .defalut{
+        height: 40px;
+        line-height: 40px;
+        padding: 0px 20px;
+        background: @markColor;
+        position: absolute;
+        right: -3px;
+        top: -3px;
+        color: #fff;
+        font-size: @navSize;
+        display: none;
+    }
+
+    &.def{
+        border-color: @markColor;
+        .defalut{
+            display: block!important;
+        }
+        .defbtn{
+            // display: none;
+        }
+
+    }
+
+
+}
+
+
+
+.btnboxb{
+	margin-bottom: 30px;
+	.btn{
+		width: 100%;
+	}
+}
+.pdx5{
+	padding: 0px 5px!important;
+}
+.pdy100{
+	padding: 100px 0px;
+}
+.pay{
+	margin-top: 40px;
+	margin-bottom: 5px;
+	span{
+		color: @markColor;
+	}
+}
+
+
+.smaile{
+	text-align: center;
+	margin-top: 80px;
+	font-size: 16px;
+	margin-bottom: 80px;
+	img{
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	h2{
+		font-weight: bold;
+		font-size: 18px;
+		// color: @markColor;
+		border-bottom: none;
+		margin-top: 0px;
+	}
+	p{
+		border-bottom: none;
+		font-size: 14px;
+	}
+
+}

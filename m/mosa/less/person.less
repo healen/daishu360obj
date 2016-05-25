@@ -1,0 +1,145 @@
+@import "../variables"; 
+@import "../lib/basic"; 
+@import "../button"; 
+@import "../document"; 
+/******************个人中心样式********************/
+.banner-content{
+	padding:0rem 0rem;
+	margin: 0.8rem;
+}
+.myhead{
+	margin-bottom: 3.5rem;
+	padding: 1.5rem 1rem;
+	.-bg ._color(@barBgColor);
+
+	.top{
+		.-display ._box();
+		.-display ._box-align(center,center);
+		.-display ._orient(vertical);
+		padding: 1.2rem 0;
+		position: relative;
+
+
+
+
+		.set{
+			position: absolute;
+			.-box ._size(1.9rem,1.9rem);
+			top: 2rem;
+			right: 0rem;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+			color: @assistColor;
+
+		}
+		img{
+			display: block;
+			width: 71px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+		h2{
+			font-size: @bigFontSize;
+		}
+	}
+	.bottom{		
+
+		padding: 0rem;
+		.-display ._box();
+		.-display ._box-align(center,start);
+		.line{
+			width: 1px;
+    		height: 4rem;
+    		background: @borderColor;
+		}
+		.qure{
+			position: relative;
+			.-display ._flex(1);
+			text-align: center;
+			padding: 1rem 0rem;
+			border-bottom: 1px solid @borderColor;
+			h2{
+				font-size: @bigFontSize;
+				color: @markColor;
+
+			}
+			p{
+				color: @minorColor;
+			}
+
+		}
+	}
+
+	&.mid{
+		padding: 1rem 0rem;
+		.qure{
+			&:active{
+			background-color: #eeeeee;
+			}
+			&:visible{
+				background-color: #ffffff
+			}
+
+		}
+		border-radius: 0.5rem;
+
+
+
+		
+
+	}
+
+	&:nth-child(3){
+		border-radius: @querRadius @querRadius 0rem 0rem ;
+	}
+	&:nth-child(4){
+		border-radius:0rem 0rem @querRadius @querRadius;
+		overflow: hidden;
+		.qurelist{
+			.list{
+				&:nth-last-child(4){
+					border-bottom: none;
+				}
+			}
+		}
+
+	}
+
+	
+}
+
+.qurelist{
+	._clearfix();
+	.-display ._flex(1);
+	.list{
+		width: 33.3%;
+		box-sizing: border-box;
+		border-right: 1px solid @borderColor;
+		float: left;
+		text-align: center;
+		position: relative;
+		color: @minorColor;
+		padding: 1rem 0; 
+		&:nth-child(4n){
+			border-right: none;
+		}
+		&:active{
+			background-color: #eeeeee;
+		}
+		&:visible{
+			background-color: #ffffff
+		}
+		&:last-child{
+			border-right: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+

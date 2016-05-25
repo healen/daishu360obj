@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>贷鼠网-首页</title>
+	<!-- <link rel="stylesheet" href="../public/styles/bootstrap3.3.5/bootstrap.min.css" type="text/css"> -->
+	<link rel="stylesheet" href="../public/styles/layout.css" type="text/css">
+
+	<link rel="stylesheet" href="../public/styles/investor_detail.css" type="text/css">
+
+	<script type="text/javascript" src="../public/scripts/lib/jquery-1.8.2.min.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+
+ 
+<div class="box">
+	<!--读取头部文件开始-->
+ 	{% inc='header.tpl' %}
+ 	<!--读取头部文件结束-->
+
+
+	<div class="container">
+		<div class="banner">
+			<div>
+				<div class="picebox">
+					<img src="../public/img/my1.png" alt="">
+					<h2>马云</h2>
+				</div>
+				<p>资质：两年以上天使基金、早期VC基金经理级以上岗位从业经验。</p>
+				<p>关注行业：文化创意、互联网、服务业、生物医药</p>
+				<p>出资金额：100万</p>
+			</div>
+			
+		</div>
+		<div class="inwarp">
+			<div class="investor_detail">
+				<h2>个人资料</h2>
+
+				<div class="msg">
+					<span class="title">众筹经历：</span>
+					律众筹明星投资人，共投资15个项目，并作为领投人，帮助3个项目募集资金1.23亿元。
+				</div>
+				<div class="msg">
+					<span class="title">工作经历：</span>
+					1995年创办中国第一家互联网商业信息发布网站“中国黄页”，1998年出任中国国际电子商务中心国富通信息技术发展有限公司总经理，1999年
+创办阿里巴巴，并担任阿里集团CEO、董事局主席，2013年5月10日，辞任阿里巴巴集团CEO，继续担任阿里集团董事局主席。
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--读取尾部文件开始-->
+	{% inc='footer.tpl' %}
+	<!--读取尾部文件结束-->
+</div>
+<script type="text/javascript" src="../public/scripts/public.js"></script>
+<script type="text/javascript" src="../public/scripts/swipe.js"></script>
+<script src="../public/scripts/lib/chaffle.min.js"></script> 
+<script src="../public/scripts/lib/slick.min.js"></script> 
+<script type="text/javascript">
+/**
+ *
+ * 筛选条件JS
+ */
+$(".where a").on("click",function(){
+	$(this).addClass("on").siblings().removeClass("on")
+})
+
+$(".where .sort").on("click",function(){
+	if(!$(this).hasClass("asc")){
+		$(this).addClass("asc").removeClass("desc");
+	}else{
+		$(this).removeClass("asc").addClass("desc");
+	}
+})
+
+
+
+$(".tip").on("mouseover",function(){
+	layer.tips('<span style="color:#a6a6a6">凡是投资的用户将获得价值投资额10%的消费券，在众筹项目完成后可到本店消费抵现使用。</span>', this, {
+                tips: [2, '#f5f5fa']
+            });
+
+})
+
+
+
+
+</script>
+
+</body>       
+</html>

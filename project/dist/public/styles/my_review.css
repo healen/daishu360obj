@@ -1,0 +1,77 @@
+/**
+ *名称：贷鼠网组件样式
+ *日期：2015
+ *作者：张晓东
+ */
+/***********************************************************************************************************************/
+.row .io {
+  height: 45px;
+  background: #f5f5fa;
+  margin-top: 15px;
+  position: relative;
+  border: 1px solid #ebebf5;
+}
+.row .io .sanjiao {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f5f5fa;
+  border-left: 10px solid transparent;
+  margin-left: 20px;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+.row .io .sanjiao1 {
+  width: 0px;
+  height: 0px;
+  border-top: 0px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #ebebf5;
+  border-left: 12px solid transparent;
+  margin-left: 20px;
+  position: absolute;
+  top: -11px;
+  left: -1px;
+}
+.row .io p {
+  font-size: 14px;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+  margin-left: 20px;
+}
+.borderbtn {
+  border-bottom: 1px solid #ebebf5;
+  padding: 20px 44px;
+  font-size: 14px;
+}
+.borderbtn .list {
+  float: left;
+  width: 25%;
+}
+.borderbtn .list.last {
+  text-align: right;
+  width: 25%;
+  float: right;
+}
+.borderbtn .list.frist {
+  width: 50%;
+}
+.borderbtn .list.frist span {
+  color: #595959;
+}
+.borderbtn .list a {
+  color: #3fd4bb;
+}
+.rzgl {
+  padding-bottom: 10px;
+}
+.mylistcontent {
+  padding: 0px 0px;
+}
+.borderbtn {
+  padding: 20px 0px 20px 30px;
+}

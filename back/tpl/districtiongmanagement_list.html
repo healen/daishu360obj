@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <title>众筹管理后台</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+	    <!-- Le styles -->
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.min.css">
+	     
+	    <!--[if lte IE 7]>
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/ie.css">
+	    <![endif]-->
+	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="bootstrap/js/html5.js"></script>
+	    <![endif]-->
+	    <link rel="stylesheet" type="text/css" href="css/frame.css">
+	    <link rel="stylesheet" type="text/css" href="css/user.css">
+	    <link rel="shortcut icon" href="img/ico/favicon.ico">
+	</head>
+	<body>
+
+		<div class="box">
+			{% inc='left.tpl' %}
+			{% inc='head.tpl' %}
+			<div class="containerme">
+
+				
+				
+				<div class="pagecontent" id="pagecontent">
+					<section class="crumbs">
+						<i class="ico-dibiao"></i><a href="home.html">首页</a> > <a href="javascript:void(0)">系统配置</a> > 系统参数配置 > 地区配置
+					</section>
+
+					<div class="list-page-content">
+
+						<form class="form-inline">
+
+
+
+							<div class="input-group">
+								<label class="checkbox">
+									地区名称：
+								</label>
+								<input type="text" class="input-small" placeholder="">
+								
+							</div>
+
+
+			
+
+
+
+
+
+
+
+
+							<div class="input-group">
+								<label class="checkbox">
+									最后修改时间：
+
+								</label>
+								<input type="text" class="input-small" placeholder="" onclick="laydate()"> 至 
+								<input type="text" class="input-small" placeholder="" onclick="laydate()">
+						
+								
+							</div>
+
+							
+							
+							
+							<button type="button" class="btn btn-primary">搜索</button>
+							<a href="#myModal"  data-toggle="modal"  type="button" class="btn">新建</a>
+
+					
+
+						</form>
+
+
+
+
+						<table class="botbor table-hover">
+								<thead>
+									<tr>
+
+
+
+
+
+
+
+
+										<td>地区名称</td>
+										<td >最后修改时间</td>
+										<td>操作</td>
+										
+										
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>北京</td>
+									
+
+										<td>2016-2-3  10:10:11</td>
+
+										<td>
+											<a href="#myModal" data-toggle="modal" class="btns">修改</a>
+
+											<a href="" class="btns">删除</a>
+											
+									
+										
+										</td>
+									</tr>
+									<tr>
+										<td>上海</td>
+										
+
+										<td>2016-2-3  10:10:11</td>
+
+										<td>
+											<a href="#myModal" data-toggle="modal" class="btns">修改</a>
+
+											<a href="" class="btns">删除</a>
+											
+									
+										
+										</td>
+									</tr>
+
+									<tr>
+										<td>哈哈集团</td>
+										
+										<td>2016-2-3  10:10:11</td>
+
+										<td>
+											<a href="#myModal" data-toggle="modal" class="btns">修改</a>
+
+											<a href="" class="btns">删除</a>
+											
+									
+										
+										</td>
+									</tr>
+								</tbody>
+						</table>
+
+
+						<div class="text-right">
+							<div class="pagination">
+							  <ul>
+							    <li><a href="#">上一页</a></li>
+							    <li><a href="#">1</a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#">4</a></li>
+							    <li><a href="#">5</a></li>
+							    <li><a href="#">下一页</a></li>
+							  </ul>
+							</div>
+							
+						</div>
+						
+					</div>
+
+					
+
+					
+					
+				</div>
+			</div>
+
+			
+			
+		</div>
+
+
+
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-header">
+		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		    <h3 id="myModalLabel">地区配置</h3>
+		  </div>
+		  <div class="modal-body">
+		  		<div class="popup">
+
+		  			<form class="form-horizontal">
+					
+							  <div class="row-fluid myform">
+							    <label class="control-label span4" for="inputEmail">地区名称：&nbsp;&nbsp;</label>
+							    <div class="controls">
+							      <input type="text"  id="inputEmail" placeholder="">
+							    </div>
+							  </div>
+
+							
+
+
+
+
+
+						
+							</form>
+		  			
+			    	
+		  			
+		  		</div>
+		    	
+		    	
+		    	
+		  </div>
+
+		  <div class="modal-footer">
+		   
+		    <button class="btn btn-large btn-warning"  data-dismiss="modal" aria-hidden="true">取消</button>
+
+		    <button class="btn btn-large btn-primary"  data-dismiss="modal" aria-hidden="true">添加</button>
+		  </div>
+		</div>
+
+		
+		<script type="text/javascript" src="js/vendor/jquery-1.7.2.min.js"></script>
+	    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+	    <script type="text/javascript" src="js/vendor/laydate/laydate.js"></script>
+	    <script type="text/javascript" src="js/public.js"></script>
+
+	 
+	</body>
+</html>
